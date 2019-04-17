@@ -1,0 +1,1334 @@
+﻿{
+  "KPIHierarchy": {
+    "items": [
+      {
+        "displayName": "Diameter",
+        "name": "Diameter",
+        "id": 2,
+        "type": "protocol",
+        "items": [
+          {
+            "displayName": "AbortSession Attempts-Rx",
+            "name": "AbortSession_Attempts",
+            "interfaceName": "Rx",
+            "id": 110,
+            "type": "kpi"
+          },
+          {
+            "displayName": "AbortSession Failures-Rx",
+            "name": "AbortSession_Failures",
+            "interfaceName": "Rx",
+            "id": 111,
+            "type": "kpi"
+          },
+          {
+            "displayName": "AbortSession FRPercentage-Rx",
+            "name": "AbortSession_FRPercentage",
+            "interfaceName": "Rx",
+            "id": 112,
+            "type": "kpi"
+          },
+          {
+            "displayName": "AbortSession SRPercentage-Rx",
+            "name": "AbortSession_SRPercentage",
+            "interfaceName": "Rx",
+            "id": 113,
+            "type": "kpi"
+          },
+          {
+            "displayName": "AbortSession SuccessfulProcedure-Rx",
+            "name": "AbortSession_SuccessfulProcedure",
+            "interfaceName": "Rx",
+            "id": 114,
+            "type": "kpi"
+          },
+          {
+            "displayName": "AuthenticationAuthorization Attempts-Rx",
+            "name": "AuthenticationAuthorization_Attempts",
+            "interfaceName": "Rx",
+            "id": 115,
+            "type": "kpi"
+          },
+          {
+            "displayName": "AuthenticationAuthorization Failures-Rx",
+            "name": "AuthenticationAuthorization_Failures",
+            "interfaceName": "Rx",
+            "id": 116,
+            "type": "kpi"
+          },
+          {
+            "displayName": "AuthenticationAuthorization FRPercentage-Rx",
+            "name": "AuthenticationAuthorization_FRPercentage",
+            "interfaceName": "Rx",
+            "id": 117,
+            "type": "kpi"
+          },
+          {
+            "displayName": "AuthenticationAuthorization SRPercentage-Rx",
+            "name": "AuthenticationAuthorization_SRPercentage",
+            "interfaceName": "Rx",
+            "id": 118,
+            "type": "kpi"
+          },
+          {
+            "displayName": "AuthenticationAuthorization SuccessfulProcedure-Rx",
+            "name": "AuthenticationAuthorization_SuccessfulProcedure",
+            "interfaceName": "Rx",
+            "id": 119,
+            "type": "kpi"
+          },
+          {
+            "displayName": "CreditControlAttemptsInitial Attempts-Gx",
+            "name": "CreditControlAttemptsInitial_Attempts",
+            "interfaceName": "Gx",
+            "id": 90,
+            "type": "kpi"
+          },
+          {
+            "displayName": "CreditControlAttemptsInitial Failures-Gx",
+            "name": "CreditControlAttemptsInitial_Failures",
+            "interfaceName": "Gx",
+            "id": 91,
+            "type": "kpi"
+          },
+          {
+            "displayName": "CreditControlAttemptsInitial FRPercentage-Gx",
+            "name": "CreditControlAttemptsInitial_FRPercentage",
+            "interfaceName": "Gx",
+            "id": 92,
+            "type": "kpi"
+          },
+          {
+            "displayName": "CreditControlAttemptsInitial SRPercentage-Gx",
+            "name": "CreditControlAttemptsInitial_SRPercentage",
+            "interfaceName": "Gx",
+            "id": 93,
+            "type": "kpi"
+          },
+          {
+            "displayName": "CreditControlAttemptsInitial SuccessfulProcedure-Gx",
+            "name": "CreditControlAttemptsInitial_SuccessfulProcedure",
+            "interfaceName": "Gx",
+            "id": 94,
+            "type": "kpi"
+          },
+          {
+            "displayName": "CreditControlAttemptsUpdate Attempts-Gx",
+            "name": "CreditControlAttemptsUpdate_Attempts",
+            "interfaceName": "Gx",
+            "id": 95,
+            "type": "kpi"
+          },
+          {
+            "displayName": "CreditControlAttemptsUpdate Failures-Gx",
+            "name": "CreditControlAttemptsUpdate_Failures",
+            "interfaceName": "Gx",
+            "id": 96,
+            "type": "kpi"
+          },
+          {
+            "displayName": "CreditControlAttemptsUpdate FRPercentage-Gx",
+            "name": "CreditControlAttemptsUpdate_FRPercentage",
+            "interfaceName": "Gx",
+            "id": 97,
+            "type": "kpi"
+          },
+          {
+            "displayName": "CreditControlAttemptsUpdate SRPercentage-Gx",
+            "name": "CreditControlAttemptsUpdate_SRPercentage",
+            "interfaceName": "Gx",
+            "id": 98,
+            "type": "kpi"
+          },
+          {
+            "displayName": "CreditControlAttemptsUpdate SuccessfulProcedure-Gx",
+            "name": "CreditControlAttemptsUpdate_SuccessfulProcedure",
+            "interfaceName": "Gx",
+            "id": 99,
+            "type": "kpi"
+          },
+          {
+            "displayName": "CreditControlTermination Attempts-Gx",
+            "name": "CreditControlTermination_Attempts",
+            "interfaceName": "Gx",
+            "id": 100,
+            "type": "kpi"
+          },
+          {
+            "displayName": "CreditControlTermination Failures-Gx",
+            "name": "CreditControlTermination_Failures",
+            "interfaceName": "Gx",
+            "id": 101,
+            "type": "kpi"
+          },
+          {
+            "displayName": "CreditControlTermination FRPercentage-Gx",
+            "name": "CreditControlTermination_FRPercentage",
+            "interfaceName": "Gx",
+            "id": 102,
+            "type": "kpi"
+          },
+          {
+            "displayName": "CreditControlTermination SRPercentage-Gx",
+            "name": "CreditControlTermination_SRPercentage",
+            "interfaceName": "Gx",
+            "id": 103,
+            "type": "kpi"
+          },
+          {
+            "displayName": "CreditControlTermination SuccessfulProcedure-Gx",
+            "name": "CreditControlTermination_SuccessfulProcedure",
+            "interfaceName": "Gx",
+            "id": 104,
+            "type": "kpi"
+          },
+          {
+            "displayName": "MAR Attempts-Cx",
+            "name": "MAR_Attempts",
+            "interfaceName": "Cx",
+            "id": 75,
+            "type": "kpi"
+          },
+          {
+            "displayName": "MAR Failures-Cx",
+            "name": "MAR_Failures",
+            "interfaceName": "Cx",
+            "id": 76,
+            "type": "kpi"
+          },
+          {
+            "displayName": "MAR FRPercentage-Cx",
+            "name": "MAR_FRPercentage",
+            "interfaceName": "Cx",
+            "id": 77,
+            "type": "kpi"
+          },
+          {
+            "displayName": "MAR SRPercentage-Cx",
+            "name": "MAR_SRPercentage",
+            "interfaceName": "Cx",
+            "id": 78,
+            "type": "kpi"
+          },
+          {
+            "displayName": "MAR SuccessfulProcedure-Cx",
+            "name": "MAR_SuccessfulProcedure",
+            "interfaceName": "Cx",
+            "id": 79,
+            "type": "kpi"
+          },
+          {
+            "displayName": "ReAuthGx Attempts-Gx",
+            "name": "ReAuthGx_Attempts",
+            "interfaceName": "Gx",
+            "id": 105,
+            "type": "kpi"
+          },
+          {
+            "displayName": "ReAuthGx Failures-Gx",
+            "name": "ReAuthGx_Failures",
+            "interfaceName": "Gx",
+            "id": 106,
+            "type": "kpi"
+          },
+          {
+            "displayName": "ReAuthGx FRPercentage-Gx",
+            "name": "ReAuthGx_FRPercentage",
+            "interfaceName": "Gx",
+            "id": 107,
+            "type": "kpi"
+          },
+          {
+            "displayName": "ReAuthGx SRPercentage-Gx",
+            "name": "ReAuthGx_SRPercentage",
+            "interfaceName": "Gx",
+            "id": 108,
+            "type": "kpi"
+          },
+          {
+            "displayName": "ReAuthGx SuccessfulProcedure-Gx",
+            "name": "ReAuthGx_SuccessfulProcedure",
+            "interfaceName": "Gx",
+            "id": 109,
+            "type": "kpi"
+          },
+          {
+            "displayName": "ReAuthRx Attempts-Rx",
+            "name": "ReAuthRx_Attempts",
+            "interfaceName": "Rx",
+            "id": 120,
+            "type": "kpi"
+          },
+          {
+            "displayName": "ReAuthRx Failures-Rx",
+            "name": "ReAuthRx_Failures",
+            "interfaceName": "Rx",
+            "id": 121,
+            "type": "kpi"
+          },
+          {
+            "displayName": "ReAuthRx FRPercentage-Rx",
+            "name": "ReAuthRx_FRPercentage",
+            "interfaceName": "Rx",
+            "id": 122,
+            "type": "kpi"
+          },
+          {
+            "displayName": "ReAuthRx SRPercentage-Rx",
+            "name": "ReAuthRx_SRPercentage",
+            "interfaceName": "Rx",
+            "id": 123,
+            "type": "kpi"
+          },
+          {
+            "displayName": "ReAuthRx SuccessfulProcedure-Rx",
+            "name": "ReAuthRx_SuccessfulProcedure",
+            "interfaceName": "Rx",
+            "id": 124,
+            "type": "kpi"
+          },
+          {
+            "displayName": "SAR Attempts-Cx",
+            "name": "SAR_Attempts",
+            "interfaceName": "Cx",
+            "id": 80,
+            "type": "kpi"
+          },
+          {
+            "displayName": "SAR Failures-Cx",
+            "name": "SAR_Failures",
+            "interfaceName": "Cx",
+            "id": 81,
+            "type": "kpi"
+          },
+          {
+            "displayName": "SAR FRPercentage-Cx",
+            "name": "SAR_FRPercentage",
+            "interfaceName": "Cx",
+            "id": 82,
+            "type": "kpi"
+          },
+          {
+            "displayName": "SAR SRPercentage-Cx",
+            "name": "SAR_SRPercentage",
+            "interfaceName": "Cx",
+            "id": 83,
+            "type": "kpi"
+          },
+          {
+            "displayName": "SAR SuccessfulProcedure-Cx",
+            "name": "SAR_SuccessfulProcedure",
+            "interfaceName": "Cx",
+            "id": 84,
+            "type": "kpi"
+          },
+          {
+            "displayName": "SessionTermination Attempts-Rx",
+            "name": "SessionTermination_Attempts",
+            "interfaceName": "Rx",
+            "id": 125,
+            "type": "kpi"
+          },
+          {
+            "displayName": "SessionTermination Failures-Rx",
+            "name": "SessionTermination_Failures",
+            "interfaceName": "Rx",
+            "id": 126,
+            "type": "kpi"
+          },
+          {
+            "displayName": "SessionTermination FRPercentage-Rx",
+            "name": "SessionTermination_FRPercentage",
+            "interfaceName": "Rx",
+            "id": 127,
+            "type": "kpi"
+          },
+          {
+            "displayName": "SessionTermination SRPercentage-Rx",
+            "name": "SessionTermination_SRPercentage",
+            "interfaceName": "Rx",
+            "id": 128,
+            "type": "kpi"
+          },
+          {
+            "displayName": "SessionTermination SuccessfulProcedure-Rx",
+            "name": "SessionTermination_SuccessfulProcedure",
+            "interfaceName": "Rx",
+            "id": 129,
+            "type": "kpi"
+          },
+          {
+            "displayName": "UAR Attempts-Cx",
+            "name": "UAR_Attempts",
+            "interfaceName": "Cx",
+            "id": 85,
+            "type": "kpi"
+          },
+          {
+            "displayName": "UAR Failures-Cx",
+            "name": "UAR_Failures",
+            "interfaceName": "Cx",
+            "id": 86,
+            "type": "kpi"
+          },
+          {
+            "displayName": "UAR FRPercentage-Cx",
+            "name": "UAR_FRPercentage",
+            "interfaceName": "Cx",
+            "id": 87,
+            "type": "kpi"
+          },
+          {
+            "displayName": "UAR SRPercentage-Cx",
+            "name": "UAR_SRPercentage",
+            "interfaceName": "Cx",
+            "id": 88,
+            "type": "kpi"
+          },
+          {
+            "displayName": "UAR SuccessfulProcedure-Cx",
+            "name": "UAR_SuccessfulProcedure",
+            "interfaceName": "Cx",
+            "id": 89,
+            "type": "kpi"
+          }
+        ]
+      },
+      {
+        "displayName": "GTPV2-C",
+        "name": "GTPV2-C",
+        "id": 4,
+        "type": "protocol",
+        "items": [
+          {
+            "displayName": "CreateBearer Attempts-S11/S5",
+            "name": "CreateBearer_Attempts",
+            "interfaceName": "S11/S5",
+            "id": 145,
+            "type": "kpi"
+          },
+          {
+            "displayName": "CreateBearer Failures-S11/S5",
+            "name": "CreateBearer_Failures",
+            "interfaceName": "S11/S5",
+            "id": 146,
+            "type": "kpi"
+          },
+          {
+            "displayName": "CreateBearer FRPercentage-S11/S5",
+            "name": "CreateBearer_FRPercentage",
+            "interfaceName": "S11/S5",
+            "id": 147,
+            "type": "kpi"
+          },
+          {
+            "displayName": "CreateBearer SRPercentage-S11/S5",
+            "name": "CreateBearer_SRPercentage",
+            "interfaceName": "S11/S5",
+            "id": 148,
+            "type": "kpi"
+          },
+          {
+            "displayName": "CreateBearer SuccessfulProcedure-S11/S5",
+            "name": "CreateBearer_SuccessfulProcedure",
+            "interfaceName": "S11/S5",
+            "id": 149,
+            "type": "kpi"
+          },
+          {
+            "displayName": "CreateIndirectDataForwardingTunnel Attempts-S11",
+            "name": "CreateIndirectDataForwardingTunnel_Attempts",
+            "interfaceName": "S11",
+            "id": 130,
+            "type": "kpi"
+          },
+          {
+            "displayName": "CreateIndirectDataForwardingTunnel Failures-S11",
+            "name": "CreateIndirectDataForwardingTunnel_Failures",
+            "interfaceName": "S11",
+            "id": 131,
+            "type": "kpi"
+          },
+          {
+            "displayName": "CreateIndirectDataForwardingTunnel FRPercentage-S11",
+            "name": "CreateIndirectDataForwardingTunnel_FRPercentage",
+            "interfaceName": "S11",
+            "id": 132,
+            "type": "kpi"
+          },
+          {
+            "displayName": "CreateIndirectDataForwardingTunnel SRPercentage-S11",
+            "name": "CreateIndirectDataForwardingTunnel_SRPercentage",
+            "interfaceName": "S11",
+            "id": 133,
+            "type": "kpi"
+          },
+          {
+            "displayName": "CreateIndirectDataForwardingTunnel SuccessfulProcedure-S11",
+            "name": "CreateIndirectDataForwardingTunnel_SuccessfulProcedure",
+            "interfaceName": "S11",
+            "id": 134,
+            "type": "kpi"
+          },
+          {
+            "displayName": "CreateSession Attempts-S11/S5",
+            "name": "CreateSession_Attempts",
+            "interfaceName": "S11/S5",
+            "id": 150,
+            "type": "kpi"
+          },
+          {
+            "displayName": "CreateSession Failures-S11/S5",
+            "name": "CreateSession_Failures",
+            "interfaceName": "S11/S5",
+            "id": 151,
+            "type": "kpi"
+          },
+          {
+            "displayName": "CreateSession FRPercentage-S11/S5",
+            "name": "CreateSession_FRPercentage",
+            "interfaceName": "S11/S5",
+            "id": 152,
+            "type": "kpi"
+          },
+          {
+            "displayName": "CreateSession SRPercentage-S11/S5",
+            "name": "CreateSession_SRPercentage",
+            "interfaceName": "S11/S5",
+            "id": 153,
+            "type": "kpi"
+          },
+          {
+            "displayName": "CreateSession SuccessfulProcedure-S11/S5",
+            "name": "CreateSession_SuccessfulProcedure",
+            "interfaceName": "S11/S5",
+            "id": 154,
+            "type": "kpi"
+          },
+          {
+            "displayName": "DeleteBearer Attempts-S11/S5",
+            "name": "DeleteBearer_Attempts",
+            "interfaceName": "S11/S5",
+            "id": 155,
+            "type": "kpi"
+          },
+          {
+            "displayName": "DeleteBearer Failures-S11/S5",
+            "name": "DeleteBearer_Failures",
+            "interfaceName": "S11/S5",
+            "id": 156,
+            "type": "kpi"
+          },
+          {
+            "displayName": "DeleteBearer FRPercentage-S11/S5",
+            "name": "DeleteBearer_FRPercentage",
+            "interfaceName": "S11/S5",
+            "id": 157,
+            "type": "kpi"
+          },
+          {
+            "displayName": "DeleteBearer SRPercentage-S11/S5",
+            "name": "DeleteBearer_SRPercentage",
+            "interfaceName": "S11/S5",
+            "id": 158,
+            "type": "kpi"
+          },
+          {
+            "displayName": "DeleteBearer SuccessfulProcedure-S11/S5",
+            "name": "DeleteBearer_SuccessfulProcedure",
+            "interfaceName": "S11/S5",
+            "id": 159,
+            "type": "kpi"
+          },
+          {
+            "displayName": "DeleteIndirectDataForwardingTunnel Attempts-S11",
+            "name": "DeleteIndirectDataForwardingTunnel_Attempts",
+            "interfaceName": "S11",
+            "id": 135,
+            "type": "kpi"
+          },
+          {
+            "displayName": "DeleteIndirectDataForwardingTunnel Failures-S11",
+            "name": "DeleteIndirectDataForwardingTunnel_Failures",
+            "interfaceName": "S11",
+            "id": 136,
+            "type": "kpi"
+          },
+          {
+            "displayName": "DeleteIndirectDataForwardingTunnel FRPercentage-S11",
+            "name": "DeleteIndirectDataForwardingTunnel_FRPercentage",
+            "interfaceName": "S11",
+            "id": 137,
+            "type": "kpi"
+          },
+          {
+            "displayName": "DeleteIndirectDataForwardingTunnel SRPercentage-S11",
+            "name": "DeleteIndirectDataForwardingTunnel_SRPercentage",
+            "interfaceName": "S11",
+            "id": 138,
+            "type": "kpi"
+          },
+          {
+            "displayName": "DeleteIndirectDataForwardingTunnel SuccessfulProcedure-S11",
+            "name": "DeleteIndirectDataForwardingTunnel_SuccessfulProcedure",
+            "interfaceName": "S11",
+            "id": 139,
+            "type": "kpi"
+          },
+          {
+            "displayName": "DeleteSession Attempts-S11/S5",
+            "name": "DeleteSession_Attempts",
+            "interfaceName": "S11/S5",
+            "id": 160,
+            "type": "kpi"
+          },
+          {
+            "displayName": "DeleteSession Failures-S11/S5",
+            "name": "DeleteSession_Failures",
+            "interfaceName": "S11/S5",
+            "id": 161,
+            "type": "kpi"
+          },
+          {
+            "displayName": "DeleteSession FRPercentage-S11/S5",
+            "name": "DeleteSession_FRPercentage",
+            "interfaceName": "S11/S5",
+            "id": 162,
+            "type": "kpi"
+          },
+          {
+            "displayName": "DeleteSession SRPercentage-S11/S5",
+            "name": "DeleteSession_SRPercentage",
+            "interfaceName": "S11/S5",
+            "id": 163,
+            "type": "kpi"
+          },
+          {
+            "displayName": "DeleteSession SuccessfulProcedure-S11/S5",
+            "name": "DeleteSession_SuccessfulProcedure",
+            "interfaceName": "S11/S5",
+            "id": 164,
+            "type": "kpi"
+          },
+          {
+            "displayName": "ModifyBearer Attempts-S11/S5",
+            "name": "ModifyBearer_Attempts",
+            "interfaceName": "S11/S5",
+            "id": 165,
+            "type": "kpi"
+          },
+          {
+            "displayName": "ModifyBearer Failures-S11/S5",
+            "name": "ModifyBearer_Failures",
+            "interfaceName": "S11/S5",
+            "id": 166,
+            "type": "kpi"
+          },
+          {
+            "displayName": "ModifyBearer FRPercentage-S11/S5",
+            "name": "ModifyBearer_FRPercentage",
+            "interfaceName": "S11/S5",
+            "id": 167,
+            "type": "kpi"
+          },
+          {
+            "displayName": "ModifyBearer SRPercentage-S11/S5",
+            "name": "ModifyBearer_SRPercentage",
+            "interfaceName": "S11/S5",
+            "id": 168,
+            "type": "kpi"
+          },
+          {
+            "displayName": "ModifyBearer SuccessfulProcedure-S11/S5",
+            "name": "ModifyBearer_SuccessfulProcedure",
+            "interfaceName": "S11/S5",
+            "id": 169,
+            "type": "kpi"
+          },
+          {
+            "displayName": "ReleaseAccessBearers Attempts-S11",
+            "name": "ReleaseAccessBearers_Attempts",
+            "interfaceName": "S11",
+            "id": 140,
+            "type": "kpi"
+          },
+          {
+            "displayName": "ReleaseAccessBearers Failures-S11",
+            "name": "ReleaseAccessBearers_Failures",
+            "interfaceName": "S11",
+            "id": 141,
+            "type": "kpi"
+          },
+          {
+            "displayName": "ReleaseAccessBearers FRPercentage-S11",
+            "name": "ReleaseAccessBearers_FRPercentage",
+            "interfaceName": "S11",
+            "id": 142,
+            "type": "kpi"
+          },
+          {
+            "displayName": "ReleaseAccessBearers SRPercentage-S11",
+            "name": "ReleaseAccessBearers_SRPercentage",
+            "interfaceName": "S11",
+            "id": 143,
+            "type": "kpi"
+          },
+          {
+            "displayName": "ReleaseAccessBearers SuccessfulProcedure-S11",
+            "name": "ReleaseAccessBearers_SuccessfulProcedure",
+            "interfaceName": "S11",
+            "id": 144,
+            "type": "kpi"
+          },
+          {
+            "displayName": "UpdateBearer Attempts-S11/S5",
+            "name": "UpdateBearer_Attempts",
+            "interfaceName": "S11/S5",
+            "id": 170,
+            "type": "kpi"
+          },
+          {
+            "displayName": "UpdateBearer Failures-S11/S5",
+            "name": "UpdateBearer_Failures",
+            "interfaceName": "S11/S5",
+            "id": 171,
+            "type": "kpi"
+          },
+          {
+            "displayName": "UpdateBearer FRPercentage-S11/S5",
+            "name": "UpdateBearer_FRPercentage",
+            "interfaceName": "S11/S5",
+            "id": 172,
+            "type": "kpi"
+          },
+          {
+            "displayName": "UpdateBearer SRPercentage-S11/S5",
+            "name": "UpdateBearer_SRPercentage",
+            "interfaceName": "S11/S5",
+            "id": 173,
+            "type": "kpi"
+          },
+          {
+            "displayName": "UpdateBearer SuccessfulProcedure-S11/S5",
+            "name": "UpdateBearer_SuccessfulProcedure",
+            "interfaceName": "S11/S5",
+            "id": 174,
+            "type": "kpi"
+          }
+        ]
+      },
+      {
+        "displayName": "S1AP",
+        "name": "S1AP",
+        "id": 6,
+        "type": "protocol",
+        "items": [
+          {
+            "displayName": "DedicatedEPSBearerContextActivation Attempts-S1-MME",
+            "name": "DedicatedEPSBearerContextActivation_Attempts",
+            "interfaceName": "S1-MME",
+            "id": 175,
+            "type": "kpi"
+          },
+          {
+            "displayName": "DedicatedEPSBearerContextActivation Failures-S1-MME",
+            "name": "DedicatedEPSBearerContextActivation_Failures",
+            "interfaceName": "S1-MME",
+            "id": 176,
+            "type": "kpi"
+          },
+          {
+            "displayName": "DedicatedEPSBearerContextActivation FRPercentage-S1-MME",
+            "name": "DedicatedEPSBearerContextActivation_FRPercentage",
+            "interfaceName": "S1-MME",
+            "id": 177,
+            "type": "kpi"
+          },
+          {
+            "displayName": "DedicatedEPSBearerContextActivation SRPercentage-S1-MME",
+            "name": "DedicatedEPSBearerContextActivation_SRPercentage",
+            "interfaceName": "S1-MME",
+            "id": 178,
+            "type": "kpi"
+          },
+          {
+            "displayName": "DedicatedEPSBearerContextActivation SuccessfulProcedure-S1-MME",
+            "name": "DedicatedEPSBearerContextActivation_SuccessfulProcedure",
+            "interfaceName": "S1-MME",
+            "id": 179,
+            "type": "kpi"
+          },
+          {
+            "displayName": "DefaultEPSBearerContextActivation Attempts-S1-MME",
+            "name": "DefaultEPSBearerContextActivation_Attempts",
+            "interfaceName": "S1-MME",
+            "id": 180,
+            "type": "kpi"
+          },
+          {
+            "displayName": "DefaultEPSBearerContextActivation Failures-S1-MME",
+            "name": "DefaultEPSBearerContextActivation_Failures",
+            "interfaceName": "S1-MME",
+            "id": 181,
+            "type": "kpi"
+          },
+          {
+            "displayName": "DefaultEPSBearerContextActivation FRPercentage-S1-MME",
+            "name": "DefaultEPSBearerContextActivation_FRPercentage",
+            "interfaceName": "S1-MME",
+            "id": 182,
+            "type": "kpi"
+          },
+          {
+            "displayName": "DefaultEPSBearerContextActivation SRPercentage-S1-MME",
+            "name": "DefaultEPSBearerContextActivation_SRPercentage",
+            "interfaceName": "S1-MME",
+            "id": 183,
+            "type": "kpi"
+          },
+          {
+            "displayName": "DefaultEPSBearerContextActivation SuccessfulProcedure-S1-MME",
+            "name": "DefaultEPSBearerContextActivation_SuccessfulProcedure",
+            "interfaceName": "S1-MME",
+            "id": 184,
+            "type": "kpi"
+          },
+          {
+            "displayName": "EPSbearercontextdeactivation Attempts-S1-MME",
+            "name": "EPSbearercontextdeactivation_Attempts",
+            "interfaceName": "S1-MME",
+            "id": 185,
+            "type": "kpi"
+          },
+          {
+            "displayName": "EPSbearercontextdeactivation Failures-S1-MME",
+            "name": "EPSbearercontextdeactivation_Failures",
+            "interfaceName": "S1-MME",
+            "id": 186,
+            "type": "kpi"
+          },
+          {
+            "displayName": "EPSbearercontextdeactivation FRPercentage-S1-MME",
+            "name": "EPSbearercontextdeactivation_FRPercentage",
+            "interfaceName": "S1-MME",
+            "id": 187,
+            "type": "kpi"
+          },
+          {
+            "displayName": "EPSbearercontextdeactivation SRPercentage-S1-MME",
+            "name": "EPSbearercontextdeactivation_SRPercentage",
+            "interfaceName": "S1-MME",
+            "id": 188,
+            "type": "kpi"
+          },
+          {
+            "displayName": "EPSbearercontextdeactivation SuccessfulProcedure-S1-MME",
+            "name": "EPSbearercontextdeactivation_SuccessfulProcedure",
+            "interfaceName": "S1-MME",
+            "id": 189,
+            "type": "kpi"
+          },
+          {
+            "displayName": "EPSbearercontextmodification Attempts-S1-MME",
+            "name": "EPSbearercontextmodification_Attempts",
+            "interfaceName": "S1-MME",
+            "id": 190,
+            "type": "kpi"
+          },
+          {
+            "displayName": "EPSbearercontextmodification Failures-S1-MME",
+            "name": "EPSbearercontextmodification_Failures",
+            "interfaceName": "S1-MME",
+            "id": 191,
+            "type": "kpi"
+          },
+          {
+            "displayName": "EPSbearercontextmodification FRPercentage-S1-MME",
+            "name": "EPSbearercontextmodification_FRPercentage",
+            "interfaceName": "S1-MME",
+            "id": 192,
+            "type": "kpi"
+          },
+          {
+            "displayName": "EPSbearercontextmodification SRPercentage-S1-MME",
+            "name": "EPSbearercontextmodification_SRPercentage",
+            "interfaceName": "S1-MME",
+            "id": 193,
+            "type": "kpi"
+          },
+          {
+            "displayName": "EPSbearercontextmodification SuccessfulProcedure-S1-MME",
+            "name": "EPSbearercontextmodification_SuccessfulProcedure",
+            "interfaceName": "S1-MME",
+            "id": 194,
+            "type": "kpi"
+          },
+          {
+            "displayName": "ErabModify Attempts-S1-MME",
+            "name": "ErabModify_Attempts",
+            "interfaceName": "S1-MME",
+            "id": 195,
+            "type": "kpi"
+          },
+          {
+            "displayName": "ErabModify Failures-S1-MME",
+            "name": "ErabModify_Failures",
+            "interfaceName": "S1-MME",
+            "id": 196,
+            "type": "kpi"
+          },
+          {
+            "displayName": "ErabModify FRPercentage-S1-MME",
+            "name": "ErabModify_FRPercentage",
+            "interfaceName": "S1-MME",
+            "id": 197,
+            "type": "kpi"
+          },
+          {
+            "displayName": "ErabModify SRPercentage-S1-MME",
+            "name": "ErabModify_SRPercentage",
+            "interfaceName": "S1-MME",
+            "id": 198,
+            "type": "kpi"
+          },
+          {
+            "displayName": "ErabModify SuccessfulProcedure-S1-MME",
+            "name": "ErabModify_SuccessfulProcedure",
+            "interfaceName": "S1-MME",
+            "id": 199,
+            "type": "kpi"
+          },
+          {
+            "displayName": "ErabSetup Attempts-S1-MME",
+            "name": "ErabSetup_Attempts",
+            "interfaceName": "S1-MME",
+            "id": 200,
+            "type": "kpi"
+          },
+          {
+            "displayName": "ErabSetup Failures-S1-MME",
+            "name": "ErabSetup_Failures",
+            "interfaceName": "S1-MME",
+            "id": 201,
+            "type": "kpi"
+          },
+          {
+            "displayName": "ErabSetup FRPercentage-S1-MME",
+            "name": "ErabSetup_FRPercentage",
+            "interfaceName": "S1-MME",
+            "id": 202,
+            "type": "kpi"
+          },
+          {
+            "displayName": "ErabSetup SRPercentage-S1-MME",
+            "name": "ErabSetup_SRPercentage",
+            "interfaceName": "S1-MME",
+            "id": 203,
+            "type": "kpi"
+          },
+          {
+            "displayName": "ErabSetup SuccessfulProcedure-S1-MME",
+            "name": "ErabSetup_SuccessfulProcedure",
+            "interfaceName": "S1-MME",
+            "id": 204,
+            "type": "kpi"
+          },
+          {
+            "displayName": "HandoverPreparation Attempts-S1-MME",
+            "name": "HandoverPreparation_Attempts",
+            "interfaceName": "S1-MME",
+            "id": 205,
+            "type": "kpi"
+          },
+          {
+            "displayName": "HandoverPreparation Failures-S1-MME",
+            "name": "HandoverPreparation_Failures",
+            "interfaceName": "S1-MME",
+            "id": 206,
+            "type": "kpi"
+          },
+          {
+            "displayName": "HandoverPreparation FRPercentage-S1-MME",
+            "name": "HandoverPreparation_FRPercentage",
+            "interfaceName": "S1-MME",
+            "id": 207,
+            "type": "kpi"
+          },
+          {
+            "displayName": "HandoverPreparation SRPercentage-S1-MME",
+            "name": "HandoverPreparation_SRPercentage",
+            "interfaceName": "S1-MME",
+            "id": 208,
+            "type": "kpi"
+          },
+          {
+            "displayName": "HandoverPreparation SuccessfulProcedure-S1-MME",
+            "name": "HandoverPreparation_SuccessfulProcedure",
+            "interfaceName": "S1-MME",
+            "id": 209,
+            "type": "kpi"
+          },
+          {
+            "displayName": "UEContextReleaseeNBInitiated Attempts-S1-MME",
+            "name": "UEContextReleaseeNBInitiated_Attempts",
+            "interfaceName": "S1-MME",
+            "id": 210,
+            "type": "kpi"
+          },
+          {
+            "displayName": "UEContextReleaseeNBInitiated Failures-S1-MME",
+            "name": "UEContextReleaseeNBInitiated_Failures",
+            "interfaceName": "S1-MME",
+            "id": 211,
+            "type": "kpi"
+          },
+          {
+            "displayName": "UEContextReleaseeNBInitiated FRPercentage-S1-MME",
+            "name": "UEContextReleaseeNBInitiated_FRPercentage",
+            "interfaceName": "S1-MME",
+            "id": 212,
+            "type": "kpi"
+          },
+          {
+            "displayName": "UEContextReleaseeNBInitiated SRPercentage-S1-MME",
+            "name": "UEContextReleaseeNBInitiated_SRPercentage",
+            "interfaceName": "S1-MME",
+            "id": 213,
+            "type": "kpi"
+          },
+          {
+            "displayName": "UEContextReleaseeNBInitiated SuccessfulProcedure-S1-MME",
+            "name": "UEContextReleaseeNBInitiated_SuccessfulProcedure",
+            "interfaceName": "S1-MME",
+            "id": 214,
+            "type": "kpi"
+          },
+          {
+            "displayName": "UEContextReleaseMMEInitiated Attempts-S1-MME",
+            "name": "UEContextReleaseMMEInitiated_Attempts",
+            "interfaceName": "S1-MME",
+            "id": 215,
+            "type": "kpi"
+          },
+          {
+            "displayName": "UEContextReleaseMMEInitiated Failures-S1-MME",
+            "name": "UEContextReleaseMMEInitiated_Failures",
+            "interfaceName": "S1-MME",
+            "id": 216,
+            "type": "kpi"
+          },
+          {
+            "displayName": "UEContextReleaseMMEInitiated FRPercentage-S1-MME",
+            "name": "UEContextReleaseMMEInitiated_FRPercentage",
+            "interfaceName": "S1-MME",
+            "id": 217,
+            "type": "kpi"
+          },
+          {
+            "displayName": "UEContextReleaseMMEInitiated SRPercentage-S1-MME",
+            "name": "UEContextReleaseMMEInitiated_SRPercentage",
+            "interfaceName": "S1-MME",
+            "id": 218,
+            "type": "kpi"
+          },
+          {
+            "displayName": "UEContextReleaseMMEInitiated SuccessfulProcedure-S1-MME",
+            "name": "UEContextReleaseMMEInitiated_SuccessfulProcedure",
+            "interfaceName": "S1-MME",
+            "id": 219,
+            "type": "kpi"
+          },
+          {
+            "displayName": "UERequestedPDNConnectivityProcedure Attempts-S1-MME",
+            "name": "UERequestedPDNConnectivityProcedure_Attempts",
+            "interfaceName": "S1-MME",
+            "id": 220,
+            "type": "kpi"
+          },
+          {
+            "displayName": "UERequestedPDNConnectivityProcedure Failures-S1-MME",
+            "name": "UERequestedPDNConnectivityProcedure_Failures",
+            "interfaceName": "S1-MME",
+            "id": 221,
+            "type": "kpi"
+          },
+          {
+            "displayName": "UERequestedPDNConnectivityProcedure FRPercentage-S1-MME",
+            "name": "UERequestedPDNConnectivityProcedure_FRPercentage",
+            "interfaceName": "S1-MME",
+            "id": 222,
+            "type": "kpi"
+          },
+          {
+            "displayName": "UERequestedPDNConnectivityProcedure SRPercentage-S1-MME",
+            "name": "UERequestedPDNConnectivityProcedure_SRPercentage",
+            "interfaceName": "S1-MME",
+            "id": 223,
+            "type": "kpi"
+          },
+          {
+            "displayName": "UERequestedPDNConnectivityProcedure SuccessfulProcedure-S1-MME",
+            "name": "UERequestedPDNConnectivityProcedure_SuccessfulProcedure",
+            "interfaceName": "S1-MME",
+            "id": 224,
+            "type": "kpi"
+          },
+          {
+            "displayName": "UErequestedPDNdisconnectprocedure Attempts-S1-MME",
+            "name": "UErequestedPDNdisconnectprocedure_Attempts",
+            "interfaceName": "S1-MME",
+            "id": 225,
+            "type": "kpi"
+          },
+          {
+            "displayName": "UErequestedPDNdisconnectprocedure Failures-S1-MME",
+            "name": "UErequestedPDNdisconnectprocedure_Failures",
+            "interfaceName": "S1-MME",
+            "id": 226,
+            "type": "kpi"
+          },
+          {
+            "displayName": "UErequestedPDNdisconnectprocedure FRPercentage-S1-MME",
+            "name": "UErequestedPDNdisconnectprocedure_FRPercentage",
+            "interfaceName": "S1-MME",
+            "id": 227,
+            "type": "kpi"
+          },
+          {
+            "displayName": "UErequestedPDNdisconnectprocedure SRPercentage-S1-MME",
+            "name": "UErequestedPDNdisconnectprocedure_SRPercentage",
+            "interfaceName": "S1-MME",
+            "id": 228,
+            "type": "kpi"
+          },
+          {
+            "displayName": "UErequestedPDNdisconnectprocedure SuccessfulProcedure-S1-MME",
+            "name": "UErequestedPDNdisconnectprocedure_SuccessfulProcedure",
+            "interfaceName": "S1-MME",
+            "id": 229,
+            "type": "kpi"
+          }
+        ]
+      },
+      {
+        "displayName": "SIP",
+        "name": "SIP",
+        "id": 7,
+        "type": "protocol",
+        "items": [
+          {
+            "displayName": "Average Registration Request Delay",
+            "name": "Average Registration Request Delay",
+            "interfaceName": " ",
+            "id": 46,
+            "type": "kpi"
+          },
+          {
+            "displayName": "Average Successful Session Duration Time",
+            "name": "Average Successful Session Duration Time",
+            "interfaceName": " ",
+            "id": 47,
+            "type": "kpi"
+          },
+          {
+            "displayName": "Call Drop Rate",
+            "name": "Call Drop Rate",
+            "interfaceName": " ",
+            "id": 48,
+            "type": "kpi"
+          },
+          {
+            "displayName": "Failed Session Setup Rate",
+            "name": "Failed Session Setup Rate",
+            "interfaceName": " ",
+            "id": 49,
+            "type": "kpi"
+          },
+          {
+            "displayName": "Ineffective Registration Attempt Rate",
+            "name": "Ineffective Registration Attempt Rate",
+            "interfaceName": " ",
+            "id": 50,
+            "type": "kpi"
+          },
+          {
+            "displayName": "Ineffective Session Attempt Rate",
+            "name": "Ineffective Session Attempt Rate",
+            "interfaceName": " ",
+            "id": 51,
+            "type": "kpi"
+          },
+          {
+            "displayName": "Invite Successful Request Attempt",
+            "name": "Invite Successful Request Attempt",
+            "interfaceName": " ",
+            "id": 52,
+            "type": "kpi"
+          },
+          {
+            "displayName": "Session Completion Rate",
+            "name": "Session Completion Rate",
+            "interfaceName": " ",
+            "id": 53,
+            "type": "kpi"
+          },
+          {
+            "displayName": "Session Defects Rate",
+            "name": "Session Defects Rate",
+            "interfaceName": " ",
+            "id": 54,
+            "type": "kpi"
+          },
+          {
+            "displayName": "Session Establishment Effectiveness Rate",
+            "name": "Session Establishment Effectiveness Rate",
+            "interfaceName": " ",
+            "id": 55,
+            "type": "kpi"
+          },
+          {
+            "displayName": "Session Establishment Rate",
+            "name": "Session Establishment Rate",
+            "interfaceName": " ",
+            "id": 56,
+            "type": "kpi"
+          }
+        ]
+      },
+      {
+        "displayName": "RAN",
+        "name": "RAN",
+        "id": 9,
+        "type": "protocol",
+        "items": [
+          {
+            "displayName": "Call Drop Rate",
+            "name": "Call Drop Rate",
+            "interfaceName": " ",
+            "id": 66,
+            "type": "kpi"
+          },
+          {
+            "displayName": "Call Setup Success rate",
+            "name": "Call Setup Success rate",
+            "interfaceName": " ",
+            "id": 57,
+            "type": "kpi"
+          },
+          {
+            "displayName": "Cell Availability",
+            "name": "Cell Availability",
+            "interfaceName": " ",
+            "id": 61,
+            "type": "kpi"
+          },
+          {
+            "displayName": "Downlink Latency",
+            "name": "Downlink Latency",
+            "interfaceName": " ",
+            "id": 69,
+            "type": "kpi"
+          },
+          {
+            "displayName": "Downlink Throughput",
+            "name": "Downlink Throughput",
+            "interfaceName": " ",
+            "id": 70,
+            "type": "kpi"
+          },
+          {
+            "displayName": "E-RAB Setup Success rate",
+            "name": "E-RAB Setup Success rate",
+            "interfaceName": " ",
+            "id": 58,
+            "type": "kpi"
+          },
+          {
+            "displayName": "ERAB Abnormal release",
+            "name": "ERAB Abnormal release",
+            "interfaceName": " ",
+            "id": 67,
+            "type": "kpi"
+          },
+          {
+            "displayName": "Inter Frequency Handover success rate",
+            "name": "Inter Frequency Handover success rate",
+            "interfaceName": " ",
+            "id": 62,
+            "type": "kpi"
+          },
+          {
+            "displayName": "Inter RAT Handover success rate",
+            "name": "Inter RAT Handover success rate",
+            "interfaceName": " ",
+            "id": 63,
+            "type": "kpi"
+          },
+          {
+            "displayName": "Intra Frequency Handover success rate",
+            "name": "Intra Frequency Handover success rate",
+            "interfaceName": " ",
+            "id": 64,
+            "type": "kpi"
+          },
+          {
+            "displayName": "Intra RAT Handover success rate",
+            "name": "Intra RAT Handover success rate",
+            "interfaceName": " ",
+            "id": 65,
+            "type": "kpi"
+          },
+          {
+            "displayName": "Radio bearer number",
+            "name": "Radio bearer number",
+            "interfaceName": " ",
+            "id": 72,
+            "type": "kpi"
+          },
+          {
+            "displayName": "Resource Block Utilization rate DL",
+            "name": "Resource Block Utilization rate DL",
+            "interfaceName": " ",
+            "id": 73,
+            "type": "kpi"
+          },
+          {
+            "displayName": "Resource Block Utilization rate UL",
+            "name": "Resource Block Utilization rate UL",
+            "interfaceName": " ",
+            "id": 74,
+            "type": "kpi"
+          },
+          {
+            "displayName": "retainability",
+            "name": "retainability",
+            "interfaceName": " ",
+            "id": 68,
+            "type": "kpi"
+          },
+          {
+            "displayName": "RRC setup success rate",
+            "name": "RRC setup success rate",
+            "interfaceName": " ",
+            "id": 59,
+            "type": "kpi"
+          },
+          {
+            "displayName": "S1 Signalling establishment success rate",
+            "name": "S1 Signalling establishment success rate",
+            "interfaceName": " ",
+            "id": 60,
+            "type": "kpi"
+          },
+          {
+            "displayName": "UpLink Throughput",
+            "name": "UpLink Throughput",
+            "interfaceName": " ",
+            "id": 71,
+            "type": "kpi"
+          }
+        ]
+      }
+    ]
+  }
+}

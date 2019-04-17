@@ -1,0 +1,202 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amdocs-CDSM</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <!-- Toastr style -->
+    <link href="css/plugins/toastr/toastr.min.css" rel="stylesheet">
+
+    <!-- Gritter -->
+    <link href="js/plugins/gritter/jquery.gritter.css" rel="stylesheet">
+
+    <link href="css/animate.css" rel="stylesheet">
+    
+
+
+    <!--Kendo CSS -->
+    <link href="css/Kendo/kendo.common.min.css" rel="stylesheet" />
+    <link href="css/Kendo/kendo.rtl.min.css" rel="stylesheet" />
+    <link href="css/Kendo/themes/kendo.default.min.css" rel="stylesheet" />
+    <link href="css/Kendo/kendo.dataviz.default.min.css" rel="stylesheet" />
+    <link href="css/Kendo/kendo.dataviz.min.css" rel="stylesheet" />
+    <link href="css/Kendo/kendo.console.css" rel="stylesheet" />
+
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+<body ng-app="cdsmApp" ng-controller="indexController">
+    <div id="wrapper" class="mainContainer">
+        <!-- NAVIGATION -->
+        <div ng-include="'modules/cdsm/header/leftMenu.html'"></div>
+
+        <div id="page-wrapper" class="gray-bg">
+            <div class="row border-bottom" id="cdsmHeader">
+                <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+                    <div class="navbar-header">
+                        <a class="navbar-minimalize minimalize-styl-2 btn btn-primary "><i class="fa fa-bars"></i> </a>
+
+                    </div>
+
+                    <div ng-show="isAuthenticated" ng-include="'modules/cdsm/header/header.html'"></div>
+                </nav>
+            </div>
+            <div class="row  " id="cdsmContent" style="background-color: transparent; height: 900px; overflow-y: auto; overflow-x: auto;margin:0;">
+                <!--border-bottom white-bg12 dashboard-header-->
+
+                <ng-view></ng-view>
+            </div>
+            <div class="footer fixed" id="cdsmFooter">
+                <!--fixed-->
+                <div class="pull-right">
+                    <strong>CDSM</strong>
+                </div>
+                <div>
+                    <strong></strong><small> Copyright AMDOCS &copy; 2014-2016</small>
+                </div>
+            </div>
+
+            <!--<div class="row" style="margin-top:20px;width:10px">
+            <div class="col-lg-12">
+                <div class="wrapper wrapper-content">
+
+                </div>
+
+            </div>
+        </div>-->
+        </div>
+    </div>
+
+
+    <!-- Mainly scripts -->
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="js/jquery.PrintArea.js"></script>
+
+
+    <!-- Flot -->
+    <script src="js/plugins/flot/jquery.flot.js"></script>
+    <script src="js/plugins/flot/jquery.flot.tooltip.min.js"></script>
+    <script src="js/plugins/flot/jquery.flot.spline.js"></script>
+    <script src="js/plugins/flot/jquery.flot.resize.js"></script>
+    <script src="js/plugins/flot/jquery.flot.pie.js"></script>
+    <!-- Peity -->
+    <script src="js/plugins/peity/jquery.peity.min.js"></script>
+    <script src="js/demo/peity-demo.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="js/inspinia.js"></script>
+    <script src="js/plugins/pace/pace.min.js"></script>
+    <!-- jQuery UI -->
+    <script src="js/plugins/jquery-ui/jquery-ui.min.js"></script>
+
+    <!-- GITTER -->
+    <script src="js/plugins/gritter/jquery.gritter.min.js"></script>
+    <!-- Sparkline -->
+    <script src="js/plugins/sparkline/jquery.sparkline.min.js"></script>
+    <!-- Sparkline demo data  -->
+    <script src="js/demo/sparkline-demo.js"></script>
+    <!-- ChartJS-->
+    <script src="js/plugins/chartJs/Chart.min.js"></script>
+    <!-- Toastr -->
+    <script src="js/plugins/toastr/toastr.min.js"></script>
+
+
+    <!--angular-->
+    <script src="js/angular/angular.js"></script>
+
+    <script src="js/angular/angular-resource.min.js"></script>
+    <script src="js/angular/angular-route.min.js"></script>
+    <script src="js/angular/angular-cookies.min.js"></script>
+    <script src="js/angular/angular-filter.min.js"></script>
+
+    <!--<script src="js/angular/angular-messages.min.js"></script>-->
+    <script src="js/angular/angular-ui-router.min.js"></script>
+    <script src="js/angular/ngStorage.min.js"></script>
+
+
+    <!-- Kendo UI Scripts-->
+    <script src="js/kendo/jszip.min.js"></script>
+    <script src="js/kendo/kendo.all.min.js"></script>
+    <script src="js/kendo/kendo.timezones.min.js"></script>
+    <script src="js/kendo/kendo.console.js"></script>
+
+    <!--cdsm JS-->
+    <script src="js/shell.js"></script>
+    <script src="js/cdsm.config.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/underscore-min.js"></script>
+
+
+
+    <script src="modules/general/typeExtension.js"></script>
+    <script src="modules/general/globalService.js"></script>
+    <script src="modules/general/helperService.js"></script>
+    <!--<script src="modules/general/app-services/authenticationService.js"></script>-->
+
+    <script src="modules/cdsm/login/controller/loginController.js"></script>
+
+    <!--sweet alert-->
+    <script src="js/sweetalert/sweetalert.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="js/sweetalert/sweetalert.css">
+
+
+
+    <script src="indexController.js"></script>
+    <script src="modules/cdsm/header/controller/headerController.js"></script>
+    <script src="modules/cdsm/header/controller/leftMenuController.js"></script>
+
+    <script src="modules/cdsm/dashboard/controller/dashboardController.js"></script>
+
+
+    <script src="modules/cdsm/rca/controller/rcaLogController.js"></script>
+    <script src="modules/cdsm/networkdiagram/controller/networkDiagramController.js"></script>
+    <script src="modules/cdsm/failure/controller/failureController.js"></script>
+    <script src="modules/cdsm/kpi/controller/kpiHierarchyController.js"></script>
+    <script src="modules/cdsm/kpi/controller/kpiController.js"></script>
+    <script src="modules/cdsm/kpi/controller/kpi4ChartsController.js"></script>
+    <script src="modules/cdsm/kpi/controller/chartEditorController.js"></script>
+
+    <script src="modules/cdsm/ct/controller/ctController.js"></script>
+    <script src="modules/cdsm/rca/controller/rcaController.js"></script>
+    <!--<script src="modules/cdsm/rca/controller/rcaControllernew.js"></script>-->
+    <script src="modules/cdsm/sanKey/sanKeyController/sanKeyController.js"></script>
+
+    <script src="modules/cdsm/eventlog/controller/corelogController.js"></script>
+    <script src="modules/cdsm/eventlog/controller/ranlogController.js"></script>
+    <script src="modules/cdsm/eventlog/controller/rcalogController.js"></script>
+    <script src="modules/cdsm/eventlog/controller/eventlogController.js"></script>
+
+
+    <script src="modules/cdsm/rca/controller/rcaService.js"></script>
+    <script src="modules/cdsm/kpi/controller/kpiService.js"></script>
+    <script src="modules/cdsm/others/controller/otherService.js"></script>
+
+
+    <script src="js/Go.js"></script>
+    <script src="js/plugins/d3/d3.min.js"></script>
+    <script src="js/plugins/c3/c3.min.js"></script>
+
+
+    <!--<script src="js/angular/angular-mocks.js"></script>
+    <script src="modules/general/app-helpers/mockAuthenticate.js"></script>-->
+    <script src="js/xml2json.min.js"></script>
+
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // alert('Page Loaded');
+        });
+
+    </script>
+
+
+</body>
+</html>

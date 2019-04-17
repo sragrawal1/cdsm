@@ -1,0 +1,39 @@
+﻿<div ng-controller="sanKeyController" id="sanKeyDiv">
+    <div class="" ng-init="onload()">
+        <!--ibox-content-->
+        <div id="sanKeyDiagramDiv" style="border: solid 0px black; width: 100%; height: 280px;"></div>
+        <span class="pull-left text-muted small" style="margin-left:10px"><strong>Before</strong></span>
+        <span class="pull-right text-muted small" style="margin-right:10px"><strong>After</strong></span>
+        <div id="sanKeyDebug" ng-show="isDebug">
+            <!--ng-show="isDebug"-->
+
+            <textarea id="sanKeySavedModel" style="width:100%;height:150px">
+                { "class": "go.GraphLinksModel",
+                "nodeDataArray": [
+                {"key":"IMS", "text":"IMS", "domain":"IMS", "color":"#6FF3F7", "pos":"-273.56282282399604 -411.0014590632372","height" :33 },
+                {"key":"EPC", "text":"EPC", "domain":"EPC", "color":"#f8ac59", "pos":"-272.56282282399604 -317.0014590632372","height" :18},
+                {"key":"RAN", "text":"RAN", "domain":"RAN", "color":"#1ab394", "pos":"-273.56282282399604 -206.00145906323718","height" :51},
+                {"key":"EPC2", "ltext":"EPC", "domain":"EPC", "color":"#f8ac59", "pos":"212.43717717600396 -208.00145906323718","height" :6},
+                {"key":"RAN2", "ltext":"RAN", "domain":"RAN", "color":"#1ab394", "pos":"210.43717717600393 -337.0014590632372","height" :67},
+                {"key":"IMS2", "ltext":"IMS", "domain":"IMS", "color":"#6FF3F7", "pos":"212.43717717600393 -409.0014590632372","height" :15},
+                {"key":"Others2", "ltext":"Others MSC/PSTN", "domain":"OTHERS", "color":"#F37892", "pos":"211.43717717600393 -270.0014590632372","height" :14}
+                ],
+                "linkDataArray": [
+                {"from":"IMS", "to":"RAN2", "width":10, "tooltiptext":"10"},
+                {"from":"IMS", "to":"EPC2", "width":3, "tooltiptext":"3"},
+                {"from":"IMS", "to":"IMS2", "width":10, "tooltiptext":"10"},
+                {"from":"IMS", "to":"Others2", "width":10, "tooltiptext":"10"},
+                {"from":"EPC", "to":"RAN2", "width":7, "tooltiptext":"7"},
+                {"from":"EPC", "to":"EPC2", "width":2, "tooltiptext":"2"},
+                {"from":"EPC", "to":"IMS2", "width":5, "tooltiptext":"5"},
+                {"from":"EPC", "to":"Others2", "width":4, "tooltiptext":"4"},
+                {"from":"RAN", "to":"RAN2", "width":50, "tooltiptext":"50"},
+                {"from":"RAN", "to":"EPC2", "width":1, "tooltiptext":"1"}
+                ]}
+            </textarea>
+
+            <input type="button" ng-click="getJSON()" value="GetJSON" />
+            <input type="button" ng-click="setJSON()" value="SetJSON" />
+        </div>
+    </div>
+</div>

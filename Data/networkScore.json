@@ -1,0 +1,60 @@
+﻿[
+{  
+"date" : "Date0",
+"data" : {
+  "scoreDetails": [
+    {
+      "technology": "LTE",
+      "accessibility": 2,
+      "retainability": 5,
+	  "mobility" : 3,
+	  "utilization" : 4
+    },
+    {
+      "technology": "VoLTE",
+      "accessibility": 8,
+      "retainability": 7,
+	  "mobility" : 3,
+	  "utilization" : 2
+    },
+    {
+      "technology": "VoWifi",
+      "accessibility": 6,
+      "retainability": 3,
+	  "mobility" : 3,
+	  "utilization" : 2
+    }
+  ]
+}
+},
+{  
+"date" : "Date1",
+"data" : {
+  "scoreDetails": [
+    {
+      "technology": "LTE",
+      "accessibility": 3,
+      "retainability": 3,
+	  "mobility" : 3,
+	  "utilization" : 3
+    },
+    {
+      "technology": "VoLTE",
+      "accessibility": 3,
+      "retainability": 3,
+	  "mobility" : 3,
+	  "utilization" : 3
+    },
+    {
+      "technology": "VoWifi",
+      "accessibility": 3,
+      "retainability": 3,
+	  "mobility" : 3,
+	  "utilization" : 3
+    }
+  ]
+}
+}
+]
+
+

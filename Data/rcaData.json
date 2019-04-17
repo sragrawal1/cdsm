@@ -1,0 +1,236 @@
+[
+{
+  "date": "Date0",
+  "RANcount" : 65,
+  "EPCcount" : 5,
+  "IMScount" : 15,
+  "Otherscount" : 15,
+  "RAN": [
+    {
+      "category": "RAN",
+      "protocolname": "SIP",
+      "problemsignature": "500",
+      "count": 10,
+      "contribution": 15.38
+    },
+    {
+      "category": "RAN",
+      "protocolname": "SIP",
+      "problemsignature": "503",
+      "count": 1,
+      "contribution": 1.53
+    },
+    {
+      "category": "RAN",
+      "protocolname": "RRC",
+      "problemsignature": "T311 Expired",
+      "count": 9,
+      "contribution": 13.84
+    },
+    {
+      "category": "RAN",
+      "protocolname": "RRC",
+      "problemsignature": "Missing Neighbor",
+      "count": 7,
+      "contribution": 10.76
+    },
+    {
+      "category": "RAN",
+      "protocolname": "RRC",
+      "problemsignature": "MAC Random Access Problem",
+      "count": 7,
+      "contribution": 10.76
+    },
+    {
+      "category": "RAN",
+      "protocolname": "RRC",
+      "problemsignature": "T300 Expired",
+      "count": 5,
+      "contribution": 7.69
+    },
+    {
+      "category": "RAN",
+      "protocolname": "RRC",
+      "problemsignature": "T310 expired",
+      "count": 2,
+      "contribution": 3.07
+    },
+    {
+      "category": "RAN",
+      "protocolname": "RRC",
+      "problemsignature": "Poor Coverage",
+      "count": 12,
+      "contribution": 18.46
+    },
+    {
+      "category": "RAN",
+      "protocolname": "RRC",
+      "problemsignature": "T301 Expired",
+      "count": 3,
+      "contribution": 4.61
+    },
+    {
+      "category": "RAN",
+      "protocolname": "RRC",
+      "problemsignature": "High Interference",
+      "count": 9,
+      "contribution": 13.84
+    }
+  ],
+  "EPC": [
+    {
+      "category": "EPC",
+      "protocolname": "SIP",
+      "problemsignature": "503",
+      "count": 5,
+      "contribution": 100
+    }
+  ],
+  "IMS": [
+    {
+      "category": "IMS",
+      "protocolname": "SIP",
+      "problemsignature": "503",
+      "count": 9,
+      "contribution": 60
+    },
+    {
+      "category": "IMS",
+      "protocolname": "SIP",
+      "problemsignature": "403",
+      "count": 4,
+      "contribution": 26.67
+    },
+    {
+      "category": "IMS",
+      "protocolname": "SIP",
+      "problemsignature": "504",
+      "count": 2,
+      "contribution": 13.33
+    }
+  ],
+  "OTHERS": [
+    {
+      "category": "Others- MSC/PSTN",
+      "protocolname": "SIP",
+      "problemsignature": "500",
+      "count": 10,
+      "contribution": 66.67
+    },
+    {
+      "category": "Others- MSC/PSTN",
+      "protocolname": "SIP",
+      "problemsignature": "480",
+      "count": 4,
+      "contribution": 26.67
+    },
+    {
+      "category": "Others- MSC/PSTN",
+      "protocolname": "SIP",
+      "problemsignature": "503",
+      "count": 1,
+      "contribution": 6.67
+    }
+  ],
+  "MasterData": [{ "rcaDate": "June-07-2016", "startTime": "6:03:38 PM", "endTime": "6:03:53 PM", "imsi": 334020105977001, "msisdn": 5536705400, "imei": 357746081165100, "errorDomain": "Others- MSC/PSTN", "ccProtocol": "SIP", "problemSignature": "500", "cell": "PU5800A001", "originatingNode": "MSC", "vendor": "Huawei", "rcaSummary": "SIP - 500 Server Internal Errer due to MSC generating Q850 Cause 41 Temporary Failure ", "showCTS": true },
+{ "rcaDate": "June-07-2016", "startTime": "12:00:01 PM", "endTime": "12:00:59 PM", "imsi": 334020343256870, "msisdn": 5533570605, "imei": 359229063438240, "errorDomain": "RAN", "ccProtocol": "SIP", "problemSignature": "500", "cell": "PU0048A001", "originatingNode": "eNodeB", "vendor": "Huawei", "rcaSummary": "S1AP Cause 21 (Radio connection with UE lost) Poor radio coverage ", "showCTS": true },
+{ "rcaDate": "June-07-2016", "startTime": "12:06:00 PM", "endTime": "12:06:48 PM", "imsi": 334020343166653, "msisdn": 5535570343, "imei": 359229065675670, "errorDomain": "IMS", "ccProtocol": "SIP", "problemSignature": "503", "cell": "PU0359A002", "originatingNode": "PCRF", "vendor": "Huawei", "rcaSummary": "SIP - 503 Service unavailable due to IP-CAN session not available", "showCTS": true },
+{ "rcaDate": "June-07-2016", "startTime": "5:44:56 AM", "endTime": "5:45:36 AM", "imsi": 334020343256470, "msisdn": 5535570324, "imei": 357746085672330, "errorDomain": "EPC", "ccProtocol": "SIP", "problemSignature": "503", "cell": "TL0093A003", "originatingNode": "PGW", "vendor": "Huawei", "rcaSummary": "SIP - 503 Service unavailable due to Resource Allocation failure", "showCTS": true },
+{ "rcaDate": "June-07-2016", "startTime": "2:11:00 PM", "endTime": "2:11:011 PM", "imsi": 334020343566872, "msisdn": 5535570435, "imei": 357746085678231, "errorDomain": "RAN", "ccProtocol": "SIP", "problemSignature": "503", "cell": "PU0267A003", "originatingNode": "eNodeB", "vendor": "Huawei", "rcaSummary": "SIP - 503 Request terminated due  to  radioNetwork : failure-in-radio-interface-procedure", "showCTS": true },
+{ "rcaDate": "June-07-2016", "startTime": "12:28:28 PM", "endTime": "12:28:58 PM", "imsi": 334020343256871, "msisdn": 5535570608, "imei": 359229065678230, "errorDomain": "Others- MSC/PSTN", "ccProtocol": "SIP", "problemSignature": "480", "cell": "TL0079A003", "originatingNode": "MSC", "vendor": "Nokia", "rcaSummary": "SIP - 480 Temporary unavailable due to MSC generating Q850 Cause 21 Call rejected", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "2:52:48 PM", "endTime": "2:52:48 PM", "imsi": 334020107877001, "msisdn": 5530165422, "imei": 357746081775620, "errorDomain": "IMS", "ccProtocol": "SIP", "problemSignature": "403", "cell": "PU0016A002", "originatingNode": "ICSCF", "vendor": "Nokia", "rcaSummary": "SIP - 480 Forbidden due to roaming rightts are not configured In HSS for the subscriber", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "12:07:10 PM", "endTime": "12:08:003 PM", "imsi": 334020108277000, "msisdn": 5539765419, "imei": 357746081723330, "errorDomain": "IMS", "ccProtocol": "SIP", "problemSignature": "503", "cell": "PU0026A001", "originatingNode": "PCRF", "vendor": "Nokia", "rcaSummary": "SIP - 503 Service unavailable due to IP-CAN session not available", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "5:25:36 AM", "endTime": "5:25:53 AM", "imsi": 334020108277000, "msisdn": 5539765419, "imei": 357746081723330, "errorDomain": "RAN", "ccProtocol": "RRC", "problemSignature": "T311 Expired", "cell": "PU0048A001", "originatingNode": "eNodeB", "vendor": "Nokia", "rcaSummary": "T311 Expired, LTE RRC Connection Setup Failure, RSRP=-114dBm, RSRQ=-14dBm", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "1:00:00 PM", "endTime": "1:02:01 PM", "imsi": 334020107877001, "msisdn": 5530165422, "imei": 357746081775620, "errorDomain": "RAN", "ccProtocol": "RRC", "problemSignature": "T311 Expired", "cell": "TL0079A003", "originatingNode": "eNodeB", "vendor": "Nokia", "rcaSummary": "T311 Expired, LTE RRC Connection Setup Failure, RSRP=-114dBm,RSRQ=-12", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "6:45:36 AM", "endTime": "6:45:56 AM", "imsi": 334020343166653, "msisdn": 5535570343, "imei": 359229065675670, "errorDomain": "RAN", "ccProtocol": "RRC", "problemSignature": "Missing Neighbor", "cell": "PU0359A002", "originatingNode": "eNodeB", "vendor": "Ericsson", "rcaSummary": "Missing Neighbor, LTE RRC Connection Dropped due to poor coverag, RSRP = -113dBm, RSRQ=-15dBm", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "2:28:48 PM", "endTime": "2:29:08 PM", "imsi": 334020107877001, "msisdn": 5530165422, "imei": 357746081775620, "errorDomain": "RAN", "ccProtocol": "RRC", "problemSignature": "MAC Random Access Problem", "cell": "PU0048A001", "originatingNode": "eNodeB", "vendor": "Nokia", "rcaSummary": "MAC Random Access Problem, LTE RRC Connection Setup Failure due to Low coverage, RSRP=-110dBm,RSRQ=-4", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "4:11:00 PM", "endTime": "4:11:39 PM", "imsi": 334020107877001, "msisdn": 5530165422, "imei": 357746081775620, "errorDomain": "EPC", "ccProtocol": "SIP", "problemSignature": "503", "cell": "TL0079A003", "originatingNode": "PGW", "vendor": "Nokia", "rcaSummary": "SIP - 503 Service unavailable due to Resource Allocation failure", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "7:28:48 AM", "endTime": "7:29:13 AM", "imsi": 334020108277000, "msisdn": 5539765419, "imei": 357746081723330, "errorDomain": "IMS", "ccProtocol": "SIP", "problemSignature": "504", "cell": "PU0026A001", "originatingNode": "I-CSCF", "vendor": "Nokia", "rcaSummary": "SIP-504 Server timeout due to  Transaction Handler detects a DNS timeout in the CSCF (Role is not the I-CSCF)", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "8:00:58 PM", "endTime": "8:02:20 PM", "imsi": 334020108277000, "msisdn": 5539765419, "imei": 357746081723330, "errorDomain": "IMS", "ccProtocol": "SIP", "problemSignature": "503", "cell": "TL0073A002", "originatingNode": "PCRF", "vendor": "Nokia", "rcaSummary": "SIP - 503 Service unavailable due to IP-CAN session not available", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "9:19:03 PM", "endTime": "9:19:41 PM", "imsi": 334020107877001, "msisdn": 5530165422, "imei": 357746081775620, "errorDomain": "RAN", "ccProtocol": "RRC", "problemSignature": "T311 Expired", "cell": "TL0073A002", "originatingNode": "eNodeB", "vendor": "Nokia", "rcaSummary": "T311 Expired, LTE RRC Connection Dropped due to poor coverag, RSRP = -112dBm, RSRQ=-15dBm", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "10:45:36 AM", "endTime": "10:45:36 AM", "imsi": 334020105967059, "msisdn": 5538665407, "imei": 357746081747440, "errorDomain": "RAN", "ccProtocol": "RRC", "problemSignature": "MAC Random Access Problem", "cell": "PU0048A001", "originatingNode": "eNodeB", "vendor": "Nokia", "rcaSummary": "MAC Random Access Problem, LTE RRC Connection Setup Failure, RSRP=-114dBm, RSRQ=-14dBm", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "11:00:00 PM", "endTime": "11:01:50 PM", "imsi": 334020343166653, "msisdn": 5535570343, "imei": 359229065675670, "errorDomain": "RAN", "ccProtocol": "RRC", "problemSignature": "Missing Neighbor", "cell": "TL0073A002", "originatingNode": "eNodeB", "vendor": "Nokia", "rcaSummary": "Missing Neighbor, LTE RRC Connection Dropped due to poor coverag, RSRP = -112dBm, RSRQ=-15dBm", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "6:03:38 PM", "endTime": "6:03:53 PM", "imsi": 334020105967059, "msisdn": 5538665407, "imei": 357746081747440, "errorDomain": "RAN", "ccProtocol": "RRC", "problemSignature": "T300 Expired", "cell": "PU0359A002", "originatingNode": "eNodeB", "vendor": "Ericsson", "rcaSummary": "T300 Expired, LTE RRC Connection Setup Failure due to Low coverage, RSRP=-114dBm,RSRQ=-7", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "12:00:01 PM", "endTime": "12:00:59 PM", "imsi": 334020343566872, "msisdn": 5535570435, "imei": 357746085678231, "errorDomain": "Others- MSC/PSTN", "ccProtocol": "SIP", "problemSignature": "500", "cell": "PU0048A001", "originatingNode": "MSC", "vendor": "Huawei", "rcaSummary": "SIP - 500 Server Internal Errer de to MSC generating Q850 Cause 4 Send special information tone", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "12:06:00 PM", "endTime": "12:06:48 PM", "imsi": 334020343566872, "msisdn": 5535570435, "imei": 357746085678231, "errorDomain": "IMS", "ccProtocol": "SIP", "problemSignature": "403", "cell": "PU0359A002", "originatingNode": "ICSCF", "vendor": "Nokia", "rcaSummary": "SIP - 480 Forbidden due to roaming rightts are not configured In HSS for the subscriber", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "5:44:56 AM", "endTime": "5:45:36 AM", "imsi": 334020343566872, "msisdn": 5535570435, "imei": 357746085678231, "errorDomain": "RAN", "ccProtocol": "RRC", "problemSignature": "T311 Expired", "cell": "PU0359A002", "originatingNode": "eNodeB", "vendor": "Ericsson", "rcaSummary": "T311 Expired, LTE RRC Connection Setup Failure, RSRP=-112dBm,RSRQ=-18", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "2:11:00 PM", "endTime": "2:11:011 PM", "imsi": 334020343166653, "msisdn": 5535570343, "imei": 359229065675670, "errorDomain": "RAN", "ccProtocol": "RRC", "problemSignature": "T311 Expired", "cell": "TL0093A003", "originatingNode": "eNodeB", "vendor": "Ericsson", "rcaSummary": "T311 Expired, LTE RRC Connection Dropped due to poor coverag, RSRP = -112dBm, RSRQ=-18dBm", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "12:28:28 PM", "endTime": "12:28:58 PM", "imsi": 334020107877001, "msisdn": 5530165422, "imei": 357746081775620, "errorDomain": "RAN", "ccProtocol": "RRC", "problemSignature": "T300 Expired", "cell": "TL0093A003", "originatingNode": "eNodeB", "vendor": "Ericsson", "rcaSummary": "T300 Expired, LTE RRC Connection Setup Failure due to Low coverage, RSRP=-113dBm,RSRQ=-7", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "2:52:48 PM", "endTime": "2:52:48 PM", "imsi": 334020108277000, "msisdn": 5539765419, "imei": 357746081723330, "errorDomain": "RAN", "ccProtocol": "RRC", "problemSignature": "T310 expired", "cell": "PU0267A003", "originatingNode": "eNodeB", "vendor": "Ericsson", "rcaSummary": "T310 expired, LTE RRC Connection Dropped, RSRP = -114dBm, RSRQ=-12dBm", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "12:07:10 PM", "endTime": "12:08:003 PM", "imsi": 334020105967059, "msisdn": 5538665407, "imei": 357746081747440, "errorDomain": "RAN", "ccProtocol": "RRC", "problemSignature": "Missing Neighbor", "cell": "TL0079A003", "originatingNode": "eNodeB", "vendor": "Nokia", "rcaSummary": "Missing Neighbor, LTE RRC Connection Dropped due to poor coverag, RSRP = -113dBm, RSRQ=-15dBm", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "5:25:36 AM", "endTime": "5:25:53 AM", "imsi": 334020108277000, "msisdn": 5539765419, "imei": 357746081723330, "errorDomain": "RAN", "ccProtocol": "RRC", "problemSignature": "T310 Expired", "cell": "PU0016A002", "originatingNode": "eNodeB", "vendor": "Nokia", "rcaSummary": "T310 Expired, LTE RRC Connection Dropped, RSRP = -112dBm, RSRQ=-18dBm", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "1:00:00 PM", "endTime": "1:02:01 PM", "imsi": 334020343566872, "msisdn": 5535570435, "imei": 357746085678231, "errorDomain": "RAN", "ccProtocol": "SIP", "problemSignature": "500", "cell": "PU0026A001", "originatingNode": "eNodeB", "vendor": "Nokia", "rcaSummary": "S1AP Cause 21 (Radio connection with UE lost) Poor radio coverage ", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "6:45:36 AM", "endTime": "6:45:56 AM", "imsi": 334020107877001, "msisdn": 5530165422, "imei": 357746081775620, "errorDomain": "RAN", "ccProtocol": "RRC", "problemSignature": "T301 Expired", "cell": "TL0089A001", "originatingNode": "eNodeB", "vendor": "Nokia", "rcaSummary": "T301 Expired, LTE RRC Connection Dropped due to poor coverag, RSRP = -113dBm, RSRQ=-15dBm", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "2:28:48 PM", "endTime": "2:29:08 PM", "imsi": 334020108277000, "msisdn": 5539765419, "imei": 357746081723330, "errorDomain": "RAN", "ccProtocol": "SIP", "problemSignature": "500", "cell": "TL0073A002", "originatingNode": "eNodeB", "vendor": "Nokia", "rcaSummary": "S1AP Cause 21 (Radio connection with UE lost) Poor radio coverage ", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "4:11:00 PM", "endTime": "4:11:39 PM", "imsi": 334020105967059, "msisdn": 5538665407, "imei": 357746081747440, "errorDomain": "RAN", "ccProtocol": "RRC", "problemSignature": "T301 Expired", "cell": "PU0048A001", "originatingNode": "eNodeB", "vendor": "Ericsson", "rcaSummary": "T301 Expired, LTE RRC Connection Dropped due to poor coverag, RSRP = -111dBm, RSRQ=-18dBm", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "7:28:48 AM", "endTime": "7:29:13 AM", "imsi": 334020105967059, "msisdn": 5538665407, "imei": 357746081747440, "errorDomain": "RAN", "ccProtocol": "RRC", "problemSignature": "T301 Expired", "cell": "PU0359A002", "originatingNode": "eNodeB", "vendor": "Ericsson", "rcaSummary": "T301 Expired, LTE RRC Connection Dropped due to poor coverag, RSRP = -110dBm, RSRQ=-18dBm", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "10:45:36 AM", "endTime": "10:45:36 AM", "imsi": 334020108277000, "msisdn": 5539765419, "imei": 357746081723330, "errorDomain": "RAN", "ccProtocol": "RRC", "problemSignature": "MAC Random Access Problem", "cell": "PU0267A003", "originatingNode": "eNodeB", "vendor": "Ericsson", "rcaSummary": "MAC Random Access Problem, LTE RRC Connection Setup Failure, RSRP=-110dBm,RSRQ=-18", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "12:00:01 PM", "endTime": "12:00:59 PM", "imsi": 334020108277000, "msisdn": 5539765419, "imei": 357746081723330, "errorDomain": "RAN", "ccProtocol": "RRC", "problemSignature": "Missing Neighbor", "cell": "PU0048A001", "originatingNode": "eNodeB", "vendor": "Ericsson", "rcaSummary": "Missing Neighbor, LTE RRC Connection Dropped due to poor coverag, RSRP = -114dBm, RSRQ=-12dBm", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "12:06:00 PM", "endTime": "12:06:48 PM", "imsi": 334020108277000, "msisdn": 5539765419, "imei": 357746081723330, "errorDomain": "RAN", "ccProtocol": "RRC", "problemSignature": "Missing Neighbor", "cell": "PU0359A002", "originatingNode": "eNodeB", "vendor": "Ericsson", "rcaSummary": "Missing Neighbor, LTE RRC Connection Dropped due to poor coverag, RSRP = -113dBm, RSRQ=-15dBm", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "5:44:56 AM", "endTime": "5:45:36 AM", "imsi": 334020343256470, "msisdn": 5535570324, "imei": 357746085672330, "errorDomain": "RAN", "ccProtocol": "RRC", "problemSignature": "Missing Neighbor", "cell": "PU0048A001", "originatingNode": "eNodeB", "vendor": "Ericsson", "rcaSummary": "Missing Neighbor, LTE RRC Connection Dropped due to poor coverag, RSRP = -114dBm, RSRQ=-12dBm", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "12:28:28 PM", "endTime": "12:28:58 PM", "imsi": 334020343256871, "msisdn": 5535570608, "imei": 359229065678230, "errorDomain": "RAN", "ccProtocol": "RRC", "problemSignature": "Missing Neighbor", "cell": "TL0093A003", "originatingNode": "eNodeB", "vendor": "Ericsson", "rcaSummary": "Missing Neighbor, LTE RRC Connection Dropped due to poor coverag, RSRP = -112dBm, RSRQ=-18dBm", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "12:07:10 PM", "endTime": "12:08:003 PM", "imsi": 334020107877001, "msisdn": 5530165422, "imei": 357746081775620, "errorDomain": "RAN", "ccProtocol": "RRC", "problemSignature": "High Interference", "cell": "TL0079A003", "originatingNode": "eNodeB", "vendor": "Nokia", "rcaSummary": "High Interference, LTE RRC Connection Setup Failure, RSRP=-110dBm,RSRQ=-18", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "5:25:36 AM", "endTime": "5:25:53 AM", "imsi": 334020107877001, "msisdn": 5530165422, "imei": 357746081775620, "errorDomain": "RAN", "ccProtocol": "SIP", "problemSignature": "500", "cell": "PU0016A002", "originatingNode": "eNodeB", "vendor": "Ericsson", "rcaSummary": "S1AP Cause 21 (Radio connection with UE lost) Poor radio coverage ", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "1:00:00 PM", "endTime": "1:02:01 PM", "imsi": 334020107877001, "msisdn": 5530165422, "imei": 357746081775620, "errorDomain": "RAN", "ccProtocol": "SIP", "problemSignature": "500", "cell": "PU0026A001", "originatingNode": "eNodeB", "vendor": "Ericsson", "rcaSummary": "S1AP Cause 21 (Radio connection with UE lost) Poor radio coverage ", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "2:28:48 PM", "endTime": "2:29:08 PM", "imsi": 334020105967059, "msisdn": 5538665407, "imei": 357746081747440, "errorDomain": "Others- MSC/PSTN", "ccProtocol": "SIP", "problemSignature": "500", "cell": "TL0089A001", "originatingNode": "MSC", "vendor": "Nokia", "rcaSummary": "SIP - 500 Server Internal Errer due to MSC generating Q850 Cause 2 No route to network", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "4:11:00 PM", "endTime": "4:11:39 PM", "imsi": 334020105977001, "msisdn": 5536705400, "imei": 357746081165100, "errorDomain": "IMS", "ccProtocol": "SIP", "problemSignature": "504", "cell": "TL0093A003", "originatingNode": "I-CSCF", "vendor": "Nokia", "rcaSummary": "SIP-504 Server timeout due to  Transaction Handler detects a DNS timeout in the CSCF (Role is not the I-CSCF)", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "8:00:58 PM", "endTime": "8:02:20 PM", "imsi": 334020343166653, "msisdn": 5535570343, "imei": 359229065675670, "errorDomain": "RAN", "ccProtocol": "RRC", "problemSignature": "High Interference", "cell": "TL0079A003", "originatingNode": "eNodeB", "vendor": "Nokia", "rcaSummary": "High Interference, LTE RRC Connection Setup Failure, RSRP=-110dBm,RSRQ=-18", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "9:19:03 PM", "endTime": "9:19:41 PM", "imsi": 334020105967059, "msisdn": 5538665407, "imei": 357746081747440, "errorDomain": "RAN", "ccProtocol": "SIP", "problemSignature": "500", "cell": "PU0267A003", "originatingNode": "eNodeB", "vendor": "Nokia", "rcaSummary": "S1AP Cause 21 (Radio connection with UE lost) Poor radio coverage ", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "10:45:36 AM", "endTime": "10:45:36 AM", "imsi": 334020343166653, "msisdn": 5535570343, "imei": 359229065675670, "errorDomain": "RAN", "ccProtocol": "RRC", "problemSignature": "T300 Expired", "cell": "TL0079A003", "originatingNode": "eNodeB", "vendor": "Nokia", "rcaSummary": "T300 Expired, LTE RRC Connection Setup Failure due to Low coverage, RSRP=-110dBm,RSRQ=-4", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "12:07:10 PM", "endTime": "12:08:003 PM", "imsi": 334020105977001, "msisdn": 5536705400, "imei": 357746081165100, "errorDomain": "RAN", "ccProtocol": "RRC", "problemSignature": "T300 Expired", "cell": "PU0016A002", "originatingNode": "eNodeB", "vendor": "Ericsson", "rcaSummary": "T300 Expired, LTE RRC Connection Setup Failure due to Low coverage, RSRP=-114dBm,RSRQ=-7", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "5:25:36 AM", "endTime": "5:25:53 AM", "imsi": 334020108277000, "msisdn": 5539765419, "imei": 357746081723330, "errorDomain": "RAN", "ccProtocol": "RRC", "problemSignature": "T311 Expired", "cell": "PU0267A003", "originatingNode": "eNodeB", "vendor": "Nokia", "rcaSummary": "T311 Expired, LTE RRC Connection Dropped due to poor coverag, RSRP = -111dBm, RSRQ=-18dBm", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "1:00:00 PM", "endTime": "1:02:01 PM", "imsi": 334020107877001, "msisdn": 5530165422, "imei": 357746081775620, "errorDomain": "RAN", "ccProtocol": "RRC", "problemSignature": "T311 Expired", "cell": "PU0267A003", "originatingNode": "eNodeB", "vendor": "Ericsson", "rcaSummary": "T311 Expired, LTE RRC Connection Setup Failure, RSRP=-110dBm,RSRQ=-18", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "6:45:36 AM", "endTime": "6:45:56 AM", "imsi": 334020343256871, "msisdn": 5535570608, "imei": 359229065678230, "errorDomain": "RAN", "ccProtocol": "RRC", "problemSignature": "T300 Expired", "cell": "PU0026A001", "originatingNode": "eNodeB", "vendor": "Nokia", "rcaSummary": "T300 Expired, LTE RRC Connection Setup Failure due to Low coverage, RSRP=-114dBm,RSRQ=-7", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "4:11:00 PM", "endTime": "4:11:39 PM", "imsi": 334020108277000, "msisdn": 5539765419, "imei": 357746081723330, "errorDomain": "RAN", "ccProtocol": "RRC", "problemSignature": "T311 Expired", "cell": "TL0089A001", "originatingNode": "eNodeB", "vendor": "Ericsson", "rcaSummary": "T311 Expired, LTE RRC Connection Dropped due to poor coverag, RSRP = -114dBm, RSRQ=-12dBm", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "9:19:03 PM", "endTime": "9:19:41 PM", "imsi": 334020343256470, "msisdn": 5535570324, "imei": 357746085672330, "errorDomain": "EPC", "ccProtocol": "SIP", "problemSignature": "503", "cell": "TL0073A002", "originatingNode": "PGW", "vendor": "Nokia", "rcaSummary": "SIP - 503 Service unavailable due to Resource Allocation failure", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "10:45:36 AM", "endTime": "10:45:36 AM", "imsi": 334020107877001, "msisdn": 5530165422, "imei": 357746081775620, "errorDomain": "IMS", "ccProtocol": "SIP", "problemSignature": "503", "cell": "PU0267A003", "originatingNode": "PCRF", "vendor": "Nokia", "rcaSummary": "SIP - 503 Service unavailable due to IP-CAN session not available", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "11:00:00 PM", "endTime": "11:01:50 PM", "imsi": 334020343256470, "msisdn": 5535570324, "imei": 357746085672330, "errorDomain": "RAN", "ccProtocol": "SIP", "problemSignature": "500", "cell": "PU0026A001", "originatingNode": "eNodeB", "vendor": "Ericsson", "rcaSummary": "S1AP Cause 21 (Radio connection with UE lost) Poor radio coverage ", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "9:19:03 PM", "endTime": "9:19:41 PM", "imsi": 334020343166653, "msisdn": 5535570343, "imei": 359229065675670, "errorDomain": "RAN", "ccProtocol": "RRC", "problemSignature": "High Interference", "cell": "PU0016A002", "originatingNode": "eNodeB", "vendor": "Nokia", "rcaSummary": "High Interference, LTE RRC Connection Setup Failure, RSRP=-113dBm,RSRQ=-15", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "10:45:36 AM", "endTime": "10:45:36 AM", "imsi": 334020343166653, "msisdn": 5535570343, "imei": 359229065675670, "errorDomain": "RAN", "ccProtocol": "RRC", "problemSignature": "MAC Random Access Problem", "cell": "PU0359A002", "originatingNode": "eNodeB", "vendor": "Ericsson", "rcaSummary": "MAC Random Access Problem, LTE RRC Connection Setup Failure due to Low coverage, RSRP=-114dBm,RSRQ=-7", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "12:06:00 PM", "endTime": "12:06:48 PM", "imsi": 334020343256871, "msisdn": 5535570608, "imei": 359229065678230, "errorDomain": "RAN", "ccProtocol": "SIP", "problemSignature": "500", "cell": "PU0026A001", "originatingNode": "eNodeB", "vendor": "Ericsson", "rcaSummary": "S1AP Cause 21 (Radio connection with UE lost) Poor radio coverage ", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "2:11:00 PM", "endTime": "2:11:011 PM", "imsi": 334020343566872, "msisdn": 5535570435, "imei": 357746085678231, "errorDomain": "Others- MSC/PSTN", "ccProtocol": "SIP", "problemSignature": "500", "cell": "PU0048A001", "originatingNode": "MSC", "vendor": "Nokia", "rcaSummary": "SIP - 500 Server Internal Errer de to MSC generating Q850 Cause 95 Invalud message", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "12:28:28 PM", "endTime": "12:28:58 PM", "imsi": 334020108277000, "msisdn": 5539765419, "imei": 357746081723330, "errorDomain": "EPC", "ccProtocol": "SIP", "problemSignature": "503", "cell": "TL0079A003", "originatingNode": "PGW", "vendor": "Nokia", "rcaSummary": "SIP - 503 Service unavailable due to Resource Allocation failure", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "2:52:48 PM", "endTime": "2:52:48 PM", "imsi": 334020108277000, "msisdn": 5539765419, "imei": 357746081723330, "errorDomain": "RAN", "ccProtocol": "RRC", "problemSignature": "High Interference", "cell": "PU0016A002", "originatingNode": "eNodeB", "vendor": "Nokia", "rcaSummary": "High Interference, LTE RRC Connection Setup Failure, RSRP=-113dBm,RSRQ=-15", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "1:00:00 PM", "endTime": "1:02:01 PM", "imsi": 334020343566872, "msisdn": 5535570435, "imei": 357746085678231, "errorDomain": "RAN", "ccProtocol": "SIP", "problemSignature": "500", "cell": "TL0073A002", "originatingNode": "eNodeB", "vendor": "Nokia", "rcaSummary": "S1AP Cause 21 (Radio connection with UE lost) Poor radio coverage ", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "6:45:36 AM", "endTime": "6:45:56 AM", "imsi": 334020107877001, "msisdn": 5530165422, "imei": 357746081775620, "errorDomain": "RAN", "ccProtocol": "SIP", "problemSignature": "500", "cell": "PU0048A001", "originatingNode": "eNodeB", "vendor": "Nokia", "rcaSummary": "S1AP Cause 21 (Radio connection with UE lost) Poor radio coverage ", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "2:28:48 PM", "endTime": "2:29:08 PM", "imsi": 334020343256470, "msisdn": 5535570324, "imei": 357746085672330, "errorDomain": "RAN", "ccProtocol": "RRC", "problemSignature": "High Interference", "cell": "PU0267A003", "originatingNode": "eNodeB", "vendor": "Ericsson", "rcaSummary": "High Interference, LTE RRC Connection Setup Failure, RSRP=-110dBm,RSRQ=-18", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "4:11:00 PM", "endTime": "4:11:39 PM", "imsi": 334020105977001, "msisdn": 5536705400, "imei": 357746081165100, "errorDomain": "RAN", "ccProtocol": "RRC", "problemSignature": "Poor Coverage", "cell": "PU0359A002", "originatingNode": "eNodeB", "vendor": "Ericsson", "rcaSummary": "Poor Coverage, LTE RRC Connection Setup Failure due to Low coverage, RSRP=-114dBm,RSRQ=-7", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "7:28:48 AM", "endTime": "7:29:13 AM", "imsi": 334020343256871, "msisdn": 5535570608, "imei": 359229065678230, "errorDomain": "RAN", "ccProtocol": "RRC", "problemSignature": "T311 Expired", "cell": "PU0016A002", "originatingNode": "eNodeB", "vendor": "Nokia", "rcaSummary": "T311 Expired, LTE RRC Connection Setup Failure, RSRP=-113dBm,RSRQ=-15", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "9:19:03 PM", "endTime": "9:19:41 PM", "imsi": 334020343166653, "msisdn": 5535570343, "imei": 359229065675670, "errorDomain": "RAN", "ccProtocol": "RRC", "problemSignature": "MAC Random Access Problem", "cell": "PU0267A003", "originatingNode": "eNodeB", "vendor": "Nokia", "rcaSummary": "MAC Random Access Problem, LTE RRC Connection Setup Failure due to Low coverage, RSRP=-113dBm,RSRQ=-6", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "10:45:36 AM", "endTime": "10:45:36 AM", "imsi": 334020107877001, "msisdn": 5530165422, "imei": 357746081775620, "errorDomain": "Others- MSC/PSTN", "ccProtocol": "SIP", "problemSignature": "480", "cell": "PU0016A002", "originatingNode": "MSC", "vendor": "Nokia", "rcaSummary": "SIP - 480 Temporary unavailable due to MSC generating Q850 Cause 21 Call rejected", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "11:00:00 PM", "endTime": "11:01:50 PM", "imsi": 334020105967059, "msisdn": 5538665407, "imei": 357746081747440, "errorDomain": "IMS", "ccProtocol": "SIP", "problemSignature": "503", "cell": "PU0016A002", "originatingNode": "PCRF", "vendor": "Nokia", "rcaSummary": "SIP - 503 Service unavailable due to IP-CAN session not available", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "6:03:38 PM", "endTime": "6:03:53 PM", "imsi": 334020343566872, "msisdn": 5535570435, "imei": 357746085678231, "errorDomain": "RAN", "ccProtocol": "RRC", "problemSignature": "MAC Random Access Problem", "cell": "TL0079A003", "originatingNode": "eNodeB", "vendor": "Nokia", "rcaSummary": "MAC Random Access Problem, LTE RRC Connection Setup Failure, RSRP=-110dBm,RSRQ=-18", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "2:11:00 PM", "endTime": "2:11:011 PM", "imsi": 334020107877001, "msisdn": 5530165422, "imei": 357746081775620, "errorDomain": "RAN", "ccProtocol": "RRC", "problemSignature": "MAC Random Access Problem", "cell": "TL0093A003", "originatingNode": "eNodeB", "vendor": "Ericsson", "rcaSummary": "MAC Random Access Problem, LTE RRC Connection Setup Failure, RSRP=-111dBm,RSRQ=-18", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "5:25:36 AM", "endTime": "5:25:53 AM", "imsi": 334020108277000, "msisdn": 5539765419, "imei": 357746081723330, "errorDomain": "RAN", "ccProtocol": "RRC", "problemSignature": "Poor Coverage", "cell": "TL0093A003", "originatingNode": "eNodeB", "vendor": "Ericsson", "rcaSummary": "Poor Coverage, LTE RRC Connection Setup Failure due to Low coverage, RSRP=-112dBm,RSRQ=5", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "6:45:36 AM", "endTime": "6:45:56 AM", "imsi": 334020105967059, "msisdn": 5538665407, "imei": 357746081747440, "errorDomain": "RAN", "ccProtocol": "RRC", "problemSignature": "Poor Coverage", "cell": "TL0093A003", "originatingNode": "eNodeB", "vendor": "Nokia", "rcaSummary": "Poor Coverage, LTE RRC Connection Setup Failure due to Low coverage, RSRP=-114dBm,RSRQ=-7", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "4:11:00 PM", "endTime": "4:11:39 PM", "imsi": 334020108277000, "msisdn": 5539765419, "imei": 357746081723330, "errorDomain": "RAN", "ccProtocol": "RRC", "problemSignature": "Poor Coverage", "cell": "PU0359A002", "originatingNode": "eNodeB", "vendor": "Ericsson", "rcaSummary": "Poor Coverage, LTE RRC Connection Setup Failure due to Low coverage, RSRP=-111dBm,RSRQ=7", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "7:28:48 AM", "endTime": "7:29:13 AM", "imsi": 334020343256871, "msisdn": 5535570608, "imei": 359229065678230, "errorDomain": "Others- MSC/PSTN", "ccProtocol": "SIP", "problemSignature": "480", "cell": "PU0359A002", "originatingNode": "MSC", "vendor": "Nokia", "rcaSummary": "SIP - Temporary unavailable de to MSC generating Q850 Cause 18 no uset responding", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "8:00:58 PM", "endTime": "8:02:20 PM", "imsi": 334020105967059, "msisdn": 5538665407, "imei": 357746081747440, "errorDomain": "Others- MSC/PSTN", "ccProtocol": "SIP", "problemSignature": "500", "cell": "PU0026A001", "originatingNode": "MSC", "vendor": "Ericsson", "rcaSummary": "SIP - 500 Server Internal Errer de to MSC generating Q850 Cause 50 requested facility not subscribed", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "2:52:48 PM", "endTime": "2:52:48 PM", "imsi": 334020105967059, "msisdn": 5538665407, "imei": 357746081747440, "errorDomain": "RAN", "ccProtocol": "RRC", "problemSignature": "Poor Coverage", "cell": "TL0089A001", "originatingNode": "eNodeB", "vendor": "Ericsson", "rcaSummary": "Poor Coverage, LTE RRC Connection Setup Failure due to Low coverage, RSRP=-112dBm,RSRQ=5", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "12:07:10 PM", "endTime": "12:08:003 PM", "imsi": 334020343256870, "msisdn": 5533570605, "imei": 359229063438240, "errorDomain": "RAN", "ccProtocol": "RRC", "problemSignature": "Poor Coverage", "cell": "TL0093A003", "originatingNode": "eNodeB", "vendor": "Ericsson", "rcaSummary": "Poor Coverage, LTE RRC Connection Setup Failure due to Low coverage, RSRP=-113dBm,RSRQ=-7", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "7:28:48 AM", "endTime": "7:29:13 AM", "imsi": 334020107877001, "msisdn": 5530165422, "imei": 357746081775620, "errorDomain": "Others- MSC/PSTN", "ccProtocol": "SIP", "problemSignature": "500", "cell": "TL0093A003", "originatingNode": "MSC", "vendor": "Huawei", "rcaSummary": "SIP - 500 Server Internal Errer de to MSC generating Q850 Cause no route to destination", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "8:00:58 PM", "endTime": "8:02:20 PM", "imsi": 334020105967059, "msisdn": 5538665407, "imei": 357746081747440, "errorDomain": "Others- MSC/PSTN", "ccProtocol": "SIP", "problemSignature": "500", "cell": "TL0089A001", "originatingNode": "MSC", "vendor": "Ericsson", "rcaSummary": "SIP - 500 Server Internal Errer de to MSC generating Q850 Cause 88 Incompatible destination", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "6:03:38 PM", "endTime": "6:03:53 PM", "imsi": 334020107877001, "msisdn": 5530165422, "imei": 357746081775620, "errorDomain": "RAN", "ccProtocol": "RRC", "problemSignature": "High Interference", "cell": "PU0359A002", "originatingNode": "eNodeB", "vendor": "Ericsson", "rcaSummary": "High Interference, LTE RRC Connection Setup Failure, RSRP=-112dBm,RSRQ=-18", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "2:11:00 PM", "endTime": "2:11:011 PM", "imsi": 334020107877001, "msisdn": 5530165422, "imei": 357746081775620, "errorDomain": "IMS", "ccProtocol": "SIP", "problemSignature": "503", "cell": "PU0267A003", "originatingNode": "PCRF", "vendor": "Nokia", "rcaSummary": "SIP - 503 Service unavailable due to IP-CAN session not available", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "12:28:28 PM", "endTime": "12:28:58 PM", "imsi": 334020105967059, "msisdn": 5538665407, "imei": 357746081747440, "errorDomain": "IMS", "ccProtocol": "SIP", "problemSignature": "503", "cell": "TL0089A001", "originatingNode": "PCRF", "vendor": "Nokia", "rcaSummary": "SIP - 503 Service unavailable due to IP-CAN session not available", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "2:52:48 PM", "endTime": "2:52:48 PM", "imsi": 334020105967059, "msisdn": 5538665407, "imei": 357746081747440, "errorDomain": "EPC", "ccProtocol": "SIP", "problemSignature": "503", "cell": "TL0073A002", "originatingNode": "PGW", "vendor": "Nokia", "rcaSummary": "SIP - 503 Service unavailable due to Resource Allocation failure", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "2:28:48 PM", "endTime": "2:29:08 PM", "imsi": 334020107877001, "msisdn": 5530165422, "imei": 357746081775620, "errorDomain": "RAN", "ccProtocol": "RRC", "problemSignature": "Poor Coverage", "cell": "PU0359A002", "originatingNode": "eNodeB", "vendor": "Ericsson", "rcaSummary": "Poor Coverage, LTE RRC Connection Setup Failure due to Low coverage, RSRP=-114dBm,RSRQ=-7", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "4:11:00 PM", "endTime": "4:11:39 PM", "imsi": 334020107877001, "msisdn": 5530165422, "imei": 357746081775620, "errorDomain": "RAN", "ccProtocol": "RRC", "problemSignature": "Poor Coverage", "cell": "TL0093A003", "originatingNode": "eNodeB", "vendor": "Ericsson", "rcaSummary": "Poor Coverage, LTE RRC Connection Setup Failure due to Low coverage, RSRP=-113dBm,RSRQ=-7", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "10:45:36 AM", "endTime": "10:45:36 AM", "imsi": 334020108277000, "msisdn": 5539765419, "imei": 357746081723330, "errorDomain": "IMS", "ccProtocol": "SIP", "problemSignature": "503", "cell": "PU0026A001", "originatingNode": "PCRF", "vendor": "Nokia", "rcaSummary": "SIP - 503 Service unavailable due to IP-CAN session not available", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "11:00:00 PM", "endTime": "11:01:50 PM", "imsi": 334020343256871, "msisdn": 5535570608, "imei": 359229065678230, "errorDomain": "RAN", "ccProtocol": "RRC", "problemSignature": "High Interference", "cell": "PU0048A001", "originatingNode": "eNodeB", "vendor": "Nokia", "rcaSummary": "High Interference, LTE RRC Connection Setup Failure, RSRP=-114dBm, RSRQ=-14dBm", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "6:03:38 PM", "endTime": "6:03:53 PM", "imsi": 334020343166653, "msisdn": 5535570343, "imei": 359229065675670, "errorDomain": "Others- MSC/PSTN", "ccProtocol": "SIP", "problemSignature": "480", "cell": "PU0048A001", "originatingNode": "MSC", "vendor": "Nokia", "rcaSummary": "SIP - Temporary unavailable de to MSC generating Q850 Cause 25 exchange routing error", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "12:00:01 PM", "endTime": "12:00:59 PM", "imsi": 334020107877001, "msisdn": 5530165422, "imei": 357746081775620, "errorDomain": "IMS", "ccProtocol": "SIP", "problemSignature": "403", "cell": "PU0026A001", "originatingNode": "ICSCF", "vendor": "Nokia", "rcaSummary": "SIP - 480 Forbidden due to roaming rightts are not configured In HSS for the subscriber", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "8:00:58 PM", "endTime": "8:02:20 PM", "imsi": 334020343256470, "msisdn": 5535570324, "imei": 357746085672330, "errorDomain": "Others- MSC/PSTN", "ccProtocol": "SIP", "problemSignature": "500", "cell": "PU0359A002", "originatingNode": "MSC", "vendor": "Huawei", "rcaSummary": "SIP - 500 Server Internal Errer de to MSC generating Q850 Cause 91 Invalid transit network selection", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "9:19:03 PM", "endTime": "9:19:41 PM", "imsi": 334020107877001, "msisdn": 5530165422, "imei": 357746081775620, "errorDomain": "Others- MSC/PSTN", "ccProtocol": "SIP", "problemSignature": "500", "cell": "PU0016A002", "originatingNode": "MSC", "vendor": "Nokia", "rcaSummary": "SIP - 500 Server Internal Errer de to MSC generating Q850 Cause 127 Interworking unspecified", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "10:45:36 AM", "endTime": "10:45:36 AM", "imsi": 334020343566872, "msisdn": 5535570435, "imei": 357746085678231, "errorDomain": "IMS", "ccProtocol": "SIP", "problemSignature": "503", "cell": "TL0093A003", "originatingNode": "PCRF", "vendor": "Nokia", "rcaSummary": "SIP - 503 Service unavailable due to IP-CAN session not available", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "2:52:48 PM", "endTime": "2:52:48 PM", "imsi": 334020105967059, "msisdn": 5538665407, "imei": 357746081747440, "errorDomain": "RAN", "ccProtocol": "RRC", "problemSignature": "Poor Coverage", "cell": "TL0073A002", "originatingNode": "eNodeB", "vendor": "Nokia", "rcaSummary": "Poor Coverage, LTE RRC Connection Setup Failure due to Low coverage, RSRP=-111dBm,RSRQ=7", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "12:07:10 PM", "endTime": "12:08:003 PM", "imsi": 334020108277000, "msisdn": 5539765419, "imei": 357746081723330, "errorDomain": "RAN", "ccProtocol": "RRC", "problemSignature": "Poor Coverage", "cell": "PU0048A001", "originatingNode": "eNodeB", "vendor": "Nokia", "rcaSummary": "Poor Coverage, LTE RRC Connection Setup Failure due to Low coverage, RSRP=-110dBm,RSRQ=-4", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "7:28:48 AM", "endTime": "7:29:13 AM", "imsi": 334020343566872, "msisdn": 5535570435, "imei": 357746085678231, "errorDomain": "RAN", "ccProtocol": "RRC", "problemSignature": "Poor Coverage", "cell": "TL0073A002", "originatingNode": "eNodeB", "vendor": "Nokia", "rcaSummary": "Poor Coverage, LTE RRC Connection Setup Failure due to Low coverage, RSRP=-112dBm,RSRQ=5", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "8:00:58 PM", "endTime": "8:02:20 PM", "imsi": 334020105967059, "msisdn": 5538665407, "imei": 357746081747440, "errorDomain": "RAN", "ccProtocol": "RRC", "problemSignature": "Poor Coverage", "cell": "PU0267A003", "originatingNode": "eNodeB", "vendor": "Nokia", "rcaSummary": "Poor Coverage, LTE RRC Connection Setup Failure due to Low coverage, RSRP=-111dBm,RSRQ=7", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "10:45:36 AM", "endTime": "10:45:36 AM", "imsi": 334020343166653, "msisdn": 5535570343, "imei": 359229065675670, "errorDomain": "RAN", "ccProtocol": "RRC", "problemSignature": "High Interference", "cell": "TL0093A003", "originatingNode": "eNodeB", "vendor": "Ericsson", "rcaSummary": "High Interference, LTE RRC Connection Setup Failure, RSRP=-111dBm,RSRQ=-18", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "2:11:00 PM", "endTime": "2:11:011 PM", "imsi": 334020343566872, "msisdn": 5535570435, "imei": 357746085678231, "errorDomain": "RAN", "ccProtocol": "RRC", "problemSignature": "High Interference", "cell": "TL0079A003", "originatingNode": "eNodeB", "vendor": "Nokia", "rcaSummary": "High Interference, LTE RRC Connection Setup Failure, RSRP=-114dBm,RSRQ=-12", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "2:28:48 PM", "endTime": "2:29:08 PM", "imsi": 334020343256871, "msisdn": 5535570608, "imei": 359229065678230, "errorDomain": "IMS", "ccProtocol": "SIP", "problemSignature": "403", "cell": "PU0267A003", "originatingNode": "ICSCF", "vendor": "Nokia", "rcaSummary": "SIP - 480 Forbidden due to roaming rightts are not configured In HSS for the subscriber", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "4:11:00 PM", "endTime": "4:11:39 PM", "imsi": 334020107877001, "msisdn": 5530165422, "imei": 357746081775620, "errorDomain": "Others- MSC/PSTN", "ccProtocol": "SIP", "problemSignature": "500", "cell": "TL0079A003", "originatingNode": "MSC", "vendor": "Nokia", "rcaSummary": "SIP - 500 Server Internal Errer de to MSC generating Q850 Cause 111 Protocol error, unspecified", "showCTS": false },
+{ "rcaDate": "June-07-2016", "startTime": "9:06:12 PM", "endTime": "6:07:23 PM", "imsi": 334020105977020, "msisdn": 5536703761, "imei": 359229065675671, "errorDomain": "Others- MSC/PSTN", "ccProtocol": "SIP", "problemSignature": "503", "cell": "PU0059A001", "originatingNode": "MSS", "vendor": "Nokia", "rcaSummary": "VoLTE Subscriber observed a call dropduring SRVCC process", "showCTS": true }]
+  }
+  ]

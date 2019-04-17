@@ -1,0 +1,76 @@
+﻿<div ng-controller="eventlogController" style="background-color: white;width:100%;">
+    <div id="page-wrapper1" class="gray-bg">
+        <div class="wrapper wrapper-content"> <!--animated fadeInRight-->
+            <div class="row">
+                
+                <div class="col-md-4">
+                    <div class="ibox float-e-margins">
+                        <div class="ibox-title">
+                            <h5>Error Code Distribution : VoLTE Service</h5>
+                        </div>
+                        <div class="ibox-content" style="height:300px;">
+                            <div>
+                                <div id="CNErrorCodeDistribution" style="height:300px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="ibox float-e-margins">
+                        <div class="ibox-title">
+                            <h5>Error Code Distribution : RAN</h5>
+                        </div>
+                        <div class="ibox-content" style="height:300px;">
+                            <div>
+                                <div id="RANErrorCodeDistribution" style="height:300px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="ibox float-e-margins">
+                        <div class="ibox-title">
+                            <h5>Problem Domain Categorization</h5>
+                        </div>
+                        <div class="ibox-content" style="height:300px;">
+                            <div id="sanKeyChart" style="margin-top:0px;">
+                                <!--<div id="ProblemCategorization" style="height:300px;"></div>-->
+                                <!--<div ng-include="'modules/cdsm/sanKey/sanKey.html'" style="margin-top:50px;"></div>-->
+                                <ng-include src="sankeyurl"></ng-include>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                
+
+                <div class="col-md-4">
+                    <div ng-include="'modules/cdsm/eventlog/corelog.html'"></div>
+                </div>
+
+                
+
+                <div class="col-md-4">
+                    <div ng-include="'modules/cdsm/eventlog/ranlog.html'"></div>
+                </div>
+
+                <div class="col-md-4">
+                    <!--<div ng-include="'modules/cdsm/eventlog/rcalog.html'"></div>-->
+                    <ng-include src="rcaurl"></ng-include>
+
+                </div>
+            </div>
+
+            
+        <div class="row" style="margin-top:10px" align="center">
+            <button class="btn btn-outline btn-primary dim" type="button" ng-click="reAnalyze()"><i class="fa fa-cogs" aria-hidden="true"></i>&nbsp;Analyze</button>
+        </div>
+        
+        </div>
+    </div>
+
+    <!--<input type="button" ng-click="reAnalyze()" />-->
+</div>

@@ -1,0 +1,201 @@
+﻿[
+{ 
+"date" : "Date0",
+"data" : {
+  "kpiDetails": [
+    {
+      "description": "Call Failure Rate (%)",
+      "technology": "VoLTE RAN",
+      "shortName": "CFR",
+      "value": "2.35"
+    },
+    {
+      "description": "Call Setup Success Rate (%)",
+      "technology": "VoLTE RAN",
+      "shortName": "CSSR",
+      "value": "98.65"
+    },
+    {
+      "description": "SRVCC Success Rate (%)",
+      "technology": "VoLTE RAN",
+      "shortName": "SRVCC(%)",
+      "value": "94.88"
+    },
+    {
+      "description": "Mobility Success Rate (%)",
+      "technology": "VoLTE RAN",
+      "shortName": "Mobility(%)",
+      "value": "97.92"
+    },
+    {
+      "description": "SIP Drop Rate (%)",
+      "technology": "VoLTE RAN",
+      "shortName": "SIP DR(%)",
+      "value": "2.14"
+    },
+    {
+      "description": "Call Setup Time (s)",
+      "technology": "VoLTE",
+      "shortName": "Call Set Time",
+      "value": "4.78"
+    },
+    {
+      "description": "Registration Success Rate (%)",
+      "technology": "VoLTE",
+      "shortName": "RSR",
+      "value": "97.41"
+    },
+    {
+      "description": "Session Completion Rate (%)",
+      "technology": "VoLTE",
+      "shortName": "SCR",
+      "value": "96.45"
+    },
+    {
+      "description": "Session Defects Rate (%)",
+      "technology": "VoLTE",
+      "shortName": "SDR",
+      "value": "3.55"
+    },
+    {
+      "description": "Session Establishment Effectiveness Rate (%)",
+      "technology": "VoLTE",
+      "shortName": "SEER",
+      "value": "96.72"
+    },
+    {
+      "description": "Associations Drop Rate (%)",
+      "technology": "VoWifi",
+      "shortName": "ADR",
+      "value": "4.35"
+    },
+    {
+      "description": "Associations Success Rate (%)",
+      "technology": "VoWifi",
+      "shortName": "ASR",
+      "value": "96.98"
+    },
+    {
+      "description": "Associations Drop #",
+      "technology": "VoWifi",
+      "shortName": "Asso. Drops",
+      "value": "71"
+    },
+    {
+      "description": "MO Wifi Call Ratio (%)",
+      "technology": "VoWifi",
+      "shortName": "MO Call(%)",
+      "value": "0.64"
+    },
+    {
+      "description": "MT Wifi Call Ratio (%)",
+      "technology": "VoWifi",
+      "shortName": "MT Call(%)",
+      "value": "0.73"
+    }
+  ]
+}
+},
+{ 
+"date" : "Date1",
+"data" : {
+  "kpiDetails": [
+    {
+      "description": "Call Failure Rate (%)",
+      "technology": "VoLTE RAN",
+      "shortName": "CFR",
+      "value": "30"
+    },
+    {
+      "description": "Call Setup Success Rate (%)",
+      "technology": "VoLTE RAN",
+      "shortName": "CSSR",
+      "value": "30"
+    },
+    {
+      "description": "DL Throughput (mbps)",
+      "technology": "VoLTE RAN",
+      "shortName": "DL Thrpt",
+      "value": "30"
+    },
+    {
+      "description": "Mobility Success Rate (%)",
+      "technology": "VoLTE RAN",
+      "shortName": "Mobility(%)",
+      "value": "30"
+    },
+    {
+      "description": "UL Throughput (mbps)",
+      "technology": "VoLTE RAN",
+      "shortName": "UL Thrpt",
+      "value": "30"
+    },
+    {
+      "description": "Call Setup Time (s)",
+      "technology": "VoLTE",
+      "shortName": "Call Set Time",
+      "value": "30"
+    },
+    {
+      "description": "Registration Success Rate (%)",
+      "technology": "VoLTE",
+      "shortName": "RSR",
+      "value": "30"
+    },
+    {
+      "description": "Session Completion Rate (%)",
+      "technology": "VoLTE",
+      "shortName": "SCR",
+      "value": "30"
+    },
+    {
+      "description": "Session Defects Rate (%)",
+      "technology": "VoLTE",
+      "shortName": "SDR",
+      "value": "30"
+    },
+    {
+      "description": "Session Establishment Effectiveness Rate (%)",
+      "technology": "VoLTE",
+      "shortName": "SEER",
+      "value": "30"
+    },
+    {
+      "description": "Associations Drop Rate (%)",
+      "technology": "VoWifi",
+      "shortName": "ADR",
+      "value": "30"
+    },
+    {
+      "description": "Associations Success Rate (%)",
+      "technology": "VoWifi",
+      "shortName": "ASR",
+      "value": "30"
+    },
+    {
+      "description": "Associations Drop #",
+      "technology": "VoWifi",
+      "shortName": "Asso. Drops",
+      "value": "30"
+    },
+    {
+      "description": "MO Wifi Call Ratio (%)",
+      "technology": "VoWifi",
+      "shortName": "MO Call(%)",
+      "value": "30"
+    },
+    {
+      "description": "MT Wifi Call Ratio (%)",
+      "technology": "VoWifi",
+      "shortName": "MT Call(%)",
+      "value": "30"
+    }
+  ]
+}
+}
+]
+
+
+
+
+

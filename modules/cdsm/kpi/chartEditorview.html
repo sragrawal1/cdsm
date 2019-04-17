@@ -1,0 +1,105 @@
+﻿<div ng-controller="chartEditorController">
+        <div class="row">
+            <!--<hr style="margin-bottom: 0px;" />-->
+            <div style="margin-left: 15px; font-weight: bold; color: darkgray;"> CHART SERIES OPTIONS </div>
+            <hr style="margin-top: 5px; margin-bottom: 5px;" />
+        </div>
+        <div class="row" style="margin-left:5px;margin-right:5px;">
+        <div class="col-lg-6 skipPadding">
+            <div style="margin-left: -10px; height: 300px; overflow-y: scroll;">
+                <a class="list-group-item" ng-repeat="kpi in currentChartPanel.kpis" ng-click="elementchange(kpi,currentChartPanel.kpis)" ng-class="kpi.active"> {{kpi.kpiName}}</a>
+            </div>
+        </div>
+        <div class="col-lg-6 skipPadding">
+            <div style="margin-left:5px;" class="row">
+                <span class="font-bold" style="color: darkgray;">Series :</span>
+                <select kendo-drop-down-list k-ng-model="chartSeries.chartType" k-value-primitive="true" style="width:125px;">
+                    <option value="column">Column</option>
+                    <option value="line">Line</option>
+                    <option value="smoothline">Smooth Line</option>
+                    <option value="stepline">Step Line</option>
+                    <option value="area">Area</option>
+                    <option value="smootharea">Smooth Area</option>
+                    <option value="steparea">Step Area</option>
+                </select>
+                <span class="font-bold" style="color: darkgray;">Axis:</span>
+                <select kendo-drop-down-list
+                        k-data-text-field="'text'"
+                        k-data-value-field="'value'"
+                        k-auto-bind="true"
+                        k-data-source='axisDataSource'
+                        id="ddlAxisType" k-ng-model="chartSeries.chartAxis" k-value-primitive="true" style="width:100px;"></select>
+            </div>
+            
+            <div class="row" style="margin-top: 10px;margin-left:5px;">
+                <div style="float: left; color: darkgray;" class="font-bold">
+                    Label Display :
+                </div>
+                <div class="text-muted small switch" style="float:left;margin-left:10px;">
+                    <div class="onoffswitch">
+                        <input type="checkbox" name="showInterfaceKPI" class="onoffswitch-checkbox" id="showInterfaceKPI" ng-model="chartSeries.showLabel">
+                        <label class="onoffswitch-label" for="showInterfaceKPI">
+                            <span class="onoffswitch-inner"></span>
+                            <span class="onoffswitch-switch"></span>
+                        </label>
+                    </div>
+                </div>
+
+
+
+            </div>
+          
+            <div style="margin-top: 5px;margin-left:5px;" class="row">
+                <span class="font-bold" style="color: darkgray;">Series Color:</span><br>
+                <div id="flatpicker" kendo-flat-color-picker k-opacity="false" k-ng-model="chartSeries.color" style="margin-top: 5px;">
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="row">
+            <hr style="margin-top: 5px; margin-bottom: 5px;" />
+            <div style="margin-left: 15px; font-weight: bold; color: darkgray;"> CHART AXIS OPTIONS </div>
+            <hr style="margin-top: 5px; margin-bottom: 5px;" />
+        </div>
+        <div class="row" style="margin-left:5px;margin-right:5px;">
+        <div class="col-lg-2 skipPadding">
+            <div class="list-group" style="margin-left: -10px;">
+                <a class="list-group-item" ng-repeat="option in currentChartPanel.chartAxisOptions"
+                   ng-click="onaxischange(option, currentChartPanel.chartAxisOptions)" ng-class="option.active">{{option.name}}</a>
+            </div>
+        </div>
+
+        <div class="col-lg-10 skipPadding">
+
+            <div class="row" style="margin-top:10px;margin-left:5px;">
+                <div class="col-lg-1 font-bold" style="color: darkgray;">Minimum</div>
+                <div class="col-lg-4" style="margin-left:5px;"><input id="txtAxisMinimum" type="number" kendo-numeric-text-box k-options="numericOptions" k-ng-model="axisOptions.min" style="width: 200px; height: 22px;" ng-disabled="axisOptions.isAutoScale" /></div>
+
+                <div class="col-lg-1 font-bold" style="color: darkgray;">Maximum</div>
+                <div class="col-lg-4" style="margin-left:5px;"><input id="txtAxisMaximum" type="number" kendo-numeric-text-box k-options="numericOptions" k-ng-model="axisOptions.max" style="width: 200px; height: 22px;" ng-disabled="axisOptions.isAutoScale" /></div>
+            </div>
+
+            <div class="row" style="margin-top:5px;margin-left:5px;">
+                <label class="font-bold" style="color: darkgray;"><input type="checkbox" id="chkAxisAutoScale" ng-model="axisOptions.isAutoScale">  Auto Scale</label>
+            </div>
+        </div>
+    </div>
+        <div class="row">
+            <div class="col-lg-3 font-bold" style="color: darkgray;">Horizontal Axis Label Format :</div>
+            <div class="col-lg-5">
+                <select kendo-drop-down-list k-ng-model="currentChartPanel.chartAxisDateFormat" k-value-primitive="true">
+                    <option value="Auto">Auto</option>
+                    <option value="MMM dd yyyy">MMM dd yyyy</option>
+                    <option value="MMM yyyy">MMM yyyy</option>
+                    <option value="MMM dd">MMM dd</option>
+                    <option value="MMM dd hh:mm tt">MMM dd hh:mm tt</option>
+                    <option value="MMM dd hh tt">MMM dd hh tt</option>
+                </select>
+            </div>
+        </div>
+        <div class="row" style="text-align:center;margin-top:5px">
+            <hr style="margin-top: 10px; margin-bottom: 10px;margin-right:10px" />
+            <button type="submit" class="k-button" id="btnApplyChartOptions" ng-click="applyChartOptions()">APPLY</button>
+        </div>
+    </div>
+   

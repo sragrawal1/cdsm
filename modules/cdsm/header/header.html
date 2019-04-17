@@ -1,0 +1,79 @@
+﻿<div ng-controller="headerController">
+    <ul class="nav navbar-top-links navbar-left">
+        <li>
+            <div style="margin-top: 20px;margin-left:20px;">
+                <h4><strong>{{pageName}}</strong></h4>
+            </div>
+        </li>
+    </ul>
+
+    <ul class="nav navbar-top-links navbar-right">
+        <li>
+            <div style="margin-top: 20px;margin-left:20px;">
+                <input id="datetimepicker" style="width: 240px" />
+            </div>
+        </li>
+        <li class="dropdown">
+            <a class="dropdown-toggle count-info" data-toggle="dropdown">
+                <!--href="#"-->
+                <i class="fa fa-warning"></i>  <span class="label label-warning">520</span>
+            </a>
+
+        </li>
+
+        <li class="dropdown">
+            <a class="dropdown-toggle count-info" data-toggle="dropdown">
+                <!--href="#"-->
+                <i class="fa fa-bell"></i>  <span class="label label-primary">8</span>
+            </a>
+            <ul class="dropdown-menu dropdown-alerts">
+                <li>
+                    <a>
+                        <!--href="#"-->
+                        <div>
+                            <i class="fa fa-bell fa-fw"></i> You have Alarms
+                            <span class="pull-right text-muted small">4 minutes ago</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                    <a>
+                        <!--href="#"-->
+                        <div>
+                            <i class="fa fa-cogs fa-fw"></i> 3 Issues on RAN
+                            <span class="pull-right text-muted small">12 minutes ago</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                    <a>
+                        <!--href="#"-->
+                        <div>
+                            <i class="fa fa-upload fa-fw"></i> Server Rebooted
+                            <span class="pull-right text-muted small">4 minutes ago</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                    <div class="text-center link-block">
+                        <a>
+                            <!--href="#"-->
+                            <!-- Redirect To New Page -->
+                            <strong>See All Alerts</strong>
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a ng-click="logOut()">
+                <i class="fa fa-sign-out"></i> Log out
+            </a>
+        </li>
+
+    </ul>
+</div>

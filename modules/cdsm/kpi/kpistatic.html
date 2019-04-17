@@ -1,0 +1,167 @@
+﻿<div id="page-wrapper1" class="gray-bg" ng-controller="kpiController">
+
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>KPI Trend </h5>
+                        <!--<div class="pull-right">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-xs btn-white active">Daily</button>
+                                <button type="button" class="btn btn-xs btn-white">Weekly</button>
+                                <button type="button" class="btn btn-xs btn-white">Monthly</button>
+                            </div>
+                        </div>-->
+
+                        <div class="ibox-tools">
+
+                            <!--<a class="fullscreen-link" data-toggle="dropdown" href="#">
+                                <i class="fa fa-expand"></i>
+                            </a>-->
+                            <!--<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <i class="fa fa-wrench"></i>
+                            </a>
+
+                            <ul class="dropdown-menu dropdown-user">
+                                <li>
+                                    <a href="#">Change KPI</a>
+                                </li>
+                            </ul>-->
+                        </div>
+
+                    </div>
+                    <div class="ibox-content">
+                        <div class="pull-right">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-xs btn-white active">Daily</button>
+                                <button type="button" class="btn btn-xs btn-white">Weekly</button>
+                                <button type="button" class="btn btn-xs btn-white">Monthly</button>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div id="KPITrendBarChart"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <!--<div class="small pull-left col-md-3 m-l-lg m-t-md">
+                    <strong>Sales char</strong> have evolved over the years sometimes.
+                </div>
+                <div class="small pull-right col-md-3 m-t-md text-right">
+                    <strong>There are many</strong> variations of passages of Lorem Ipsum available, but the majority have suffered.
+                </div>-->
+                <div class="flot-chart m-b-xl">
+                    <div class="flot-chart-content" id="flot-dashboard5-chart"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <script>
+
+
+        c3.generate({
+            bindto: '#KPITrendBarChart',
+            data: {
+                columns: [
+                    ['Diameter:Credit Control AttemptsInitial_SRPercentage', 90, 92, 93, 91, 95, 96, 92],
+                    ['GTPV2:CreateSession_SRPercentage', 94, 96, 95, 98, 97, 95, 99],
+                    ['SIP:Session Establishment Effectiveness Rate', 98, 93, 95, 91, 96, 99, 92],
+                    ['S1AP:Default EPS Bearer Context Activation_SuccessfulProcedure', 96, 99, 100, 97, 95, 96, 97]
+                ],
+                //colors: {
+                //    data1: '#1ab394',
+                //    data2: '#BABABA'
+                //},
+                type: 'bar'
+
+                //Group is for Stacked Bar Chart
+                //,
+                //groups: [
+                //    ['data1', 'data2']
+                //]
+            },
+            axis: {
+                x: {
+                    type: 'category',
+                    categories: ['06/03/2016', '06/04/2016', '06/05/2016', '06/06/2016', '06/07/2016', '06/08/2016', '06/09/2016']
+                },
+                y: {
+                    max: 100,
+                    min: 90,
+                    // Range includes padding, set 0 if no padding needed
+                    // padding: {top:0, bottom:0}
+                }
+            }
+               , legend: {
+                   position: 'top'
+               }
+               ,
+            color: {
+                pattern: ['#1ab394', '#BABABA', '#ff7f0e', '#ffbb78', '#98df8a', '#1f77b4', '#aec7e8', '#2ca02c', '#98df8a', '#d62728', '#ff9896', '#9467bd', '#c5b0d5', '#8c564b', '#c49c94', '#e377c2', '#f7b6d2', '#7f7f7f', '#c7c7c7', '#bcbd22', '#dbdb8d', '#17becf', '#9edae5']
+            }
+
+        });
+
+
+
+        var data1 = [
+          [0, 4], [1, 8], [2, 5], [3, 10], [4, 4], [5, 16], [6, 5], [7, 11], [8, 6], [9, 11], [10, 20], [11, 10], [12, 13], [13, 4], [14, 7], [15, 8], [16, 12]
+        ];
+        var data2 = [
+            [0, 0], [1, 2], [2, 7], [3, 4], [4, 11], [5, 4], [6, 2], [7, 5], [8, 11], [9, 5], [10, 4], [11, 1], [12, 5], [13, 2], [14, 5], [15, 2], [16, 0]
+        ];
+        $("#flot-dashboard5-chart").length && $.plot($("#flot-dashboard5-chart"), [
+                    data1, data2
+        ],
+                {
+                    series: {
+                        lines: {
+                            show: false,
+                            fill: true
+                        },
+                        splines: {
+                            show: true,
+                            tension: 0.4,
+                            lineWidth: 1,
+                            fill: 0.4
+                        },
+                        points: {
+                            radius: 0,
+                            show: true
+                        },
+                        shadowSize: 2
+                    },
+                    grid: {
+                        hoverable: true,
+                        clickable: true,
+
+                        borderWidth: 2,
+                        color: 'transparent'
+                    },
+                    colors: ["#1ab394", "#1C84C6"],
+                    xaxis: {
+                    },
+                    yaxis: {
+                    },
+                    tooltip: false
+                }
+        );
+
+        $(document).ready(function () {
+        });
+
+    </script>
+
+
+
+</div>

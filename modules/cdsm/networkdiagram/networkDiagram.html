@@ -1,0 +1,115 @@
+﻿<div ng-controller="networkDiagramController">
+    <!--<div class="ibox-content"> </div>-->
+    <div class="pull-right text-muted small">KPIs &nbsp;
+        <div class="pull-right text-muted small switch">
+            <div class="onoffswitch">
+                <input type="checkbox" name="showInterfaceKPI" class="onoffswitch-checkbox" id="showInterfaceKPI">
+                <label class="onoffswitch-label" for="showInterfaceKPI">
+                    <span class="onoffswitch-inner"></span>
+                    <span class="onoffswitch-switch"></span>
+                </label>
+            </div>
+        </div>
+    </div>
+   <br />
+    <div id="networkDiagramDiv" style="border: solid 0px black; width: 100%; height: 350px;"></div>
+   
+    
+    <!--<input type="checkbox" id="chkInterfaceKPIs" value="InterfaceKPIs" ng-click="showInterfaceKPIs()"> Interface KPIs-->   
+    
+    
+
+    
+    
+     
+    <!--<input type="checkbox" id="chkDebug" value="Debug" ng-model="isDebug"> Debug-->
+    
+
+    <div id="divDebug" ng-show="isDebug">
+        <textarea id="mySavedModel" style="width: 800px; height: 400px;">
+            { "class": "go.GraphLinksModel",
+            "nodeDataArray": [
+            {"key":"RAN", "isGroup":"true", "color":"#ededed", "shapepath":"M25,0 L60,0 45,30 0,30 z", "description":"RAN : Radio Access Network"},
+            {"key":"UE", "group":"RAN", "pos":"-244.56282282399607 -439.0014590632372", "icon":"UE",  "iconWidth":30, "iconHeight":40, "text":"UE", "description":"UE Description", "caption":"UE Caption", "color":"#96a8bc"},
+            {"key":"enodeb1", "group":"RAN", "pos":"-174.90281725453798 -294.42148774976073", "icon":"eNodeB",  "iconWidth":30, "iconHeight":40, "text":"eNB", "description":"eNB1 Description", "caption":"eNB Caption", "color":"#96a8bc"},
+            {"key":"enodeb2", "group":"RAN", "pos":"-175.04281664418653 -542.9314135920458", "icon":"eNodeB",  "iconWidth":30, "iconHeight":40, "text":"eNB", "description":"eNB2 Description", "caption":"eNB Caption", "color":"#96a8bc"},
+            {"key":"WiFiAP", "group":"RAN", "icon":"server3",  "iconWidth":30, "iconHeight":40, "text":"Wi-Fi AP", "description":"Wifi AP Description", "objecttype":"WifiAP", "objectcount":1, "color":"#96a8bc", "pos":"-228.35316782786435 -235.74395801727337"},
+            {"key":"EPC", "isGroup":"true", "color":"#f3fcfa", "shapepath":"M13,0 L60,0 75,30 0,30 z", "description":"EPC : Evolved Packet Core"},
+            {"key":"HSS", "group":"EPC", "pos":"-61.71347048546011 -527.8712574014552", "icon":"cylinder",  "iconWidth":30, "iconHeight":40, "text":"HSS", "description":"HSS Description", "objecttype":"HSS", "objectcount":2, "color":"#72c3bf"},
+            {"key":"MME", "group":"EPC", "pos":"-72.82348635460062 -450.5212559620033", "icon":"server3",  "iconWidth":30, "iconHeight":40, "portHeight":20, "text":"MME", "description":"MME Description", "objecttype":"MME", "objectcount":2, "color":"#72c3bf"},
+            {"key":"SGW", "group":"EPC", "pos":"-48.92349245811596 -265.41127061044096", "icon":"server", "square":40,  "iconWidth":30, "iconHeight":40, "text":"SGW", "description":"SGW Description", "objecttype":"SGW", "objectcount":2, "color":"#72c3bf"},
+            {"key":"DiameterAgent", "group":"EPC", "pos":"194.2365722391492 -507.94128464852656", "icon":"cylinder",  "iconWidth":30, "iconHeight":40, "text":"Diameter Agent", "description":"DiameterAgent Description", "objecttype":"DiameterAgent", "objectcount":2, "color":"#72c3bf"},
+            {"key":"PGW", "group":"EPC", "pos":"211.4064941141496 -291.88127183114386", "icon":"server",  "iconWidth":30, "iconHeight":40, "text":"PGW", "description":"PGW Description", "objecttype":"PGW", "objectcount":2, "color":"#72c3bf"},
+            {"key":"PCRF", "group":"EPC", "pos":"494.24667355750904 -329.4012608448158", "icon":"cylinder",  "iconWidth":30, "iconHeight":40, "text":"PCRF", "description":"PCRF Description", "objecttype":"PCRF", "objectcount":1, "color":"#72c3bf"},
+            {"key":"ePDG", "group":"EPC", "icon":"server3",  "iconWidth":30, "iconHeight":40, "text":"ePDG", "description":"ePDG Description", "objecttype":"WifiAP", "objectcount":1, "color":"#72c3bf", "pos":"340.4700927734375 -228.9500366210938"},
+            {"key":"IMS", "isGroup":"true", "color":"#fbfbe5", "shapepath":"M15,0 L60,0 75,30 25,30 z", "description":"IMS: IP Multimedia Subsystem"},
+            {"key":"TAS", "group":"IMS", "pos":"580.0403491715754 -533.6854427399323", "icon":"server3",  "iconWidth":30, "iconHeight":40, "text":"TAS", "description":"TAS Description", "objecttype":"TAS", "objectcount":4, "color":"#b8b881"},
+            {"key":"MRF", "group":"IMS", "pos":"1165.128923379733 -541.2834186456778", "icon":"server3",  "iconWidth":30, "iconHeight":40, "text":"MRF", "description":"MRF Description", "objecttype":"MRF", "objectcount":2, "color":"#b8b881"},
+            {"key":"ISCSCF", "group":"IMS", "pos":"670.9872117845093 -434.19898562786124", "icon":"server3",  "iconWidth":30, "iconHeight":40, "text":"I/S-CSCF", "description":"I/S-CSCF Description", "objecttype":"ISCSCF", "objectcount":2, "color":"#b8b881"},
+            {"key":"BGCF", "group":"IMS", "pos":"1100.7164354120254 -448.3003604553463", "icon":"server3",  "iconWidth":30, "iconHeight":40, "text":"BGCF", "description":"BGCF Description", "objecttype":"BGCF", "objectcount":2, "color":"#b8b881"},
+            {"key":"MGCFMGW", "group":"IMS", "pos":"1100.7911180636306 -292.35697816568637", "icon":"server3",  "iconWidth":30, "iconHeight":40, "text":"MGCF/MGW", "description":"MGCFMGW Description", "objecttype":"MGCFMGW", "objectcount":2, "color":"#b8b881"},
+            {"key":"PCSFALG", "group":"IMS", "pos":"874.5625662199678 -301.269432487279", "icon":"server3",  "iconWidth":30, "iconHeight":40, "text":"P-CSCF", "description":"PCSFALG Description", "objecttype":"PCSFALG", "objectcount":1, "color":"#b8b881"},
+            {"key":"CSNetwork", "pos":"1237.1100286215712 -390.1186454382332", "icon":"cloud", "iconWidth":60, "iconHeight":40, "text":"CS-Network", "description":"CSNetwork Description", "objecttype":"CSNetwork", "objectcount":1, "color":"lightgray"},
+            {"key":"AAA", "group":"IMS", "icon":"server3",  "iconWidth":30, "iconHeight":40, "text":"AAA", "description":"AAA Description", "objecttype":"WifiAP", "objectcount":1, "color":"#b8b881", "pos":"952.1410277605472 -230.8536133103731"}
+            ],
+            "linkDataArray": [
+            {"from":"UE", "to":"enodeb1", "interface":"LTE", "protocol":"Uu", "altText":"LTE-Uu:91.86", "text":"LTE", "points":[-233.56282282399607,-431.1181257299038,-223.56282282399607,-431.1181257299038,-211.98282003926704,-431.1181257299038,-211.98282003926704,-294.4214877497607,-200.40281725453798,-294.4214877497607,-190.40281725453798,-294.4214877497607], "color":"#decb6d"},
+            {"from":"UE", "to":"enodeb2", "interface":"LTE", "altText":"LTE-Uu:99.18", "protocol":"Uu", "text":"LTE", "points":[-233.56282282399607,-446.8847923965705,-223.56282282399607,-446.8847923965705,-216.05281973409131,-446.8847923965705,-216.05281973409131,-550.8147469253791,-208.54281664418653,-550.8147469253791,-190.54281664418653,-550.8147469253791], "color":"#1ab394"},
+            {"from":"enodeb1", "to":"enodeb2", "interface":"X2", "altText":"X2-:97.48", "protocol":"", "text":"X2", "points":[-159.40281725453798,-306.2464877497607,-149.40281725453798,-306.2464877497607,-149.40281725453798,-418.67645067090325,-200.54281664418653,-418.67645067090325,-200.54281664418653,-535.0480802587125,-190.54281664418653,-535.0480802587125], "color":"#1ab394"},
+            {"from":"enodeb1", "to":"MME", "interface":"S1-MME", "altText":"S1-MME:86.92", "protocol":"S1AP", "text":"S1", "points":[-159.40281725453798,-294.4214877497607,-141.40281725453798,-294.4214877497607,-124.8631518045693,-294.4214877497607,-124.8631518045693,-445.7912559620033,-108.32348635460062,-445.7912559620033,-90.32348635460062,-445.7912559620033], "color":"#decb6d"},
+            {"from":"enodeb2", "to":"MME", "interface":"S1-MME", "altText":"S1-MME:96.12", "protocol":"S1AP", "text":"S1", "points":[-159.54281664418653,-550.8147469253791,-141.54281664418653,-550.8147469253791,-124.93315149939357,-550.8147469253791,-124.93315149939357,-455.25125596200325,-108.32348635460062,-455.25125596200325,-90.32348635460062,-455.25125596200325], "color":"#decb6d"},
+            {"from":"enodeb1", "to":"SGW", "interface":"S1-U", "altText":"S1-U:89.53", "protocol":"GTPV1-U", "text":"S1", "points":[-159.40281725453798,-282.5964877497607,-149.40281725453798,-282.5964877497607,-116.41315485632697,-282.5964877497607,-116.41315485632697,-257.5279372771076,-83.42349245811596,-257.5279372771076,-65.42349245811596,-257.5279372771076], "color":"#decb6d"},
+            {"from":"enodeb2", "to":"SGW", "interface":"S1-U", "altText":"S1-U:94.13", "protocol":"GTPV1-U", "text":"S1", "points":[-159.54281664418653,-535.0480802587125,-149.54281664418653,-535.0480802587125,-112.48315455115124,-535.0480802587125,-112.48315455115124,-273.2946039437743,-75.42349245811596,-273.2946039437743,-65.42349245811596,-273.2946039437743], "color":"#decb6d"},
+            {"from":"DiameterAgent", "to":"HSS", "interface":"S6a", "altText":"S6a-Diameter:92.41", "protocol":"Diameter", "text":"S6a", "points":[244.73657223914924,-525.6787846485265,254.73657223914927,-525.6787846485265,257.48004150390625,-525.6787846485265,257.48004150390625,-564.2000122070312,-94.51995849609375,-564.2000122070312,-94.51995849609375,-519.9879240681218,-93.7134704854601,-519.9879240681218,-75.7134704854601,-519.9879240681218], "color":"#decb6d"},
+            {"from":"DiameterAgent", "to":"MME", "interface":"S6a", "altText":"S6a-Diameter:84.92", "protocol":"Diameter", "text":"S6a", "points":[244.73657223914924,-490.20378464852655,254.73657223914927,-490.20378464852655,255.1600341796875,-490.20378464852655,255.1600341796875,-477.6800079345703,135.1600341796875,-477.6800079345703,135.1600341796875,-485.6800079345703,-96.8399658203125,-485.6800079345703,-96.8399658203125,-464.7112559620033,-100.32348635460062,-464.7112559620033,-90.32348635460062,-464.7112559620033], "color":"#ed5565"},
+            {"from":"DiameterAgent", "to":"PGW", "interface":"Gx", "altText":"Gx-Diameter:86.50", "protocol":"Diameter", "text":"Gx", "points":[244.73657223914924,-496.1162846485265,262.73657223914926,-496.1162846485265,262.73657223914926,-399.91127823983515,184.4064941141496,-399.91127823983515,184.4064941141496,-306.0712718311438,194.4064941141496,-306.0712718311438], "color":"#decb6d"},
+            {"from":"DiameterAgent", "to":"PCRF", "interface":"Gx", "altText":"Gx-Diameter:83.46", "protocol":"Diameter", "text":"Gx", "points":[244.73657223914924,-502.02878464852654,270.73657223914926,-502.02878464852654,368.4916228983292,-502.02878464852654,368.4916228983292,-329.40126084481573,466.2466735575091,-329.40126084481573,476.2466735575091,-329.40126084481573], "color":"#ed5565"},
+            {"from":"DiameterAgent", "to":"PCSFALG", "interface":"Rx", "altText":"Rx-Diameter:100.38", "protocol":"Diameter", "text":"Rx", "points":[244.73657223914924,-507.94128464852656,278.73657223914926,-507.94128464852656,284,-507.94128464852656,284,-507.94128464852656,532,-507.94128464852656,532,-301.269432487279,833.5625662199678,-301.269432487279,851.5625662199678,-301.269432487279], "color":"#1ab394"},
+            {"from":"DiameterAgent", "to":"ISCSCF", "interface":"Cx", "altText":"Cx-Diameter:96.04", "protocol":"Diameter", "text":"Cx", "points":[244.73657223914924,-513.8537846485266,286.73657223914926,-513.8537846485266,284,-513.8537846485266,284,-513.8537846485266,532,-513.8537846485266,532,-434.19898562786124,633.9872117845093,-434.19898562786124,643.9872117845093,-434.19898562786124], "color":"#decb6d"},
+            {"from":"DiameterAgent", "to":"TAS", "interface":"Sh", "altText":"Sh-Diameter:88.98", "protocol":"Diameter", "text":"Sh", "points":[244.73657223914924,-519.7662846485265,262.73657223914926,-519.7662846485265,268,-519.7662846485265,268,-519.7662846485265,532,-519.7662846485265,532,-541.5687760732657,548.0403491715754,-541.5687760732657,566.0403491715754,-541.5687760732657], "color":"#decb6d"},
+            {"from":"SGW", "to":"MME", "interface":"S11", "altText":"S11-GTPV2-C:81.99", "protocol":"GTPV2-C", "text":"S11", "points":[-32.42349245811596,-273.2946039437743,-22.42349245811596,-273.2946039437743,-22.42349245811596,-357.9662632862221,-100.32348635460062,-357.9662632862221,-100.32348635460062,-436.33125596200324,-90.32348635460062,-436.33125596200324], "color":"#ed5565"},
+            {"from":"SGW", "to":"PGW", "interface":"S5/S8", "altText":"S5/S8-GTPV2-C:85.39", "protocol":"GTPV2-C", "text":"S5/S8", "points":[-32.42349245811596,-257.5279372771076,-14.423492458115959,-257.5279372771076,76.99150082801682,-257.5279372771076,76.99150082801682,-296.61127183114376,168.4064941141496,-296.61127183114376,194.4064941141496,-296.61127183114376], "color":"#decb6d"},
+            {"from":"ISCSCF", "to":"PCSFALG", "interface":"Mw", "altText":"Mw-SIP:94.27", "protocol":"SIP", "text":"Mw", "points":[697.9872117845093,-418.43231896119454,707.9872117845093,-418.43231896119454,774.7748890022385,-418.43231896119454,774.7748890022385,-313.094432487279,841.5625662199678,-313.094432487279,851.5625662199678,-313.094432487279], "color":"#decb6d"},
+            {"from":"ISCSCF", "to":"TAS", "interface":"Ma", "altText":"Ma-SIP:91.40", "protocol":"SIP", "text":"Ma", "points":[697.9872117845093,-449.9656522945279,707.9872117845093,-449.9656522945279,707.9872117845093,-483.9422141838968,556.0403491715754,-483.9422141838968,556.0403491715754,-525.802109406599,566.0403491715754,-525.802109406599], "color":"#decb6d"},
+            {"from":"ISCSCF", "to":"MRF", "interface":"Mr", "altText":"Mr-SIP:83.62", "protocol":"SIP", "text":"Mr", "points":[697.9872117845093,-442.0823189611946,715.9872117845093,-442.0823189611946,927.5580675821211,-442.0823189611946,927.5580675821211,-533.4000853123445,1139.128923379733,-533.4000853123445,1149.128923379733,-533.4000853123445], "color":"#ed5565"},
+            {"from":"ISCSCF", "to":"BGCF", "interface":"Mi", "altText":"Mi-SIP:93.25", "protocol":"SIP", "text":"Mi", "points":[697.9872117845093,-434.19898562786124,723.9872117845093,-434.19898562786124,898.1018235982675,-434.19898562786124,898.1018235982675,-448.3003604553463,1072.2164354120257,-448.3003604553463,1082.2164354120257,-448.3003604553463], "color":"#decb6d"},
+            {"from":"ISCSCF", "to":"MGCFMGW", "interface":"Mg", "altText":"Mg-SIP:86.21", "protocol":"SIP", "text":"Mg", "points":[697.9872117845093,-426.31565229452786,715.9872117845093,-426.31565229452786,712.2100830078125,-426.31565229452786,712.2100830078125,-426.31565229452786,904.2100830078125,-426.31565229452786,904.2100830078125,-284.473644832353,1044.2911180636306,-284.473644832353,1062.2911180636306,-284.473644832353], "color":"#decb6d"},
+            {"from":"PGW", "to":"PCSFALG", "interface":"SGi", "altText":"SGi-Diameter:82.39", "protocol":"Diameter", "text":"SGi", "points":[228.4064941141496,-291.88127183114375,238.4064941141496,-291.88127183114375,238.4064941141496,-289.44443248727896,238.4064941141496,-289.44443248727896,825.5625662199678,-289.44443248727896,851.5625662199678,-289.44443248727896], "color":"#ed5565"},
+            {"from":"TAS", "to":"MRF", "interface":"Mr", "altText":"Mr-SIP:87.14", "protocol":"SIP", "text":"Mr", "points":[594.0403491715754,-533.6854427399323,604.0403491715754,-533.6854427399323,867.5846362756541,-533.6854427399323,867.5846362756541,-549.1667519790111,1131.128923379733,-549.1667519790111,1149.128923379733,-549.1667519790111], "color":"#decb6d"},
+            {"from":"BGCF", "to":"MGCFMGW", "interface":"Mj", "altText":"Mj-SIP:96.21", "protocol":"SIP", "text":"Mj", "points":[1119.2164354120257,-448.3003604553463,1129.2164354120257,-448.3003604553463,1129.2164354120257,-370.3286693105163,1052.2911180636306,-370.3286693105163,1052.2911180636306,-300.2403114990197,1062.2911180636306,-300.2403114990197], "color":"#decb6d"},
+            {"from":"MGCFMGW", "to":"CSNetwork", "interface":"BIS", "altText":"BID-C/ISUP/SIP-I:88.00", "protocol":"C/ISUP/SIP-I", "text":"BID", "points":[1139.2911180636306,-292.3569781656863,1149.2911180636306,-292.3569781656863,1168.9505733426008,-292.3569781656863,1168.9505733426008,-390.1186454382332,1188.6100286215712,-390.1186454382332,1198.6100286215712,-390.1186454382332], "color":"#decb6d"},
+            {"from":"AAA", "to":"ePDG", "interface":"SWm", "altText":"SWm-Diameter:99.37", "protocol":"Diameter", "text":"SWm", "points":[967.6410277605473,-219.02861331037303,993.6410277605473,-219.02861331037303,993.6410277605473,-262.50361331037305,311.4700927734375,-262.50361331037305,311.4700927734375,-228.9500366210938,321.4700927734375,-228.9500366210938], "color":"#1ab394"},
+            {"from":"AAA", "to":"PGW", "interface":"S6b", "altText":"S6b-Diameter:82.47", "protocol":"Diameter", "text":"S6b", "points":[967.6410277605473,-242.67861331037307,977.6410277605473,-242.67861331037307,977.6410277605473,-323.5312718311438,184.4064941141496,-323.5312718311438,184.4064941141496,-277.69127183114375,194.4064941141496,-277.69127183114375], "color":"#ed5565"},
+            {"from":"AAA", "to":"HSS", "interface":"SWx", "altText":"SWx-Diameter:84.13", "protocol":"Diameter", "text":"SWx", "points":[967.6410277605473,-230.85361331037305,985.6410277605473,-230.85361331037305,985.6410277605473,-379.3624353559141,-93.7134704854601,-379.3624353559141,-93.7134704854601,-535.7545907347885,-75.7134704854601,-535.7545907347885], "color":"#ed5565"},
+            {"from":"ePDG", "to":"PGW", "interface":"S2b", "altText":"S2b-GTPV2-C:82.87", "protocol":"GTPV2-C", "text":"S2b", "points":[359.4700927734375,-236.83336995442713,369.4700927734375,-236.83336995442713,369.4700927734375,-323.5312718311438,176.4064941141496,-323.5312718311438,176.4064941141496,-287.1512718311438,194.4064941141496,-287.1512718311438], "color":"#ed5565"},
+            {"from":"ePDG", "to":"WiFiAP", "interface":"SWu", "altText":"SWu-IPSec:94.54", "protocol":"IPSec", "text":"SWu", "points":[359.4700927734375,-236.83336995442713,377.4700927734375,-236.83336995442713,377.4700927734375,-197.3000366210938,-265.35316782786435,-197.3000366210938,-265.35316782786435,-235.74395801727334,-255.35316782786435,-235.74395801727334], "color":"#decb6d"}
+            ]}
+        </textarea>
+
+        <input type="button" ng-click="getJSON()" value="GetJSON" />
+        <input type="button" ng-click="setJSON()" value="SetJSON" />
+        <!--<input type="button" ng-click="changeNodeProperty()" value="changeNodeProperty" />-->
+        <!--<input type="button" onclick="setNetworkDiagram();" value="Draw Diagram" />-->
+        
+        Background Color:
+        <select id="cmbNodeBackgroundCategory">
+            <option value="RAN">RAN</option>
+            <option value="EPC">EPC</option>
+            <option value="IMS">IMS</option>
+        </select>
+        <input id="bgpicker" />
+        
+        Node Color:
+        <select id="cmbNodeCategory">
+            <option value="RAN">RAN</option>
+            <option value="EPC">EPC</option>
+            <option value="IMS">IMS</option>
+        </select>
+        <input id="picker" />
+
+        
+
+
+      
+    </div>
+</div>

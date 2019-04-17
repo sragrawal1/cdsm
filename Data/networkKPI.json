@@ -1,0 +1,423 @@
+﻿[
+{
+"date": "Date0",
+"data" : [
+  {
+    "kpiValue": 94.82,
+    "interfaceName": "Cx",
+    "protocolName": "Diameter",
+    "sourceName": "DiameterAgent",
+    "targetName": "ISCSCF"
+  },
+  {
+    "kpiValue": 95.84,
+    "interfaceName": "Gx",
+    "protocolName": "Diameter",
+    "sourceName": "DiameterAgent",
+    "targetName": "PCRF"
+  },
+  {
+    "kpiValue": 96.68,
+    "interfaceName": "Gx",
+    "protocolName": "Diameter",
+    "sourceName": "DiameterAgent",
+    "targetName": "PGW"
+  },
+  {
+    "kpiValue": 95.23,
+    "interfaceName": "Rx",
+    "protocolName": "Diameter",
+    "sourceName": "DiameterAgent",
+    "targetName": "PCSFALG"
+  },
+  {
+    "kpiValue": 94.58,
+    "interfaceName": "S11",
+    "protocolName": "GTPV2-C",
+    "sourceName": "SGW",
+    "targetName": "MME"
+  },
+  {
+    "kpiValue": 96.46,
+    "interfaceName": "S1-MME",
+    "protocolName": "S1AP",
+    "sourceName": "enodeb1",
+    "targetName": "MME"
+  },
+  {
+    "kpiValue": 93.11,
+    "interfaceName": "S1-MME",
+    "protocolName": "S1AP",
+    "sourceName": "enodeb2",
+    "targetName": "MME"
+  },
+  {
+    "kpiValue": 91.92,
+    "interfaceName": "BIS",
+    "protocolName": "C/ISUP/SIP-I",
+    "sourceName": "MGCFMGW",
+    "targetName": "CSNetwork"
+  },
+  {
+    "kpiValue": 98.38,
+    "interfaceName": "LTE",
+    "protocolName": "Uu",
+    "sourceName": "UE",
+    "targetName": "enodeb1"
+  },
+  {
+    "kpiValue":97.52,
+    "interfaceName": "LTE",
+    "protocolName": "Uu",
+    "sourceName": "UE",
+    "targetName": "enodeb2"
+  },
+  {
+    "kpiValue": 99.94,
+    "interfaceName": "Ma",
+    "protocolName": "SIP",
+    "sourceName": "ISCSCF",
+    "targetName": "TAS"
+  },
+  {
+    "kpiValue": 86.13,
+    "interfaceName": "Mg",
+    "protocolName": "SIP",
+    "sourceName": "ISCSCF",
+    "targetName": "MGCFMGW"
+  },
+  {
+    "kpiValue": 98.08,
+    "interfaceName": "Mi",
+    "protocolName": "SIP",
+    "sourceName": "ISCSCF",
+    "targetName": "BGCF"
+  },
+  {
+    "kpiValue": 94.67,
+    "interfaceName": "Mj",
+    "protocolName": "SIP",
+    "sourceName": "BGCF",
+    "targetName": "MGCFMGW"
+  },
+  {
+    "kpiValue": 98.24,
+    "interfaceName": "Mr",
+    "protocolName": "SIP",
+    "sourceName": "ISCSCF",
+    "targetName": "MRF"
+  },
+  {
+    "kpiValue": 98.71,
+    "interfaceName": "Mr",
+    "protocolName": "SIP",
+    "sourceName": "TAS",
+    "targetName": "MRF"
+  },
+  {
+    "kpiValue": 96.04,
+    "interfaceName": "Mw",
+    "protocolName": "SIP",
+    "sourceName": "ISCSCF",
+    "targetName": "PCSFALG"
+  },
+  {
+    "kpiValue": 98.41,
+    "interfaceName": "S1-U",
+    "protocolName": "GTPV1-U",
+    "sourceName": "enodeb1",
+    "targetName": "SGW"
+  },
+  {
+    "kpiValue": 96.16,
+    "interfaceName": "S1-U",
+    "protocolName": "GTPV1-U",
+    "sourceName": "enodeb2",
+    "targetName": "SGW"
+  },
+  {
+    "kpiValue": 95.25,
+    "interfaceName": "S2b",
+    "protocolName": "GTPV2-C",
+    "sourceName": "ePDG",
+    "targetName": "PGW"
+  },
+  {
+    "kpiValue": 94.99,
+    "interfaceName": "S5/S8",
+    "protocolName": "GTPV2-C",
+    "sourceName": "SGW",
+    "targetName": "PGW"
+  },
+  {
+    "kpiValue": 97.56,
+    "interfaceName": "S6a",
+    "protocolName": "Diameter",
+    "sourceName": "DiameterAgent",
+    "targetName": "HSS"
+  },
+  {
+    "kpiValue": 99.72,
+    "interfaceName": "S6a",
+    "protocolName": "Diameter",
+    "sourceName": "DiameterAgent",
+    "targetName": "MME"
+  },
+  {
+    "kpiValue": 96.65,
+    "interfaceName": "S6b",
+    "protocolName": "Diameter",
+    "sourceName": "AAA",
+    "targetName": "PGW"
+  },
+  {
+    "kpiValue": 98.89,
+    "interfaceName": "SGi",
+    "protocolName": "Diameter",
+    "sourceName": "PGW",
+    "targetName": "PCSFALG"
+  },
+  {
+    "kpiValue": 96.36,
+    "interfaceName": "Sh",
+    "protocolName": "Diameter",
+    "sourceName": "DiameterAgent",
+    "targetName": "TAS"
+  },
+  {
+    "kpiValue": 97.97,
+    "interfaceName": "SWm",
+    "protocolName": "Diameter",
+    "sourceName": "AAA",
+    "targetName": "ePDG"
+  },
+  {
+    "kpiValue": 97.41,
+    "interfaceName": "SWu",
+    "protocolName": "IPSec",
+    "sourceName": "ePDG",
+    "targetName": "WiFiAP"
+  },
+  {
+    "kpiValue": 94.11,
+    "interfaceName": "SWx",
+    "protocolName": "Diameter",
+    "sourceName": "AAA",
+    "targetName": "HSS"
+  }
+]
+
+},
+{
+"date": "Date1",
+"data" : [
+  {
+    "kpiValue": 96.07,
+    "interfaceName": "Cx",
+    "protocolName": "Diameter",
+    "sourceName": "DiameterAgent",
+    "targetName": "ISCSCF"
+  },
+  {
+    "kpiValue": 95.7,
+    "interfaceName": "Gx",
+    "protocolName": "Diameter",
+    "sourceName": "DiameterAgent",
+    "targetName": "PCRF"
+  },
+  {
+    "kpiValue": 95.7,
+    "interfaceName": "Gx",
+    "protocolName": "Diameter",
+    "sourceName": "DiameterAgent",
+    "targetName": "PGW"
+  },
+  {
+    "kpiValue": 95.66,
+    "interfaceName": "Rx",
+    "protocolName": "Diameter",
+    "sourceName": "DiameterAgent",
+    "targetName": "PCSFALG"
+  },
+  {
+    "kpiValue": 96.3,
+    "interfaceName": "S11",
+    "protocolName": "GTPV2-C",
+    "sourceName": "SGW",
+    "targetName": "MME"
+  },
+  {
+    "kpiValue": 95.93,
+    "interfaceName": "S1-MME",
+    "protocolName": "S1AP",
+    "sourceName": "enodeb1",
+    "targetName": "MME"
+  },
+  {
+    "kpiValue": 95.93,
+    "interfaceName": "S1-MME",
+    "protocolName": "S1AP",
+    "sourceName": "enodeb2",
+    "targetName": "MME"
+  },
+  {
+    "kpiValue": 96.44,
+    "interfaceName": "BIS",
+    "protocolName": "C/ISUP/SIP-I",
+    "sourceName": "MGCFMGW",
+    "targetName": "CSNetwork"
+  },
+  {
+    "kpiValue": 95.97,
+    "interfaceName": "LTE",
+    "protocolName": "Uu",
+    "sourceName": "UE",
+    "targetName": "enodeb1"
+  },
+  {
+    "kpiValue": 95.97,
+    "interfaceName": "LTE",
+    "protocolName": "Uu",
+    "sourceName": "UE",
+    "targetName": "enodeb2"
+  },
+  {
+    "kpiValue": 96.23,
+    "interfaceName": "Ma",
+    "protocolName": "SIP",
+    "sourceName": "ISCSCF",
+    "targetName": "TAS"
+  },
+  {
+    "kpiValue": 95.87,
+    "interfaceName": "Mg",
+    "protocolName": "SIP",
+    "sourceName": "ISCSCF",
+    "targetName": "MGCFMGW"
+  },
+  {
+    "kpiValue": 96.5,
+    "interfaceName": "Mi",
+    "protocolName": "SIP",
+    "sourceName": "ISCSCF",
+    "targetName": "BGCF"
+  },
+  {
+    "kpiValue": 96.13,
+    "interfaceName": "Mj",
+    "protocolName": "SIP",
+    "sourceName": "BGCF",
+    "targetName": "MGCFMGW"
+  },
+  {
+    "kpiValue": 95.77,
+    "interfaceName": "Mr",
+    "protocolName": "SIP",
+    "sourceName": "ISCSCF",
+    "targetName": "MRF"
+  },
+  {
+    "kpiValue": 95.77,
+    "interfaceName": "Mr",
+    "protocolName": "SIP",
+    "sourceName": "TAS",
+    "targetName": "MRF"
+  },
+  {
+    "kpiValue": 96.03,
+    "interfaceName": "Mw",
+    "protocolName": "SIP",
+    "sourceName": "ISCSCF",
+    "targetName": "PCSFALG"
+  },
+  {
+    "kpiValue": 96.2,
+    "interfaceName": "S1-U",
+    "protocolName": "GTPV1-U",
+    "sourceName": "enodeb1",
+    "targetName": "SGW"
+  },
+  {
+    "kpiValue": 96.2,
+    "interfaceName": "S1-U",
+    "protocolName": "GTPV1-U",
+    "sourceName": "enodeb2",
+    "targetName": "SGW"
+  },
+  {
+    "kpiValue": 96.46,
+    "interfaceName": "S2b",
+    "protocolName": "GTPV2-C",
+    "sourceName": "ePDG",
+    "targetName": "PGW"
+  },
+  {
+    "kpiValue": 96.09,
+    "interfaceName": "S5/S8",
+    "protocolName": "GTPV2-C",
+    "sourceName": "SGW",
+    "targetName": "PGW"
+  },
+  {
+    "kpiValue": 95.73,
+    "interfaceName": "S6a",
+    "protocolName": "Diameter",
+    "sourceName": "DiameterAgent",
+    "targetName": "HSS"
+  },
+  {
+    "kpiValue": 95.73,
+    "interfaceName": "S6a",
+    "protocolName": "Diameter",
+    "sourceName": "DiameterAgent",
+    "targetName": "MME"
+  },
+  {
+    "kpiValue": 95.99,
+    "interfaceName": "S6b",
+    "protocolName": "Diameter",
+    "sourceName": "AAA",
+    "targetName": "PGW"
+  },
+  {
+    "kpiValue": 95.63,
+    "interfaceName": "SGi",
+    "protocolName": "Diameter",
+    "sourceName": "PGW",
+    "targetName": "PCSFALG"
+  },
+  {
+    "kpiValue": 96.26,
+    "interfaceName": "Sh",
+    "protocolName": "Diameter",
+    "sourceName": "DiameterAgent",
+    "targetName": "TAS"
+  },
+  {
+    "kpiValue": 95.89,
+    "interfaceName": "SWm",
+    "protocolName": "Diameter",
+    "sourceName": "AAA",
+    "targetName": "ePDG"
+  },
+  {
+    "kpiValue": 96.53,
+    "interfaceName": "SWu",
+    "protocolName": "IPSec",
+    "sourceName": "ePDG",
+    "targetName": "WiFiAP"
+  },
+  {
+    "kpiValue": 96.16,
+    "interfaceName": "SWx",
+    "protocolName": "Diameter",
+    "sourceName": "AAA",
+    "targetName": "HSS"
+  }
+]
+
+}
+
+]
+
+

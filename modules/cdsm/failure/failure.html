@@ -1,0 +1,62 @@
+﻿<div ng-controller="failureController">
+    <div id="page-wrapper1" class="gray-bg">
+        <div class="wrapper wrapper-content animated fadeInRight">
+            <div class="row" id="failureTop">
+                <div class="col-md-4">
+                    <div class="ibox float-e-margins">
+                        <div class="ibox-title">
+                            <h5>Error Code Distribution : VoLTE Service</h5>
+                        </div>
+                        <div class="ibox-content" style="height:300px;">
+                            <div>
+                                <div id="CNErrorCodeDistribution" kendo-chart k-options="CNErrorCodeDistributionChartOptions" k-rebind="CNErrorCodeDistributionChartOptions" style="height:300px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="ibox float-e-margins">
+                        <div class="ibox-title">
+                            <h5>Error Code Distribution : RAN</h5>
+                        </div>
+                        <div class="ibox-content" style="height:300px;">
+                            <div>
+                                <div id="RANErrorCodeDistribution" kendo-chart k-options="RANErrorCodeDistributionChartOptions" k-rebind="RANErrorCodeDistributionChartOptions" style="height:300px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="ibox float-e-margins">
+                        <div class="ibox-title">
+                            <h5>Problem Domain Categorization</h5>
+                        </div>
+                        <div class="ibox-content" style="min-height:300px;width:100%;" id="sanKeyChart">
+                            <div ng-include="'modules/cdsm/sanKey/sanKey.html'" style="margin-top:0px;"></div>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-12">
+                        <div class="ibox-title">
+                            <h5>Network View</h5>
+                            <div class="ibox-tools">
+                                <a class="fullscreen-link">
+                                    <i ng-class="diagramMode == 'expand' ? 'fa fa-expand' : 'fa fa-compress'" ng-click="diagramFullScreen(diagramMode)"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="ibox-content">
+                            <div ng-include="'modules/cdsm/networkdiagram/networkDiagram.html'"></div>
+                        </div>
+                   
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

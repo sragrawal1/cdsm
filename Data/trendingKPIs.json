@@ -1,0 +1,187 @@
+{
+  "lte": {
+    "callfailure": 95.58,
+    "callsetupsuccess": 94.03,
+    "dlthroughput": 14.21,
+    "mobility": 95.11,
+    "ulthroughput": 2.60
+  },
+  "defaultChartPanels": [
+    {
+      "id": 1,
+      "title": "Chart No: 1",
+      "kpis": [
+        {
+          "kpiId": 10,
+          "kpiName": "AbortSession_Attempts",
+          "kpiDisplayName": "AbortSession Attempts",
+          "protocolName": "Diameter",
+          "color": "#1B9DDE",
+          "chartType": "column",
+          "showLabel": false,
+          "chartAxis": "YOne"
+        },
+        {
+          "kpiId": 11,
+          "kpiName": "AbortSession_Failures",
+          "kpiDisplayName": "AbortSession Failures",
+          "protocolName": "Diameter",
+          "color": "#84C63E",
+          "chartType": "column",
+          "showLabel": false,
+          "chartAxis": "YTwo"
+        }
+      ],
+      "chartAxisOptions": [
+        {
+          "name": "YOne",
+          "isAutoScale": true,
+          "color": "#1B9DDE",
+          "min": 0,
+          "max": 100
+        },
+        {
+          "name": "YTwo",
+          "isAutoScale": true,
+          "color": "#84C63E",
+          "min": 0,
+          "max": 100
+        }
+      ],
+      "chartAxisDateFormat": "Auto",
+      "$$hashKey": "object:8"
+    },
+    {
+      "id": 2,
+      "title": "Chart No: 2",
+      "kpis": [
+        {
+          "kpiId": 30,
+          "kpiName": "CreateBearer_Attempts",
+          "kpiDisplayName": "CreateBearer Attempts",
+          "protocolName": "GTPV2-C",
+          "color": "#1B9DDE",
+          "chartType": "column",
+          "showLabel": false,
+          "chartAxis": "YOne"
+        },
+        {
+          "kpiId": 31,
+          "kpiName": "CreateBearer_Failures",
+          "kpiDisplayName": "CreateBearer Failures",
+          "protocolName": "GTPV2-C",
+          "color": "#84C63E",
+          "chartType": "column",
+          "showLabel": false,
+          "chartAxis": "YTwo"
+        }
+      ],
+      "chartAxisOptions": [
+        {
+          "name": "YOne",
+          "isAutoScale": true,
+          "color": "#1B9DDE",
+          "min": 0,
+          "max": 100
+        },
+        {
+          "name": "YTwo",
+          "isAutoScale": true,
+          "color": "#84C63E",
+          "min": 0,
+          "max": 100
+        }
+      ],
+      "chartAxisDateFormat": "Auto",
+      "$$hashKey": "object:9"
+    },
+    {
+      "id": 3,
+      "title": "Chart No: 3",
+      "kpis": [
+        {
+          "kpiId": 50,
+          "kpiName": "DedicatedEPSBearerContextActivation_Attempts",
+          "kpiDisplayName": "DedicatedEPSBearerContextActivation Attempts",
+          "protocolName": "S1AP",
+          "color": "#1B9DDE",
+          "chartType": "line",
+          "showLabel": false,
+          "chartAxis": "YOne"
+        },
+        {
+          "kpiId": 51,
+          "kpiName": "DedicatedEPSBearerContextActivation_Failures",
+          "kpiDisplayName": "DedicatedEPSBearerContextActivation Failures",
+          "protocolName": "S1AP",
+          "color": "#84C63E",
+          "chartType": "column",
+          "showLabel": false,
+          "chartAxis": "YTwo"
+        }
+      ],
+      "chartAxisOptions": [
+        {
+          "name": "YOne",
+          "isAutoScale": true,
+          "color": "#1B9DDE",
+          "min": 0,
+          "max": 100
+        },
+        {
+          "name": "YTwo",
+          "isAutoScale": true,
+          "color": "#84C63E",
+          "min": 0,
+          "max": 100
+        }
+      ],
+      "chartAxisDateFormat": "Auto",
+      "$$hashKey": "object:10"
+    },
+    {
+      "id": 4,
+      "title": "Chart No: 4",
+      "kpis": [
+        {
+          "kpiId": 70,
+          "kpiName": "Average_Registration_Request_Delay",
+          "kpiDisplayName": "Average Registration Request Delay",
+          "protocolName": "SIP",
+          "color": "#1B9DDE",
+          "chartType": "column",
+          "showLabel": false,
+          "chartAxis": "YOne"
+        },
+        {
+          "kpiId": 72,
+          "kpiName": "Call_Drop_Rate",
+          "kpiDisplayName": "Call Drop Rate",
+          "protocolName": "SIP",
+          "color": "#84C63E",
+          "chartType": "column",
+          "showLabel": false,
+          "chartAxis": "YTwo"
+        }
+      ],
+      "chartAxisOptions": [
+        {
+          "name": "YOne",
+          "isAutoScale": true,
+          "color": "#1B9DDE",
+          "min": 0,
+          "max": 100
+        },
+        {
+          "name": "YTwo",
+          "isAutoScale": true,
+          "color": "#84C63E",
+          "min": 0,
+          "max": 100
+        }
+      ],
+      "chartAxisDateFormat": "Auto",
+      "$$hashKey": "object:11"
+    }
+  ]
+}

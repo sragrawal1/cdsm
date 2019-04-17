@@ -1,0 +1,376 @@
+﻿<div ng-controller="dashboardController">
+
+    <div class="row">
+        <div class="col-md-8">
+            <div class="ibox-title">
+                <h5>KPI Overview</h5>
+            </div>
+            <div class="ibox-content">
+                <!-- Widgets -->
+                <div class="row">
+                    <div class="col-md-1">
+                        <h2 class="font-bold" style="margin-top:35px">LTE</h2>
+                    </div>
+                    <div class="col-md-2">
+
+                        <div class="widget style1 navy-bg">
+                            <div class="row vertical-align">
+                                <!--<div class="col-xs-3">
+                                    <i class="fa fa-rss fa-3x"></i>
+                                </div>-->
+                                <div class="col-xs-9 text-right">
+                                    <h2 class="font-bold">{{lte.accessibility}}</h2>
+                                    <h4 class="font-bold">Call Setup Success(%)</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-2">
+                        <div class="widget style1 navy-bg">
+                            <div class="row vertical-align">
+                                <!--<div class="col-xs-3">
+                                    <i class="fa fa-rss fa-3x"></i>
+                                </div>-->
+                                <div class="col-xs-9 text-right">
+                                    <h2 class="font-bold">{{lte.retainability}}</h2>
+                                    <h4 class="font-bold">Call Failure(%)</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-2">
+                        <div class="widget style1 navy-bg">
+                            <div class="row vertical-align">
+                                <div class="col-xs-12 text-center">
+                                    <h2 class="font-bold">{{lte.mobility}}</h2>
+                                    <h4 class="font-bold">Mobility(%)</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2" align="center">
+                        <div class="widget style1 navy-bg">
+                            <div class="row vertical-align">
+                                <div class="col-xs-12 text-center">
+                                    <h2 class="font-bold">{{lte.serviceintegrity}}</h2>
+                                    <h4 class="font-bold">UL Throughput(mbps)</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <!--<div id="sparkline2" style="height: 70px;vertical-align: middle;"></div>-->
+                    </div>
+
+
+                    <div class="col-md-2" align="center">
+                        <div class="widget style1 navy-bg">
+                            <div class="row vertical-align">
+                                <div class="col-xs-12 text-center">
+                                    <h2 class="font-bold">{{lte.serviceintegrity}}</h2>
+                                    <h4 class="font-bold">new kpi</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <!--<div id="sparkline2" style="height: 70px;vertical-align: middle;"></div>-->
+                    </div>
+
+                    <div class="col-md-1">
+                        <!--<img src="../../../img/sparkline.jpg" style="margin-top:30px" />-->
+                        <!--<div kendo-chart k-options="failureChart" k-rebind="failureChart" style="height:100px;width:100%"  />-->
+                        <div id="divLTESpark" style="height:70px;margin-top:10px"></div>
+                        Call Failures
+                    </div>
+
+
+                    <!--<div class="col-md-2">-->
+                    <!--<div class="pull-right text-right">
+
+            <span class="bar_dashboard">5,3,9,6,5,9,7,3,5,2,4,7,3,2,7,9,6,4,5,7,3,2,1,0,9,5,6,8,3,2,1</span>
+            <br />
+            <small class="font-bold">$ 20 054.43</small>
+        </div>-->
+                    <!--<div data-diameter="40" class="updating-chart">5,3,9,6,5,9,7,3,5,2,5,3,9,6,5,9,4,7,3,2,9,8,7,4,5,1,2,9,5,4,7,2,7,7,3,5,2</div>-->
+                    <!--<div class="widget style1 navy-bg" >
+            <h5>Visits week</h5>
+            <h2>65 000</h2>
+            <div id="sparkline2" style="height: 25px;"></div>
+        </div>-->
+                    <!--</div>-->
+                    <!--<div class="col-md-2">
+            <div class="center-block"><canvas id="doughnutChart" width="78" height="78"></canvas>
+            <h5>Maxtor</h5>
+            </div>
+
+        </div>-->
+
+
+                </div>
+
+                <div class="row">
+                    <div>
+                        <div class="col-md-1">
+                            <h2 class="font-bold" style="margin-top:35px">VoLTE</h2>
+                        </div>
+                        <div class="col-md-2">
+
+                            <div class="widget style1 yellow-bg">
+                                <div class="row vertical-align">
+                                    <!--<div class="col-xs-3">
+                                        <i class="fa fa-shield fa-3x"></i>
+                                    </div>-->
+                                    <div class="col-xs-9 text-right">
+                                        <h2 class="font-bold">{{volte.seer}}</h2>
+                                        <h4 class="font-bold">Session Establishment Effectiveness(%)</h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-2">
+                            <div class="widget style1 yellow-bg">
+                                <div class="row vertical-align">
+                                    <!--<div class="col-xs-3">
+                                        <i class="fa fa-shield fa-3x"></i>
+                                    </div>-->
+                                    <div class="col-xs-9 text-right">
+                                        <h2 class="font-bold">{{volte.scr}}</h2>
+                                        <h4 class="font-bold">SCR</h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-2">
+                            <div class="widget style1 yellow-bg">
+                                <div class="row vertical-align">
+                                    <div class="col-xs-12 text-center">
+                                        <h2 class="font-bold">{{volte.sdr}}</h2>
+                                        <h4 class="font-bold">SDR</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="widget style1 yellow-bg">
+                                <div class="row vertical-align">
+                                    <div class="col-xs-12 text-center">
+                                        <h2 class="font-bold">{{volte.callsetuptime}}</h2>
+                                        <h4 class="font-bold">Call Setup Time</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--<div id="sparkline2" style="height: 70px;vertical-align: middle;"></div>-->
+                        </div>
+
+                        <div class="col-md-2" align="center">
+                            <div class="widget style1 navy-bg">
+                                <div class="row vertical-align">
+                                    <div class="col-xs-12 text-center">
+                                        <h2 class="font-bold">{{lte.serviceintegrity}}</h2>
+                                        <h4 class="font-bold">new kpi</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--<div id="sparkline2" style="height: 70px;vertical-align: middle;"></div>-->
+                        </div>
+                        <div class="col-md-1">
+                            <!--<img src="../../../img/sparkline.jpg" style="margin-top:30px" />-->
+                            <div id="divVoLTESpark" style="height:70px;width:50px;margin-top:10px"></div>
+                           Session Failures
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div>
+                        <div class="col-md-1">
+                            <h2 class="font-bold" style="margin-top:35px">VoWifi</h2>
+                        </div>
+                        <div class="col-md-2">
+
+                            <div class="widget style1 lazur-bg">
+                                <div class="row vertical-align">
+                                    <div class="col-xs-3">
+                                        <i class="fa fa-mobile-phone fa-3x"></i>
+                                    </div>
+                                    <div class="col-xs-9 text-right">
+                                        <h2 class="font-bold">{{vowifi.accessibility}}</h2>
+                                        <h4 class="font-bold">Accessibility</h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-2">
+                            <div class="widget style1 lazur-bg">
+                                <div class="row vertical-align">
+                                    <div class="col-xs-3">
+                                        <i class="fa fa-mobile-phone fa-3x"></i>
+                                    </div>
+                                    <div class="col-xs-9 text-right">
+                                        <h2 class="font-bold">{{vowifi.retainability}}</h2>
+                                        <h4 class="font-bold">Retainability</h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-2">
+                            <div class="widget style1 lazur-bg">
+                                <div class="row vertical-align">
+                                    <div class="col-xs-12 text-center">
+                                        <h2 class="font-bold">{{vowifi.calldrops}}</h2>
+                                        <h4 class="font-bold">Call Drops</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="widget style1 lazur-bg">
+                                <div class="row vertical-align">
+                                    <div class="col-xs-12 text-center">
+                                        <h2 class="font-bold">{{vowifi.callingratio}}</h2>
+                                        <h4 class="font-bold">MO/MT Wifi</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--<div id="sparkline2" style="height: 70px;vertical-align: middle;"></div>-->
+                        </div>
+
+                        <div class="col-md-2" align="center">
+                            <div class="widget style1 navy-bg">
+                                <div class="row vertical-align">
+                                    <div class="col-xs-12 text-center">
+                                        <h2 class="font-bold">{{lte.serviceintegrity}}</h2>
+                                        <h4 class="font-bold">new kpi</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--<div id="sparkline2" style="height: 70px;vertical-align: middle;"></div>-->
+                        </div>
+
+                        <div class="col-md-1">
+                            <!--<img src="../../../img/sparkline.jpg" style="margin-top:30px" />-->
+                            <div id="divVoWifiSpark" style="height:70px;width:20px;margin-top:10px"></div>
+                            Call Drops
+                        </div>
+                    </div>
+                </div>   
+            
+             </div>
+
+               
+
+
+            </div>
+
+
+        <div class="col-md-4">
+            <div class="animated bounceInRight">
+                <div class="ibox-title">
+                    <h5>Network Score</h5>
+                </div>
+                <div class="ibox-content">
+                    <div class="animated flipInY">
+                        <div id="scoreChart" style="height:300px;margin-top:20px"></div>
+                     </div>
+                        <!--<div class="animated flipInY">
+            <div>
+                <span>Core Network KPI</span>
+                <small class="pull-right">10/200</small>
+            </div>
+            <div class="progress progress-small">
+                <div style="width: 60%;" class="progress-bar"></div>
+            </div>
+
+
+            <div>
+                <span>Accesibility</span>
+                <small class="pull-right">96/100</small>
+            </div>
+            <div class="progress progress-small">
+                <div style="width: 96%;" class="progress-bar"></div>
+            </div>
+
+            <div>
+                <span>RAN Issues</span>
+                <small class="pull-right">20 </small>
+            </div>
+            <div class="progress progress-small">
+                <div style="width: 50%;" class="progress-bar"></div>
+            </div>
+            <div>
+                <span>Core Network KPI 3</span>
+                <small class="pull-right">73%</small>
+            </div>
+            <div class="progress progress-small">
+                <div style="width: 40%;" class="progress-bar"></div>
+            </div>
+            <div>
+                <span>Alarms</span>
+                <small class="pull-right">400</small>
+            </div>
+            <div class="progress progress-small">
+                <div style="width: 20%;" class="progress-bar progress-bar-danger"></div>
+            </div>
+        </div>-->
+                    </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Network View</h5>
+                    <div class="ibox-tools">
+
+                        <a class="fullscreen-link" data-toggle="dropdown" href="#">
+                            <i class="fa fa-expand"></i>
+                        </a>
+
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <i class="fa fa-wrench"></i>
+                        </a>
+
+                        <ul class="dropdown-menu dropdown-user">
+                            <li>
+                                <a href="#">Config option 1</a>
+                            </li>
+                            <li>
+                                <a href="#">Config option 2</a>
+                            </li>
+                        </ul>
+
+                        <!--<a class="close-link">
+                            <i class="fa fa-times"></i>
+                        </a>-->
+                    </div>
+                </div>
+                <div class="ibox-content" align="center" >
+                    <!--<h2>Word map</h2>
+                    <small>This is simple example of map</small>-->
+                    <!-- <div id="world-map" style="height: 300px;"></div>-->
+                    <!-- style="width:1300px; height:450px" -->
+                    <!--<div ng-include="'Diagram.html'"></div>-->
+                    <div ng-include="'modules/cdsm/networkdiagram/networkDiagram.html'"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+   
+   
+
+</body>
+</html>-->

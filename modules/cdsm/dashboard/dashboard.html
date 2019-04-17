@@ -1,0 +1,134 @@
+﻿<div ng-controller="dashboardController">
+    <div id="page-wrapper1" class="gray-bg">
+        <div class="wrapper wrapper-content"> 
+            <div class="row" id="dashboardTop">
+                <div class="col-md-7">
+                    <div class="ibox-title">
+                        <h5>KPI</h5>
+                    </div>
+                    <div class="ibox-content" style="min-height:230px" id="divTechnologyKPI">
+                        <div class="row">
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2">
+                                <h2 class="font-bold" style="margin-top:5px">VoLTE RAN</h2>
+                            </div>
+                            <div class="col-md-2" ng-repeat="techkpi in technologyKPIs | filter:{ technology: 'VoLTE RAN'} : true">
+
+
+                                <div class="widget style1 navy-bg" data-toggle="tooltip" data-placement="left" title="{{techkpi.description}}">
+                                    <div class="row vertical-align">
+                                        <div class="col-xs-12 text-center">
+                                            <h2 class="font-bold">{{techkpi.value | number:2}}</h2>
+                                            <h4 class="font-bold">{{techkpi.shortName}}</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-2">
+                                <h2 class="font-bold" style="margin-top:5px">VoLTE</h2>
+                            </div>
+                            <div class="col-md-2" ng-repeat="techkpi in technologyKPIs | filter:{ technology: 'VoLTE'} : true">
+
+
+                                <div class="widget style1 yellow-bg" data-toggle="tooltip" data-placement="left" title="{{techkpi.description}}">
+                                    <div class="row vertical-align">
+                                        <div class="col-xs-12 text-center">
+                                            <h2 class="font-bold">{{techkpi.value | number:2}}</h2>
+                                            <h4 class="font-bold">{{techkpi.shortName}}</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-2">
+                                <h2 class="font-bold" style="margin-top:5px">VoWifi</h2>
+                            </div>
+                            <div class="col-md-2" ng-repeat="techkpi in technologyKPIs | filter:{ technology: 'VoWifi'} : true">
+                                <div class="widget style1 lazur-bg" data-toggle="tooltip" data-placement="left" title="{{techkpi.description}}">
+                                    <div class="row vertical-align">
+                                        <div class="col-xs-12 text-center">
+                                            <h2 class="font-bold">{{techkpi.value | number:2}}</h2>
+                                            <h4 class="font-bold">{{techkpi.shortName}}</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2">
+                    <div class="animated bounceInRight">
+                        <div class="ibox-title">
+                            <h5>Failures</h5>
+                        </div>
+                        <div class="ibox-content" style="min-height:230px" id="divNetworkFailure">
+                            <div class="animated flipInY">
+                                <div class="row" style="margin-top:0px">
+                                    <div class="col-md-12">
+                                        <div id="divLTESpark" style="height: 50px; width: 100%; margin-top: 10px;" class="k-sparkline"></div>
+                                        <br /><span class="small text-muted">Call Failures</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div id="divVoLTESpark" style="height: 50px; width: 100%; margin-top: 10px;" class="k-sparkline"></div>
+                                        <br /><span class="small text-muted">Session Failures</span>
+</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div id="divVoWifiSpark" style="height: 50px; width: 100%; margin-top: 10px;" class="k-sparkline"></div>
+                                        <br /><span class="small text-muted">Association Failures</span>
+</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-3">
+                    <div class="animated bounceInRight">
+                        <div class="ibox-title">
+                            <h5>Network Score</h5>
+                        </div>
+                        <div class="ibox-content">
+                            <div class="animated flipInY">
+                                <div id="scoreChart" style="height: 230px; margin-top: 0px" kendo-chart k-options="networkScoreChartOptions" k-rebind="networkScoreChartOptions"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                        <div class="ibox-title">
+                            <h5>Network View</h5>
+                            <div class="ibox-tools">
+                                <a class="fullscreen-link" >
+                                    <i ng-class="diagramMode == 'expand' ? 'fa fa-expand' : 'fa fa-compress'" ng-click="diagramFullScreen(diagramMode)"></i>
+                                     
+                                </a>
+                            </div>
+                        </div>
+                        <div class="ibox-content">
+                            <div ng-include="'modules/cdsm/networkdiagram/networkDiagram.html'"></div>
+                        </div>
+                    
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    
+</div>
+

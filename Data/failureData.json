@@ -1,0 +1,398 @@
+[
+{
+  "date": "Date0",
+  "RANErrorDistribution": [
+    {
+      "category": "High Inteference",
+      "value": 9
+    },
+    {
+      "category": "MAC Random Access Problem",
+      "value": 7
+    },
+    {
+      "category": "Missing Neighbor",
+      "value": 7
+    },
+    {
+      "category": "Poor Coverage",
+      "value": 12
+    },
+    {
+      "category": "T300 Expired",
+      "value": 5
+    },
+    {
+      "category": "T301 Expired",
+      "value": 3
+    },
+    {
+      "category": "T310 Expired",
+      "value": 2
+    },
+    {
+      "category": "T311 Expired",
+      "value": 9
+    },
+    {
+      "category": "500",
+      "value": 10
+    },
+    {
+      "category": "503",
+      "value": 1
+    },
+	{
+      "category": "Others",
+      "value": 4
+    }
+
+  ],
+  "CNErrorCodeDistribution": [
+    {
+      "category": "403_service Forbidden",
+      "value": 4
+    },
+    {
+      "category": "480_Tempararily Unavailable",
+      "value": 4
+    },
+    {
+      "category": "487_Request Terminated",
+      "value": 1
+    },
+    {
+      "category": "500_Service Terminal Error",
+      "value": 11
+    },
+    {
+      "category": "503_Service Unavailable",
+      "value": 14
+    },
+    {
+      "category": "504_service Time-Out",
+      "value": 2
+    }
+  ],
+  "sanKeynodeData": [
+    {
+      "key": "IMS",
+      "text": "IMS",
+      "domain": "IMS",
+      "color": "#6FF3F7",
+      "pos": "-273.56282282399604 -411.0014590632372",
+      "height": 33
+    },
+    {
+      "key": "EPC",
+      "text": "EPC",
+      "domain": "EPC",
+      "color": "#f8ac59",
+      "pos": "-272.56282282399604 -317.0014590632372",
+      "height": 18
+    },
+    {
+      "key": "RAN",
+      "text": "RAN",
+      "domain": "RAN",
+      "color": "#1ab394",
+      "pos": "-273.56282282399604 -206.00145906323718",
+      "height": 51
+    },
+    {
+      "key": "EPC2",
+      "ltext": "EPC",
+      "domain": "EPC",
+      "color": "#f8ac59",
+      "pos": "212.43717717600396 -208.00145906323718",
+      "height": 6
+    },
+    {
+      "key": "RAN2",
+      "ltext": "RAN",
+      "domain": "RAN",
+      "color": "#1ab394",
+      "pos": "210.43717717600393 -337.0014590632372",
+      "height": 67
+    },
+    {
+      "key": "IMS2",
+      "ltext": "IMS",
+      "domain": "IMS",
+      "color": "#6FF3F7",
+      "pos": "212.43717717600393 -409.0014590632372",
+      "height": 15
+    },
+    {
+      "key": "Others2",
+      "ltext": "Others MSC/PSTN",
+      "domain": "OTHERS",
+      "color": "#F37892",
+      "pos": "211.43717717600393 -270.0014590632372",
+      "height": 14
+    }
+  ],
+  "sanKeyLinkData": [
+    {
+      "from": "IMS",
+      "to": "RAN2",
+      "width": 10,
+      "tooltiptext": "10"
+    },
+    {
+      "from": "IMS",
+      "to": "EPC2",
+      "width": 3,
+      "tooltiptext": "3"
+    },
+    {
+      "from": "IMS",
+      "to": "IMS2",
+      "width": 10,
+      "tooltiptext": "10"
+    },
+    {
+      "from": "IMS",
+      "to": "Others2",
+      "width": 10,
+      "tooltiptext": "10"
+    },
+    {
+      "from": "EPC",
+      "to": "RAN2",
+      "width": 7,
+      "tooltiptext": "7"
+    },
+    {
+      "from": "EPC",
+      "to": "EPC2",
+      "width": 2,
+      "tooltiptext": "2"
+    },
+    {
+      "from": "EPC",
+      "to": "IMS2",
+      "width": 5,
+      "tooltiptext": "5"
+    },
+    {
+      "from": "EPC",
+      "to": "Others2",
+      "width": 4,
+      "tooltiptext": "4"
+    },
+    {
+      "from": "RAN",
+      "to": "RAN2",
+      "width": 50,
+      "tooltiptext": "50"
+    },
+    {
+      "from": "RAN",
+      "to": "EPC2",
+      "width": 1,
+      "tooltiptext": "1"
+    }
+  ]
+  },
+  {
+  "date": "Date1",
+  "RANErrorDistribution": [
+    {
+      "category": "High Inteference",
+      "value": 5
+    },
+    {
+      "category": "MAC Random Access Problem",
+      "value": 5
+    },
+    {
+      "category": "Missing Neighbor",
+      "value": 5
+    },
+    {
+      "category": "Poor Coverage",
+      "value": 5
+    },
+    {
+      "category": "T300 Expired",
+      "value": 5
+    },
+    {
+      "category": "T301 Expired",
+      "value": 5
+    },
+    {
+      "category": "T310 Expired",
+      "value": 5
+    },
+    {
+      "category": "T311 Expired",
+      "value": 5
+    },
+    {
+      "category": "500",
+      "value": 5
+    },
+    {
+      "category": "487",
+      "value": 5
+    },
+	{
+      "category": "Others",
+      "value": 4
+    }
+
+  ],
+  "CNErrorCodeDistribution": [
+    {
+      "category": "403_service Forbidden",
+      "value": 4
+    },
+    {
+      "category": "480_Tempararily Unavailable",
+      "value": 4
+    },
+    {
+      "category": "487_Request Terminated",
+      "value": 4
+    },
+    {
+      "category": "500_Service Terminal Error",
+      "value": 4
+    },
+    {
+      "category": "503_Service Unavailable",
+      "value": 4
+    },
+    {
+      "category": "504_service Time-Out",
+      "value": 4
+    }
+  ],
+  "sanKeynodeData": [
+    {
+      "key": "IMS",
+      "text": "IMS",
+      "domain": "IMS",
+      "color": "#6FF3F7",
+      "pos": "-273.56282282399604 -411.0014590632372",
+      "height": 10
+    },
+    {
+      "key": "EPC",
+      "text": "EPC",
+      "domain": "EPC",
+      "color": "#f8ac59",
+      "pos": "-272.56282282399604 -317.0014590632372",
+      "height": 10
+    },
+    {
+      "key": "RAN",
+      "text": "RAN",
+      "domain": "RAN",
+      "color": "#1ab394",
+      "pos": "-273.56282282399604 -206.00145906323718",
+      "height": 10
+    },
+    {
+      "key": "EPC2",
+      "ltext": "EPC",
+      "domain": "EPC",
+      "color": "#f8ac59",
+      "pos": "212.43717717600396 -208.00145906323718",
+      "height": 10
+    },
+    {
+      "key": "RAN2",
+      "ltext": "RAN",
+      "domain": "RAN",
+      "color": "#1ab394",
+      "pos": "210.43717717600393 -337.0014590632372",
+      "height": 10
+    },
+    {
+      "key": "IMS2",
+      "ltext": "IMS",
+      "domain": "IMS",
+      "color": "#6FF3F7",
+      "pos": "212.43717717600393 -409.0014590632372",
+      "height": 10
+    },
+    {
+      "key": "Others2",
+      "ltext": "Others MSC/PSTN",
+      "domain": "OTHERS",
+      "color": "#F37892",
+      "pos": "211.43717717600393 -270.0014590632372",
+      "height": 10
+    }
+  ],
+  "sanKeyLinkData": [
+    {
+      "from": "IMS",
+      "to": "RAN2",
+      "width": 10,
+      "tooltiptext": "10"
+    },
+    {
+      "from": "IMS",
+      "to": "EPC2",
+      "width": 10,
+      "tooltiptext": "3"
+    },
+    {
+      "from": "IMS",
+      "to": "IMS2",
+      "width": 10,
+      "tooltiptext": "10"
+    },
+    {
+      "from": "IMS",
+      "to": "Others2",
+      "width": 10,
+      "tooltiptext": "10"
+    },
+    {
+      "from": "EPC",
+      "to": "RAN2",
+      "width": 10,
+      "tooltiptext": "7"
+    },
+    {
+      "from": "EPC",
+      "to": "EPC2",
+      "width": 10,
+      "tooltiptext": "2"
+    },
+    {
+      "from": "EPC",
+      "to": "IMS2",
+      "width": 10,
+      "tooltiptext": "5"
+    },
+    {
+      "from": "EPC",
+      "to": "Others2",
+      "width": 10,
+      "tooltiptext": "4"
+    },
+    {
+      "from": "RAN",
+      "to": "RAN2",
+      "width": 10,
+      "tooltiptext": "50"
+    },
+    {
+      "from": "RAN",
+      "to": "EPC2",
+      "width": 10,
+      "tooltiptext": "1"
+    }
+  ]
+  }
+
+]
+
+
+

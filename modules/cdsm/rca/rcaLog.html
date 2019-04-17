@@ -1,0 +1,25 @@
+﻿<div ng-controller="rcaLogController">
+    <div id="divRANData" class="row">
+        <div class="col-lg-5" style="margin-left:10px">
+            <b>Processing RAN Data</b>
+        </div>
+        <div id="pbRANData" class="col-lg-7" style="width: 325px; margin-left: 10px">
+        </div>
+        
+    </div>
+        <div ng-repeat="log in logData">
+            <div id="{{'div' + log.identifier}}" class="row" style="display: none;margin-top:2px">
+                <div class="col-lg-5" style="margin-left:10px">
+                    <b>{{log.text}}</b>
+                </div>
+                <div id="{{'pb' + log.identifier}}" class="col-lg-7" style="width:325px;margin-left:10px">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="box">
+                <div class="console" style="height:100px;width:98%"></div>
+            </div>
+        </div>
+    </div>

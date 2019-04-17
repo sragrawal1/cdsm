@@ -1,0 +1,123 @@
+﻿<div ng-controller="rcaController" style="background-color: transparent;width:100%;height:100%;margin:0">
+    <div id="page-wrapper1" class="gray-bg" style="margin:0">
+        <div class="wrapper wrapper-content animated fadeInRight" style="margin:0">
+
+            <div class="row" id="rcaTop" style="margin:0">
+                <div class="col-md-12">
+                    <div class="ibox">
+                        <div class="ibox-title">
+                            <h5><i class="fa fa-file-text" style="margin-right:10px"></i>Problem Domain Categorization</h5>
+                        </div>
+                        <div class="ibox-content" style="min-height: 80px;">
+                            <div class="row"></div>
+                            <div class="row">
+
+                                <div class="col-md-3">
+
+                                    <div class="widget style1 navy-bg divButton" id="divRAN" ng-click="categoryChange('RAN')">
+                                        <div class="row vertical-align">
+                                            <div class="col-xs-12 text-center">
+                                                <h2 class="font-bold">RAN :{{rcaData.RANcount}}</h2>
+                                                <h4 class="font-bold">Radio Access Network</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-md-3">
+
+                                    <div class="widget style1 yellow-bg divButton" id="divEPC" ng-click="categoryChange('EPC')">
+                                        <div class="row vertical-align">
+                                            <div class="col-xs-12 text-center">
+                                                <h2 class="font-bold">EPC :{{rcaData.EPCcount}}</h2>
+                                                <h4 class="font-bold">Evolved Packet Core</h4>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-md-3">
+
+                                    <div class="widget style1 lazur-bg divButton" id="divIMS" ng-click="categoryChange('IMS')">
+                                        <div class="row vertical-align">
+                                            <div class="col-xs-12 text-center">
+
+                                                <h2 class="font-bold">IMS :{{rcaData.IMScount}}</h2>
+                                                <h4 class="font-bold">IP Multimedia Subsystem</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-md-3">
+
+                                    <div class="widget style1 red-bg divButton" id="divOTHERS" ng-click="categoryChange('OTHERS')">
+                                        <div class="row vertical-align">
+                                            <div class="col-xs-12 text-center">
+                                                <h2 class="font-bold">Others :{{rcaData.Otherscount}}</h2>
+                                                <h4 class="font-bold">MSC/PSTN</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row" style="margin:0">
+                <div id="splitterexample">
+                    <div id="splitter" style="height: 630px; margin: 0;" >
+                        <!--<div></div>-->
+                            <div id="rcaGrid" kendo-grid k-options="gridOptions" k-ng-delay="gridOptions" style="margin:0;height:100%;background-color:none;" />
+                        
+                        <!--<div></div>-->
+                            <div id="imsiGrid" kendo-grid k-options="IMSIgridOptions" k-ng-delay="IMSIgridOptions" style="margin:0;height: 100%; background-color: none; " />
+                        
+                    </div>
+                    <script>
+                        $(document).ready(function () {
+                            $("#splitter").kendoSplitter({
+                                orientation: "horizontal",
+                                panes: [
+                                    { collapsible: true, size: "340px", collapsedSize: "200px" },
+                                    { collapsible: false, collapsed: false }
+                                ]
+                            });
+                        });
+                    </script>
+
+                </div>
+
+            </div>
+            <!--<div class="row">
+                <div class="col-lg-12">
+
+                    <div kendo-window id="CTWindow" k-options="kCTWindowOptions" k-on-open="win2visibleCT = true" k-on-close="win2visibleCT = false">
+                        <div ng-if="win2visibleCT">
+                            <div ng-include="'modules/cdsm/ct/ct.html'"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>-->
+
+
+        </div>
+    </div>
+
+
+
+
+
+</div>

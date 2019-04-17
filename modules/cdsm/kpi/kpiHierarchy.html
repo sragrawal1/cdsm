@@ -1,0 +1,25 @@
+﻿<div ng-controller="kpiHierarchyController">
+    <div class="row">
+        <input class="k-textbox clearInputX" placeholder="Search KPI..." style="width:100%;" id="inKPISearch" ng-model="searchText"  ng-change="changeKPI()"/>
+        <div kendo-tree-view k-options="filterTreeOptions" k-rebind="filterTreeOptions" id="kpiFilterTreeDiv" style="height: 300px; margin-top: 5px; margin-bottom: 5px;"></div>
+    </div>
+
+    <!--<div class="row"></div>-->
+        <div style="text-align: center; margin-top: 5px;margin-bottom:5px;">
+            <input type="button" class="k-button" value="Apply" ng-click="applyKPI()" />
+        </div>
+
+    <script id="kpi-template" type="text/x-kendo-template">
+        # 
+        if(item.interfaceName == undefined   || item.interfaceName == null)
+        { #
+        <span>${ item.displayName}  </span>
+        #}
+        else 
+        { #
+        <span>${ item.displayName} (${ item.interfaceName})  </span>
+        #}
+        #
+    </script>
+
+</div>

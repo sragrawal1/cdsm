@@ -1,0 +1,106 @@
+﻿<div ng-controller="kpi4ChartsController">
+        <div id="page-wrapper1" class="gray-bg">
+            <div class="wrapper wrapper-content animated fadeInRight">
+                <div class="row">
+                    <div class="col-md-12">
+                        <!--<div class="ibox float-e-margins"></div>-->
+                        <div class="ibox-title">
+                            <h5>KPIs</h5>
+                            <div class="ibox-tools">
+                                <!--<a class="fullscreen-link">
+                                    <i ng-class="diagramMode == 'expand' ? 'fa fa-expand' : 'fa fa-compress'" ng-click="diagramFullScreen(diagramMode)"></i>
+
+                                </a>-->
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <div class="col-xs-12 col-lg-6">
+                                <div class="panel panel-default">
+                                    <div class="">
+                                        <span class="" style="margin-left:10px;margin-top:5px;">
+                                            <strong>Diameter</strong>
+                                        </span>
+                                        <div class="" style="float: right">
+                                            <button type="button" class="btn btn-link btn-xs" ng-click="showChartFilter(chartPanel)">
+                                                <span class="glyphicon glyphicon-edit"></span>Filter
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div id="chart1" kendo-chart k-options="diameterChartOptions" k-rebind="diameterChartOptions" style="min-height: 300px;max-height:300px;margin-bottom:10px;" />
+                                        <!--<hr />-->
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-lg-6">
+                                <div class="panel panel-default">
+                                    <div class="">
+                                        <span class="" style="margin-left:10px;margin-top:5px;">
+                                            <strong>GTPV2-C</strong>
+                                        </span>
+                                        <div class="" style="float: right">
+                                            <button type="button" class="btn btn-link btn-xs" ng-click="showChartFilter(chartPanel)">
+                                                <span class="glyphicon glyphicon-edit"></span>Filter
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div id="chart2" kendo-chart k-options="GTPV2ChartOptions" k-rebind="GTPV2ChartOptions" style="min-height: 300px;max-height:300px;margin-bottom:10px;" />
+                                        <!--<hr />-->
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-lg-6">
+                                <div class="panel panel-default">
+                                    <div class="">
+                                        <span class="" style="margin-left:10px;margin-top:5px;">
+                                            <strong>S1AP</strong>
+                                        </span>
+                                        <div class="" style="float: right">
+                                            <button type="button" class="btn btn-link btn-xs" ng-click="showChartFilter(chartPanel)">
+                                                <span class="glyphicon glyphicon-edit"></span>Filter
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div id="chart3" kendo-chart k-options="S1APChartOptions" k-rebind="S1APChartOptions" style="min-height: 300px;max-height:300px;margin-bottom:10px;" />
+                                        <!--<hr />-->
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-lg-6">
+                                <div class="panel panel-default">
+                                    <div class="">
+                                        <span class="" style="margin-left:10px;margin-top:5px;">
+                                            <strong>RAN</strong>
+                                        </span>
+                                        <div class="" style="float: right">
+                                            <button type="button" class="btn btn-link btn-xs" ng-click="showChartFilter(chartPanel)">
+                                                <span class="glyphicon glyphicon-edit"></span>Filter
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div id="chart4" kendo-chart k-options="RANChartOptions" k-rebind="RANChartOptions" style="min-height: 300px;max-height:300px;margin-bottom:10px;" />
+                                        <!--<hr />-->
+                                    </div>
+
+                                </div>
+                            </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div kendo-window id="kpiFilterWindow" k-options="kpiFilterWindowOptions" k-on-open="win2visiblekpi = true" k-on-close="win2visiblekpi = false">
+            <div ng-if="win2visiblekpi">
+                <div ng-include="'modules/cdsm/kpi/kpiHierarchy.html'"></div>
+            </div>
+        </div>
+</div>

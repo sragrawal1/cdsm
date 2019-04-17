@@ -1,0 +1,330 @@
+﻿<div ng-controller="ctController">
+    <style>
+        .highlightrow {
+            background-color: #ed5565;
+        }
+    </style>
+    <!--<div id="wrapper"> </div>-->
+        <div id="page-wrapper1" class="gray-bg">
+            <div class="wrapper wrapper-content animated fadeInRight">
+                
+                <div class="row" id="ctSearch">
+                    <div class="col-lg-12">
+
+                        <div class="ibox">
+                            <!--<div class="ibox-title">
+                                <h5>IMSI Info</h5>
+                            </div>-->
+                            <div class="ibox-content">
+                                <div class="row"></div>
+                                <div class="row" style="margin-top:2px">
+                                    <div class="col-md-4">
+                                        <p class="font-bold">
+                                            IMSI #:
+                                        </p>
+                                        <input type="text" class="form-control" />
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <p class="font-bold">
+                                            Date
+                                        </p>
+                                        <select class="select2_demo_3 form-control">
+                                            <option value="06/20/2016">06/20/2016</option>
+                                            <option value="06/21/2016">06/21/2016</option>
+                                        </select>
+
+                                    </div>
+                                    <div class="col-md-4">
+                                        <p class="font-bold">
+                                            Time
+                                        </p>
+                                        <select class="select2_demo_2 form-control">
+                                            <option value="09:41 AM">09:41 AM</option>
+                                            <option value="06:32 PM">06:32 PM</option>
+                                        </select>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                
+                
+                
+                <div class="row" id="ctDetail">
+                    <div class="col-md-3">
+                        <div class="ibox">
+                            <div class="ibox-title">
+                                
+                                <h5><span class="glyphicon glyphicon-info-sign" style="margin-right:10px"></span>RCA Information</h5>
+                            </div>
+                            <div class="ibox-content" style="min-height:275px">
+
+                                <div class="row  m-t-sm">
+                                    <div class="col-sm-6">
+                                        <div class="font-bold">Date</div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        {{callTraceModel.info.date}}
+                                    </div>
+                                </div>
+
+                                <div class="row  m-t-sm">
+                                    <div class="col-sm-6">
+                                        <div class="font-bold">Start Time</div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        {{callTraceModel.info.startTime}}
+                                    </div>
+                                </div>
+
+                                <div class="row  m-t-sm">
+                                    <div class="col-sm-6">
+                                        <div class="font-bold">End Time</div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        {{callTraceModel.info.endTime}}
+                                    </div>
+                                </div>
+
+                                <div class="row  m-t-sm">
+                                    <div class="col-sm-6">
+                                        <div class="font-bold">IMSI</div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        {{callTraceModel.info.IMSI}}
+                                    </div>
+                                </div>
+
+                                <div class="row  m-t-sm">
+                                    <div class="col-sm-6">
+                                        <div class="font-bold">MSISDN</div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        {{callTraceModel.info.MSISDN}}
+                                    </div>
+                                </div>
+
+                                <div class="row  m-t-sm">
+                                    <div class="col-sm-6">
+                                        <div class="font-bold">IMEI</div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        {{callTraceModel.info.IMEI}}
+                                    </div>
+                                </div>
+
+                                <div class="row  m-t-sm" style="background-color: #f5f5f5">
+                                    <div class="col-sm-6">
+                                        <div class="font-bold">Error Domain</div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        {{callTraceModel.info.errorDomain}}
+                                    </div>
+                                </div>
+
+                                <div class="row  m-t-sm" style="background-color: #f5f5f5">
+                                    <div class="col-sm-6">
+                                        <div class="font-bold">CC Protocol</div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        {{callTraceModel.info.CCProtocol}}
+                                    </div>
+                                </div>
+
+                                <div class="row  m-t-sm" style="background-color: #f5f5f5">
+                                    <div class="col-sm-6">
+                                        <div class="font-bold">Problem Signatures</div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        {{callTraceModel.info.problemSignature}}
+                                    </div>
+                                </div>
+
+                                <div class="row  m-t-sm">
+                                    <div class="col-sm-6">
+                                        <div class="font-bold">Cell</div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        {{callTraceModel.info.cell}}
+                                    </div>
+                                </div>
+
+                                <div class="row  m-t-sm">
+                                    <div class="col-sm-6">
+                                        <div class="font-bold">Originating Node</div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        {{callTraceModel.info.originatingNode}}
+                                    </div>
+                                </div>
+
+                                <div class="row  m-t-sm">
+                                    <div class="col-sm-6">
+                                        <div class="font-bold">Vendor</div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        {{callTraceModel.info.vendor}}
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="ibox">
+                            <div class="ibox-title">
+                                <h5><i class="fa fa-file-text" style="margin-right:10px"></i>RCA Description</h5>
+                            </div>
+                            <div class="ibox-content" style="min-height:275px">
+
+                                <div class="row  m-t-sm">
+                                    <div class="col-sm-12">
+                                        <div class="font-bold">Problem Signature</div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        {{callTraceModel.description.problemSignature}}
+                                    </div>
+                                </div>
+
+
+                                <div class="row  m-t-sm">
+                                    <div class="col-sm-12">
+                                        <div class="font-bold">Problem Description</div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        {{callTraceModel.description.problemDescription}}
+                                    </div>
+                                </div>
+
+                                <div class="row  m-t-sm">
+                                    <div class="col-sm-12">
+                                        <div class="font-bold">Possible Reasons</div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        {{callTraceModel.description.posibleReason}}
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="ibox">
+                            <div class="ibox-title">
+                                <h5><i class="fa fa-rocket" style="margin-right:10px"></i>Recommended Actions</h5>
+                            </div>
+                            <div class="ibox-content" style="min-height:275px">
+                                <div class="row  m-t-sm">
+                                    <div class="col-sm-12">
+                                        <div class="font-bold">Suggestion</div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        {{callTraceModel.action.suggestion}}
+                                    </div>
+                                </div>
+
+
+                                <div class="row  m-t-sm">
+                                    <div class="col-sm-12">
+                                        <input type="button" ng-click="addNote()" value="Add a Note" class="btn btn-block btn-outline btn-primary" />
+                                        <input type="button" ng-click="createReport()" value="Create Analysis Report" class="btn btn-block btn-outline btn-primary" />
+                                        <input type="button" ng-click="email()" value="Email Issue" class="btn btn-block btn-outline btn-primary" />
+                                        <input type="button" ng-click="updateRemedy()" value="Open/Update Remedy Ticket" class="btn btn-block btn-outline btn-primary" />
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="ibox float-e-margins">
+                            <div class="ibox-title">
+                                <h5>Call Trace </h5>
+
+
+                                <div class="ibox-tools">
+                                    <a class="fullscreen-link">
+                                        <i ng-class="diagramMode == 'expand' ? 'fa fa-expand' : 'fa fa-compress'" ng-click="diagramFullScreen(diagramMode)"></i>
+                                                <!--<i class="fa fa-compress"></i>
+                                                <i class="fa fa-expand"></i>-->
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="ibox-content">
+
+                                <div>
+                                    <div id="ctDiagramDiv" style="background-color: transparent; width: 100%; height: 340px;"></div> <!--padding: 60px 0px;-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+                <!--<div id="divDebug">
+                    <textarea id="mySavedModel" style="width: 800px; height: 400px;">
+                        { "class": "go.GraphLinksModel",
+                        "nodeDataArray": [
+                        {"key":"UE", "text":"UE", "isGroup":true, "loc":"0 0", "duration":20,"icon":"cylinder","iconWidth":20, "iconHeight":30},
+                        {"key":"eNB", "text":"eNB", "isGroup":true, "loc":"200 0", "duration":20},
+                        {"key":"MME", "text":"MME", "isGroup":true, "loc":"400 0", "duration":20},
+                        {"key":"SGW", "text":"S-GW", "isGroup":true, "loc":"600 0", "duration":20},
+                        {"key":"PGW", "text":"P-GW", "isGroup":true, "loc":"800 0", "duration":20},
+                        {"key":"PCRF", "text":"PCRF", "isGroup":true, "loc":"1000 0", "duration":20},
+                        {"key":"PCSCF", "text":"P-CSCF", "isGroup":true, "loc":"1200 0", "duration":20},
+                        {"key":"SCSCF", "text":"S-CSCF", "isGroup":true, "loc":"1400 0", "duration":20},
+                        {"group":"UE", "start":0, "duration":2, "key":-8},
+                        {"group":"MME", "start":2, "duration":2, "key":-9},
+                        {"group":"SGW", "start":4, "duration":2, "key":-10},
+                        {"group":"PGW", "start":6, "duration":2, "key":-11},
+                        {"group":"SGW", "start":8, "duration":2, "key":-12},
+                        {"group":"MME", "start":10, "duration":2, "key":-13},
+                        {"group":"SGW", "start":12, "duration":2, "key":-14},
+                        {"group":"MME", "start":14, "duration":2, "key":-15},
+                        {"group":"SGW", "start":16, "duration":2, "key":-16},
+                        {"group":"PGW", "start":18, "duration":2, "key":-17},
+                        {"group":"PCRF", "start":20, "duration":2, "key":-18},
+                        {"group":"PGW", "start":22, "duration":2, "key":-19}
+                        ],
+                        "linkDataArray": [
+                        {"from":"UE", "to":"MME", "text":"Create Session Request", "time":2},
+                        {"from":"MME", "to":"SGW", "text":"Create Session Request", "time":4},
+                        {"from":"SGW", "to":"PGW", "text":"Create Session Request", "time":6},
+                        {"from":"PGW", "to":"SGW", "text":"Create Session Response", "time":8},
+                        {"from":"SGW", "to":"MME", "text":"Create Session Response", "time":10},
+                        {"from":"MME", "to":"SGW", "text":"Modify Bearer Request", "time":12},
+                        {"from":"SGW", "to":"MME", "text":"Modify Bearer Response", "time":14},
+                        {"from":"MME", "to":"SGW", "text":"Create Session Request", "time":16},
+                        {"from":"SGW", "to":"PGW", "text":"Create Session Request", "time":18},
+                        {"from":"PGW", "to":"PCRF", "text":"Create Session Request", "time":20},
+                        {"from":"PCRF", "to":"PGW", "text":"Create Session Request", "time":22}
+                        ]}
+                    </textarea>
+                    <input type="button" ng-click="getJSON()" value="GetJSON" />
+                    <input type="button" ng-click="setJSON()" value="SetJSON" />
+
+                    <input type="button" ng-click="test()" value="Test"/>
+                </div>-->
+
+
+            </div>
+        </div>
+
+    <div kendo-window id="CTMessageWindow" k-options="kCTMWindowOptions" k-on-open="win2visibleCTM = true" k-on-close="win2visibleCTM = false" class="modal-content animated fadeIn">
+        <div ng-if="win2visibleCTM">
+            <div id="ctmGrid" kendo-grid k-options="CTMgridOptions" k-ng-delay="CTMgridOptions" />
+        </div>
+    </div>
+</div>

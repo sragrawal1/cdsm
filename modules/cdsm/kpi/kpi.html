@@ -1,0 +1,121 @@
+﻿<div ng-controller="kpiController">
+    <div id="page-wrapper1" class="gray-bg">
+        <div class="wrapper wrapper-content animated fadeInRight">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="ibox-title" id="title">
+                        <h5>Network KPIs</h5>
+                        <div class="ibox-tools">
+                        </div>
+                    </div>
+                    <div class="panel-body" id="idChartArea">
+                        <div class="row" style="margin-bottom:5px;" id="idChartOptions">
+                            <span class="btn-group" data-toggle="buttons" style="padding-left:0px">
+                                <label class="btn btn-default" ng-repeat="g in granularity" ng-click="granularityClicked(g)" ng-class="g.active">
+                                    <input type="radio" name="rdbPeriod" id="{{g.name}}" value="{{g.name}}" autocomplete="off"> {{g.name}}
+                                </label>
+                            </span>
+
+                            &nbsp;
+
+                            <span style="padding-top:5px">
+                                <span id="sliderSpan">
+                                    <input id="slider" style="width: 270px;" />
+                                </span>
+                            </span>
+
+                            <button type="submit" ng-click="reLoadAllChartData()" class="btn btn-link btn-xs" style="margin-left:20px;"><span class="glyphicon glyphicon-ok"></span> Apply</button>
+                            <button type="submit" ng-click="addNewChart()" class="btn btn-link btn-xs"><span class="glyphicon glyphicon-plus"></span>Add New Chart</button>
+                            <!--<button type="submit" ng-click="test()" class="btn btn-link btn-xs">Test Button</button>-->
+
+                        </div>
+                        <style>
+                            .Deselect {
+                                border-color: lightgray;
+                            }
+
+                            .Select {
+                                border-color: lightblue;
+                            }
+                        </style>
+                        <div class="col-xs-12 col-lg-6" ng-repeat="chartPanel in chartPanels" style="min-height:0px;" id="idChartParentDiv">
+                            <div class="panel panel-default Deselect" id="{{'chartPanel' + chartPanel.id}}" style="margin-bottom:5px;">
+                                <!--<div class="">  </div>-->
+                                <span class="">
+                                    <!--{{chartPanel.title}}-->
+                                </span>
+                                <div class="" style="float: right">
+                                    <button type="button" class="btn btn-link btn-xs" ng-click="showChartFilter(chartPanel)">
+                                        <i class="fa fa-filter" aria-hidden="true"></i><!--Filter-->
+                                    </button>
+
+                                    <button type="button" class="btn btn-link btn-xs" ng-click="showChartEditorViewpopup(chartPanel)" ng-disabled="chartPanel.kpis.length ==0">
+                                        <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                                        <!--Customize-->
+                                    </button>
+
+
+
+                                    <button type="button" class="btn btn-link btn-xs" ng-click="expandChart(chartMode,chartPanel.id)" ng-disabled="chartPanel.kpis.length ==0">
+                                        <i ng-class="chartMode == 'expand' ? 'fa fa-expand' : 'fa fa-compress'" aria-hidden="true"></i>
+                                    </button>
+
+                                    <button type="button" class="btn btn-link btn-xs" ng-click="duplicateChart(chartPanel)" ng-disabled="chartPanel.kpis.length ==0">
+                                        <i class="fa fa-files-o"></i>
+                                    </button>
+
+                                    <div class="btn-group" style="margin-top: 0px; margin-right: 0px;">
+                                        <button type="button" class="btn btn-link btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ng-disabled="chartPanel.kpis.length ==0">
+                                            <i class="fa fa-share-square" aria-hidden="true"></i>&nbsp;<span class="caret"></span>
+                                            <span class="sr-only">Toggle Dropdown</span>
+                                        </button>
+                                        <ul class="dropdown-menu pull-right">
+                                            <li ng-click="showChartPrintpopup(chartPanel)"><a href="">Print</a></li>
+                                            <li ng-click="onChartExport(chartPanel,'pdf')"><a href="">PDF</a></li>
+                                            <li ng-click="onChartExport(chartPanel,'image')"><a href="">Image</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <button type="submit" ng-click="removeChart(chartPanel)" class="btn btn-link btn-xs"><span class="glyphicon glyphicon-remove"></span></button>
+                                </div>
+
+                                <div class="panel-body" id="{{'chartDiv' + chartPanel.id}}">
+                                    <div id="{{'Chart' + chartPanel.id}}" kendo-chart k-options="chartPanel.chartOptions" k-rebind="chartPanel.chartOptions" ng-init="setChartHeight($last)" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div kendo-window id="kpiFilterWindow" k-options="kpiFilterWindowOptions" k-on-open="win2visiblekpi = true" k-on-close="win2visiblekpi = false">
+        <div ng-if="win2visiblekpi">
+            <div ng-include="'modules/cdsm/kpi/kpiHierarchy.html'"></div>
+        </div>
+    </div>
+
+    <div kendo-window id="chartEditorWindow" k-options="kChartEditorwindowOptions" k-on-open="win2visiblechartEditor = true" k-on-close="win2visiblechartEditor = false">
+        <div ng-if="win2visiblechartEditor">
+            <div ng-include="'modules/cdsm/kpi/chartEditorview.html'"></div>
+        </div>
+    </div>
+
+    <div kendo-window id="chartPrintWindow" k-options="kChartPrintWindowOptions" k-on-open="win2visiblechartPrint = true" k-on-close="win2visiblechartPrint = false">
+        <div ng-if="win2visiblechartPrint">
+            <div class="row text-right" >
+                <button class="btn btn-outline btn-primary dim" type="button" ng-click="printChart()"><i class="fa fa-print" aria-hidden="true"></i>&nbsp;Print</button>
+            </div>
+            
+            <div id="chartPrintArea">
+                <div class="row">
+                    <div kendo-chart k-options="printChartOptions" k-rebind="printChartOptions" style="min-height: 500px; max-height: 500px;width:100%;"></div>
+                </div>
+                <div class="row text-center">
+                    <div id="chartData" kendo-grid k-options="gridChartDataOptions" k-ng-delay="gridChartDataOptions" style="margin:0;background-color:none;" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
